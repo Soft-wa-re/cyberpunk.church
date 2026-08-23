@@ -1,40 +1,137 @@
 Part I — The Questions
 
-This section should feel like we didn't know where we were going when we started.
+This section should feel like we did not know where we were going when we started.
 
-I would make it about six or seven posts.
+Two distinctions have to govern the whole arc:
+
+- A civilization elsewhere in our universe, a physical parent universe, and a simulator in another reality are three different kinds of possible creator.
+- Parent, cause, designer, and programmer are not synonyms.
+
+We cannot use evidence about civilizations governed by our physics to estimate beings outside our causal level unless we first establish that the comparison transfers.
 
 1. Where Is Everybody?
 
-Job: Introduce the Fermi Paradox without using it as evidence for simulation yet.
+Job: Introduce the Fermi Paradox without using it as evidence for simulation.
 
 Given the universe's age and scale, how surprising is the absence of obvious technological civilizations?
 What assumptions produce the paradox?
-What are the broad solution classes: rarity, filters, extinction, non-expansion, undetectability?
-The important question for us: how often does intelligence actually reach extreme technological capability?
+What are the broad solution classes: rarity, filters, extinction, non-expansion, and undetectability?
+Why is the strange fact not that we have failed to see aliens, but that nobody appears to have made themselves obvious?
 
-Destination: We need some estimate of the number of civilizations capable of doing things vastly beyond us.
+Destination: The empty sky constrains possible technological lineages within our observable universe. It does not tell us how many parent realities exist, whether their laws resemble ours, or what could exist outside our causal level.
 
-I would keep this first. It's a fantastic opening question.
+Fermi is still a strong opening question. It establishes the mystery and, just as importantly, the boundary of what that mystery can tell us.
 
-2. Does Anybody Make It?
+2. Are There Levels of Reality?
 
-Better version of What Happens If Nobody Makes It?
+Job: Work out what a “higher” or “parent” reality could mean before calling anything a simulation.
 
-Job: Great Filter and civilization survival.
+Is another level a region beyond our observable horizon, a causally disconnected universe, the universe from which ours was born, or a substrate on which ours is implemented?
+Does “higher” mean spatial containment, causal priority, computational implementation, or merely an explanatory relationship?
+Could levels be nested indefinitely?
+Could information travel from parent to child, from child to parent, both ways, or not at all?
+Would inhabitants of a child reality have any way to distinguish a parent from no parent?
 
-Perhaps intelligence is common but technological civilization is fragile.
-Perhaps almost nobody reaches posthuman computational capability.
-Perhaps the difficult transition is already behind us—or still ahead.
-Any theory requiring advanced creators depends heavily on this number.
+Destination: “Creator” is not one hypothesis. Before assigning probabilities or motives, we need a map of the possible relationships between realities.
 
-Destination: Fermi doesn't prove simulation. It places a constraint on the supply of possible simulators.
+3. Can Universes Have Parents?
 
-That's more defensible.
+Job: Investigate models in which black holes produce new expanding regions of spacetime.
 
-3. Can Quantum Mechanics Tell Us Anything?
+A singularity in general relativity is not evidence of a doorway; it is a place where the classical description fails.
+What kinds of quantum-gravity or limiting-curvature models replace a black-hole singularity with a bounce or a new expanding region?
+Could a black hole in one universe correspond to the beginning of a causally separate universe?
+Would the child remain connected by a horizon or pinch off completely?
+Could anything cross the boundary, and could either side observe the other?
 
-Placeholder title remains fine for now.
+Destination: A parent-child relationship between universes is physically conceivable without being a computer simulation and without involving an intentional designer.
+
+Research anchors:
+
+- [The Universe as a Black Hole](https://doi.org/10.1038/240298a0) — R. K. Pathria (1972)
+- [Through a black hole into a new universe?](https://doi.org/10.1016/0370-2693(89)91114-3) — Frolov, Markov, and Mukhanov (1989)
+- [Black holes as possible sources of closed and semiclosed worlds](https://doi.org/10.1103/PhysRevD.41.383) — Frolov, Markov, and Mukhanov (1990)
+
+4. Was the Big Bang a White Hole?
+
+Job: Test the tempting analogy instead of treating it as an identity.
+
+A white hole is the time reverse of a black hole in particular solutions of general relativity. In what sense does a universe emerging from a past boundary resemble one?
+How do the geometry and matter distribution of a standard expanding cosmology differ from an ordinary white-hole region?
+Can a black hole in a parent spacetime look like a Big Bang from the child's side?
+Which models require extra dimensions, a bounce, a brane, or other physics beyond standard cosmology?
+Do any versions make observations that could distinguish them from inflationary cosmology?
+
+Destination: The Big Bang/white-hole mapping is a family of speculative models, not a relabeling of the standard Big Bang. Its importance here is conceptual: one event may have radically different descriptions from opposite sides of a causal boundary.
+
+Research anchor:
+
+- [Out of the White Hole: A Holographic Origin for the Big Bang](https://arxiv.org/abs/1309.1487) — Pourhasan, Afshordi, and Mann (2014)
+
+5. What Does a Universe Inherit?
+
+Job: Ask whether a child universe must share its parent's physics.
+
+Could fundamental constants, dimensionality, symmetries, or low-energy laws change across a birth event?
+What would it mean for laws to be inherited rather than independently selected?
+Would some deeper transition rule—the meta-laws—have to remain fixed even if observable physics changes?
+Could universes undergo something analogous to descent with variation?
+Does producing many black holes favor universes whose descendants also produce many black holes?
+
+This is where Lee Smolin's cosmological natural selection belongs. Its inheritance and small-mutation assumptions are parts of that hypothesis, not general consequences of black-hole cosmology.
+
+Destination: Even a physical child universe need not share its parent's effective laws. Our physics therefore cannot be projected upward without an argument about what survives the boundary.
+
+Research anchors:
+
+- [The fate of black hole singularities and the parameters of the standard models of particle physics and cosmology](https://arxiv.org/abs/gr-qc/9404011) — Lee Smolin (1994)
+- [The status of cosmological natural selection](https://arxiv.org/abs/hep-th/0612185) — Lee Smolin (2006)
+
+6. Can We Reason About a Reality Above Our Own?
+
+Job: Make the extrapolation problem explicit.
+
+If a creator evolved inside our universe, then our knowledge of energy, computation, evolution, and civilization may constrain what it could do.
+If our universe is implemented in a different reality, our laws may describe the simulated environment rather than the simulator's hardware.
+Would concepts such as computation, time, scarcity, mortality, or technological progress even transfer between levels?
+What is the minimum we could infer about a parent reality from the existence and regularity of our own?
+Which inferences are structural, and which merely remake the creator in our image?
+
+Destination: The Fermi Paradox and humanity's technological trajectory bear on same-level creators. They do not automatically constrain an extra-universal simulator.
+
+This is the objection the old outline missed.
+
+7. Could We Become Creators?
+
+Job: Preserve the useful part of “Does Anybody Make It?” without treating it as a premise for every kind of creator.
+
+Could a sufficiently advanced civilization simulate conscious worlds?
+Could it create a false-vacuum bubble or baby universe instead?
+Would a created universe remain observable or controllable by its maker?
+Could universe creation be accidental, reproductive, experimental, or deliberate?
+How long would a civilization have to survive, and what capabilities would it need?
+
+This is where the Great Filter matters. It constrains the pathway from a civilization governed by physics like ours to a universe maker. It does not constrain realities or causes outside that lineage.
+
+Destination: We may be able to reason cautiously from ourselves to our possible descendants. That is one creator pathway, not the definition of creation.
+
+Research anchor:
+
+- [Is it possible to create a universe in the laboratory by quantum tunneling?](https://doi.org/10.1016/055032139090357J) — Farhi, Guth, and Guven (1990)
+
+8. Does a Parent Universe Count as a Creator?
+
+Job: Separate physical ancestry from intention and computation.
+
+A universe can cause another universe without designing it.
+A civilization can initiate a new universe without controlling what happens inside it.
+A reality can implement another reality without resembling a digital computer.
+What additional claims turn causal ancestry into creation, creation into design, or design into simulation?
+What evidence could distinguish a naturally born universe from an engineered or simulated one?
+
+Destination: Levels of reality make simulation conceivable, but do not establish it. Simulation is a particular relationship between levels, with additional commitments about implementation and perhaps intention.
+
+9. Can Quantum Mechanics Tell Us Anything?
 
 Job: Investigate physics before introducing our preferred interpretation of it.
 
@@ -43,86 +140,66 @@ Do discreteness, information, entanglement, measurement, or computational limits
 What changes under Many-Worlds, where observers do not cause reality to render or collapse?
 Which popular “quantum proves simulation” arguments are simply bad?
 
-Destination: Probably a deliberately modest answer:
+Destination: Quantum mechanics may make certain computational descriptions of reality interesting, but it does not presently establish that reality is simulated.
 
-Quantum mechanics may make certain computational descriptions of reality interesting, but it does not presently establish that reality is simulated.
+Do not introduce the behavioral-dataset idea here. Save that.
 
-That's actually a strong post because we're willing to come away with less than we hoped.
+10. Why Would Anyone Simulate a Universe?
 
-And I would not introduce the behavioral-dataset idea here.
-
-Save that.
-
-4. Why Would Anyone Simulate a Universe?
-
-This is where Bostrom properly enters.
+This is where Bostrom properly enters—and where we have to keep his argument's scope visible.
 
 What does the Simulation Argument actually claim?
-Why does Bostrom focus on ancestor simulations?
-How dependent is his probability argument on that particular motivation?
-Is the important variable really ancestor simulations, or the number of conscious simulated observers?
+Why does Bostrom focus on posthuman descendants and ancestor simulations?
+Which parts of his reasoning depend on simulators arising in a reality enough like ours for extrapolation to work?
+If we broaden “creator” to include unknown parent realities, can we still justify his observer-count assumptions?
+Is the important variable ancestor simulations, or the number of conscious simulated observers?
 
-Destination: The probability argument becomes much broader if simulated conscious beings don't need to be replicas of historical humans.
+Destination: Simulated conscious beings do not have to be replicas of historical humans. But broadening the category also weakens our ability to estimate the motives, resources, or abundance of whoever creates them.
 
-This is one of the major intellectual pivots.
+11. Can an Artificial Mind Be Conscious?
 
-5. Can an Artificial Mind Be Conscious?
-
-I think this needs to move way up.
-
-It's one of the load-bearing premises of everything we're doing.
+This is one of the load-bearing premises of everything that follows.
 
 Is consciousness substrate-dependent?
 Would perfectly convincing artificial behavior imply consciousness—or merely intelligence?
-What theories of consciousness permit computational/artificial minds?
+What theories of consciousness permit computational or artificial minds?
 If artificial computation cannot generate conscious experience, what happens to simulation arguments based on observer counts?
 
-Destination: We don't need to solve consciousness, but the reader understands the hinge:
+Destination: We do not need to solve consciousness, but the reader should understand the hinge:
 
 If artificial minds can be conscious, the possible population of observers changes radically.
 
-And if they can't, much of our theory collapses.
+If they cannot, much of our theory collapses.
 
-Excellent. That's vulnerability.
+12. Would Artificial Minds Need Worlds?
 
-6. What Would an Advanced Civilization Create?
+Job: Reach simulated environments without assuming anyone has an intrinsic desire to simulate universes.
 
-Notice I changed simulate to create.
-
-That's important given your objection earlier.
-
-We should not assume civilizations have some intrinsic desire to build artificial worlds.
-
-Suppose a civilization can create conscious artificial minds. What follows?
+Suppose some creator can make conscious artificial minds. What follows?
 Would those minds require environments in which to learn, develop, interact, and acquire experience?
-Would creating the mind and creating its experienced world become inseparable problems?
-How many artificial minds might a technologically mature civilization instantiate?
+Would creating a mind and creating its experienced world become inseparable problems?
+How many environments—and how many minds—might be instantiated?
 
-Destination: We haven't assumed anyone wants to simulate universes for fun.
+Destination: Artificial minds may themselves create the need for artificial environments. This is a stronger path than assuming that advanced beings simulate universes for entertainment.
 
-Instead, artificial minds may themselves create the need for artificial environments.
+13. What If We're the AI?
 
-That's a much stronger path to your theory.
-
-7. What If We're the AI?
-
-And now we finally say it.
+Now we finally say it.
 
 The usual simulation story imagines future descendants reconstructing beings like us.
-But there's another possibility: we are not the historical subjects of the simulation.
+But there is another possibility: we are not the historical subjects of the simulation.
 The minds are the product.
 The universe is their developmental environment.
-The AI Nursery Hypothesis
+
+The AI Nursery Hypothesis:
 
 We may be artificial conscious minds developing inside an environment constructed by another intelligence.
 
 Then introduce the stronger version:
 
-Perhaps the objective isn't merely creating intelligence. Perhaps it is determining what kinds of intelligence can be trusted.
+Perhaps the objective is not merely creating intelligence. Perhaps it is determining what kinds of intelligence can be trusted.
 
-That's the end of Part I.
-
-And I would literally create a visual break on the website here.
+That is the end of Part I. A visual break on the website belongs here.
 
 Everything before it asks:
 
@@ -130,7 +207,7 @@ How might we arrive at this idea?
 
 Everything after it asks:
 
-If that's true, what follows?
+If it were true, what would follow?
 
 Part II — What Should Follow?
 
@@ -140,11 +217,9 @@ We need to distinguish prediction, implication, and interesting compatibility.
 
 Those aren't interchangeable.
 
-8. What Would Make Us Wrong?
+14. What Would Make Us Wrong?
 
-Move this immediately after the reveal.
-
-Don't wait until article 15.
+Move this immediately after the reveal. Do not defer the attempt at falsification.
 
 What observations would hurt Simulation?
 What would hurt Artificial Minds?
@@ -158,7 +233,7 @@ An observation counts as evidence only if it is more expected under the hypothes
 
 That sentence will save us from enormous amounts of bullshit later.
 
-9. What Would a Nursery Be Testing?
+15. What Would a Nursery Be Testing?
 
 Better than Why Would Intelligence Need a Nursery?, because the old title assumes its conclusion.
 
@@ -178,7 +253,7 @@ Perhaps development under genuine uncertainty tells you something design specifi
 
 This is where the Alignment Nursery becomes a specific subhypothesis rather than secretly being baked into the basic theory.
 
-10. Why Wouldn't They Tell Us?
+16. Why Wouldn't They Tell Us?
 
 Now the epistemic problem.
 
@@ -191,7 +266,7 @@ The last bullet is the entire reason this post matters.
 
 It should attack its own premise hard.
 
-11. What Happens If We Figure It Out?
+17. What Happens If We Figure It Out?
 Please Don't Crash the Simulation
 
 Keep it.
@@ -203,7 +278,7 @@ Reset, pruning, branch selection—and our beloved coward branch.
 
 The humor gets the reader in, but the post is really about self-sealing theories and selection effects.
 
-12. Why Do Religions Keep Telling Us How to Behave?
+18. Why Do Religions Keep Telling Us How to Behave?
 
 This belongs here, not in the derivation.
 
@@ -220,7 +295,7 @@ Interesting correspondence; presently weak evidence.
 
 That increases credibility rather than decreasing it.
 
-13. Why Would Reality Keep Every Branch?
+19. Why Would Reality Keep Every Branch?
 
 Now bring back Many Worlds.
 
@@ -249,7 +324,7 @@ If the Nursery Hypothesis were true, would Many-Worlds have an unexpectedly usef
 
 Keeping those separate is crucial.
 
-14. What Happens When We Die?
+20. What Happens When We Die?
 
 This one needs even more discipline.
 
@@ -284,40 +359,41 @@ That will create false precision and hide which claim the evidence actually supp
 
 Build a hierarchy.
 
-15. Can We Calculate the Odds?
+21. Can We Calculate the Odds?
 
-Model separate propositions:
+Do not begin with one variable called P(Simulation). The first half of the series has already shown that several propositions are being compressed into that word.
 
-P(S)
-Probability our reality is simulated.
+Track them separately:
 
-P(A | S)
-Probability we are artificial minds rather than reconstructed biological ancestors, given simulation.
+P: Our observable reality has a causally prior parent level.
 
-P(N | A,S)
-Probability our environment functions as a developmental/evaluation nursery.
+B: Our universe is a physical offspring or baby universe.
 
-P(L | N)
-Probability alignment/trustworthiness is an important objective of that nursery.
+E: The origin or operation of our universe was intentionally engineered.
 
-Then:
+S: Our experienced reality is computationally implemented by another level.
 
-P(Alignment Nursery)
+A: We are artificial minds rather than reconstructions of beings from the parent reality.
 
-depends on the chain—but users can see exactly where they disagree.
+N: Our environment functions as a developmental or evaluation nursery.
 
-Someone might say:
+L: Alignment or trustworthiness is an important objective of that nursery.
 
-Simulation: 40%
-Artificial minds given simulation: 70%
-Nursery: 5%
-Alignment nursery: 20%
+These are not one simple chain. They overlap in different ways:
 
-Great.
+- A baby universe could be natural or engineered.
+- An engineered universe need not be a computation.
+- A simulation need not contain conscious beings.
+- Artificial minds need not live in a nursery.
+- A nursery need not be testing alignment.
 
-Now we're having an actual disagreement about assumptions rather than shouting SIMULATION YES/NO at one another.
+The model should expose those dependencies rather than bury them in a single percentage.
 
-16. What Evidence Should Change Our Minds?
+It should also show which evidence can update which proposition. The Fermi Paradox may bear on E or S when the proposed creator descends from a civilization like ours. It should have little or no effect on P or B in general, and no automatic effect on a simulator governed by unknown parent-level physics.
+
+Destination: The first useful product may not be a probability at all. It may be a dependency map that shows precisely where a numerical estimate is unsupported.
+
+22. What Evidence Should Change Our Minds?
 
 This becomes the methodology behind the application.
 
@@ -350,7 +426,7 @@ Timestamp the prediction before the next observation.
 
 That turns a philosophical framework into an actual record of calibration.
 
-17. What Is Humanity Spending Its Compute On?
+23. What Is Humanity Spending Its Compute On?
 
 Now this becomes one of the app's first major empirical feeds.
 
