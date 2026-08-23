@@ -85,11 +85,11 @@ We cannot simultaneously assume that life is common, technological intelligence 
 
 Aliens could exist nearby or throughout the galaxy without our knowing it. That is not the strange part. The strange part is that, after billions of years in which even one civilization might have become conspicuous, the galaxy still looks unclaimed.
 
-For our purposes, one unknown matters more than the others: how often does intelligence reach extreme technological capability?
+The Fermi Paradox does not tell us which assumption is wrong. It may be that technological life is rare, that it rarely survives, that it remains quiet, or simply that we have not learned how to see it.
 
-There is a profound difference between a universe that frequently produces civilizations capable of engineering on scales vastly beyond us and one in which nearly every civilization disappears before reaching that point. Any theory that depends on ancient, powerful creators first depends on there being creators to do the creating.
+It also tells us only about this universe. The empty sky may constrain what other civilizations have done under the same physics we inhabit. It cannot tell us whether our universe has a parent, whether other levels of reality exist, or what the laws of such a reality would be.
 
-The empty sky does not answer that question. It makes the question unavoidable.
+That leaves a stranger question than where everybody is: is this sky all there is?
 
 ## Notes
 
