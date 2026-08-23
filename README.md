@@ -1,4 +1,4 @@
-# Simulationist Church
+# cyberpunk.church
 
 A clean Jekyll blog shell using the Hacker theme.
 
