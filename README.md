@@ -31,6 +31,13 @@ nodes:
       status: open
       belief:
         type: unknown
+      cruxes:
+        - The uncertainty most capable of reversing this claim
+      updates:
+        up:
+          - An observable result that would raise this claim
+        down:
+          - An observable result that would lower this claim
 
   - id: first-observation
     type: evidence
@@ -58,6 +65,8 @@ views:
 Node types are `question`, `claim`, `hypothesis`, `evidence`, `objection`, `assumption`, and `conclusion`.
 
 Relationship types are `supports`, `attacks`, `contradicts`, `entails`, `assumes`, `depends-on`, `explains`, and `alternative-to`. Use `entails` only for a logical consequence; use `supports` when something merely provides evidence or makes another node more plausible.
+
+Directional `epistemics.updates` are displayed in the inspector and remain part of the normalized graph, so claims can be queried by observations that would raise or lower them.
 
 Reference the canonical graph and view in the post's frontmatter:
 

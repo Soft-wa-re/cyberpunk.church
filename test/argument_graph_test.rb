@@ -59,6 +59,18 @@ class ArgumentGraphValidatorTest < Minitest::Test
     assert errors.any? { |error| error.include?("duplicate view id 'post-view'") }
   end
 
+  def test_rejects_invalid_directional_updates
+    graph = valid_graph
+    graph["nodes"].first["epistemics"] = {
+      "updates" => { "up" => [], "sideways" => ["An unsupported direction"] }
+    }
+
+    errors = @validator.validate(graph, path: "broken.yml")
+
+    assert errors.any? { |error| error.include?("updates has unknown field 'sideways'") }
+    assert errors.any? { |error| error.include?("updates up must contain at least one item") }
+  end
+
   def test_validator_enums_match_the_canonical_schema
     schema_path = File.expand_path("../_schemas/argument-graph.schema.json", __dir__)
     definitions = JSON.parse(File.read(schema_path)).fetch("$defs")

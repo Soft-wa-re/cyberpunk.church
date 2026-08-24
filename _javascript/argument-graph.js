@@ -113,6 +113,21 @@ function renderInspector(container, graph, node) {
     container.append(section);
   }
 
+  [
+    ["up", "Raises this claim"],
+    ["down", "Lowers this claim"]
+  ].forEach(([direction, heading]) => {
+    const observations = epistemics.updates?.[direction];
+    if (!observations?.length) return;
+
+    const section = element("section", `argument-graph__detail-section argument-graph__updates argument-graph__updates--${direction}`);
+    section.append(element("h4", "", heading));
+    const list = element("ul", "argument-graph__detail-list");
+    observations.forEach((observation) => list.append(element("li", "", observation)));
+    section.append(list);
+    container.append(section);
+  });
+
   if (node.sources?.length) {
     const section = element("section", "argument-graph__detail-section");
     section.append(element("h4", "", "Sources"));

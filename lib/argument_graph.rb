@@ -53,7 +53,8 @@ module ArgumentGraph
     GRAPH_KEYS = %w[version id title description views nodes edges].freeze
     VIEW_KEYS = %w[id title description nodes].freeze
     NODE_KEYS = %w[id type title body epistemics sources].freeze
-    EPISTEMIC_KEYS = %w[status belief confidence cruxes].freeze
+    EPISTEMIC_KEYS = %w[status belief confidence cruxes updates].freeze
+    UPDATE_KEYS = %w[up down].freeze
     BELIEF_KEYS = %w[type value].freeze
     SOURCE_KEYS = %w[title url note].freeze
     EDGE_KEYS = %w[id from to type strength note].freeze
@@ -201,6 +202,24 @@ module ArgumentGraph
       end
       validate_belief(epistemics["belief"], context) if epistemics.key?("belief")
       validate_string_array(epistemics["cruxes"], "#{context} cruxes") if epistemics.key?("cruxes")
+      validate_updates(epistemics["updates"], context) if epistemics.key?("updates")
+    end
+
+    def validate_updates(updates, context)
+      unless updates.is_a?(Hash)
+        error("#{context} updates must be an object")
+        return
+      end
+
+      validate_keys(updates, UPDATE_KEYS, "#{context} updates")
+      error("#{context} updates must include up or down observations") if updates.empty?
+      UPDATE_KEYS.each do |direction|
+        next unless updates.key?(direction)
+
+        validate_array(updates[direction], "#{context} updates #{direction}", nonempty: true)&.each_with_index do |item, index|
+          validate_nonempty_string(item, "#{context} updates #{direction} item ##{index + 1}")
+        end
+      end
     end
 
     def validate_belief(belief, context)
