@@ -45,6 +45,20 @@ class ArgumentGraphValidatorTest < Minitest::Test
     assert errors.any? { |error| error.include?("probability belief value must be a number between 0 and 1") }
   end
 
+  def test_rejects_duplicate_views_and_missing_view_nodes
+    graph = valid_graph
+    graph["views"] = [
+      { "id" => "post-view", "title" => "Post view", "nodes" => %w[question missing-node] },
+      { "id" => "post-view", "title" => "Duplicate view", "nodes" => %w[question question] }
+    ]
+
+    errors = @validator.validate(graph, path: "broken.yml")
+
+    assert errors.any? { |error| error.include?("refers to nonexistent node 'missing-node'") }
+    assert errors.any? { |error| error.include?("includes duplicate node 'question'") }
+    assert errors.any? { |error| error.include?("duplicate view id 'post-view'") }
+  end
+
   def test_validator_enums_match_the_canonical_schema
     schema_path = File.expand_path("../_schemas/argument-graph.schema.json", __dir__)
     definitions = JSON.parse(File.read(schema_path)).fetch("$defs")

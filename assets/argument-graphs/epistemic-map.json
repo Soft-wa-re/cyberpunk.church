@@ -1,0 +1,1160 @@
+{
+  "version": 1,
+  "id": "epistemic-map",
+  "title": "Cyberpunk Church Epistemic Map",
+  "description": "The canonical map of the AI Nursery Hypothesis, its empirical constraints, and the Fermi and Simulation dilemmas that frame it.",
+  "views": [
+    {
+      "id": "where-is-everybody",
+      "title": "Where Is Everybody?",
+      "description": "The observation, assumptions, objections, and broad hypotheses behind the absence of an obvious extraterrestrial civilization.",
+      "nodes": [
+        "fermi-question",
+        "technosignature-absence",
+        "limited-search",
+        "expansion-feasible",
+        "one-lineage",
+        "rare-life",
+        "short-lived-civilizations",
+        "inconspicuous-civilizations",
+        "hidden-aliens",
+        "fermi-constraint"
+      ]
+    },
+    {
+      "id": "simulation-argument",
+      "title": "Are You Living in a Computer Simulation?",
+      "description": "Bostrom's population argument, the assumptions that drive it, and why its disjunction is not proof of the Simulation Hypothesis.",
+      "nodes": [
+        "simulation-argument",
+        "posthuman-failure",
+        "posthumans-abstain",
+        "mostly-simulated",
+        "abundant-compute",
+        "engineered-consciousness",
+        "reference-class",
+        "ancestor-simulation",
+        "bostrom-disjunction",
+        "bostrom-not-proof"
+      ]
+    },
+    {
+      "id": "what-is-an-ai-nursery",
+      "title": "What Is an AI Nursery?",
+      "description": "The minimum definition of a Nursery and the consciousness and developmental assumptions it requires.",
+      "nodes": [
+        "nursery-question",
+        "engineered-consciousness",
+        "consciousness-indicators",
+        "consciousness-uncertain",
+        "development-matters",
+        "human-development",
+        "direct-specification",
+        "artificial-minds",
+        "nursery-hypothesis",
+        "alignment-hypothesis",
+        "nursery-world-requirements",
+        "ancestor-simulation"
+      ]
+    },
+    {
+      "id": "why-here-why-now",
+      "title": "Why Here? Why Now?",
+      "description": "What our apparent position near artificial-mind creation and our ignorance of any operator could constrain.",
+      "nodes": [
+        "nursery-question",
+        "recursive-creation",
+        "ai-threshold",
+        "timing-selection",
+        "natural-development",
+        "hidden-purpose",
+        "evaluation-awareness",
+        "hiddenness-self-sealing",
+        "evidence-ledger",
+        "current-verdict"
+      ]
+    },
+    {
+      "id": "are-we-building-ai-nurseries",
+      "title": "Are We Building AI Nurseries?",
+      "description": "Evidence from AI training worlds, hidden evaluations, rapidly growing artificial activity, and the unresolved observer census.",
+      "nodes": [
+        "development-matters",
+        "ai-world-generalization",
+        "nursery-world-requirements",
+        "evaluation-awareness",
+        "recursive-creation",
+        "ai-activity-growth",
+        "observer-census",
+        "incommensurable-counts",
+        "reference-class",
+        "engineered-consciousness",
+        "nursery-hypothesis"
+      ]
+    },
+    {
+      "id": "is-our-world-nursery-shaped",
+      "title": "Is Our World Nursery-Shaped?",
+      "description": "A comparison of Nursery predictions with natural development, ancestor simulation, research simulation, and objections from excess scale and weak discrimination.",
+      "nodes": [
+        "nursery-question",
+        "nursery-hypothesis",
+        "alignment-hypothesis",
+        "nursery-world-requirements",
+        "stable-laws",
+        "social-stakes",
+        "natural-development",
+        "ancestor-simulation",
+        "research-simulation",
+        "hidden-purpose",
+        "hiddenness-self-sealing",
+        "excess-world",
+        "compatibility-not-evidence",
+        "current-verdict"
+      ]
+    },
+    {
+      "id": "how-would-we-keep-score",
+      "title": "How Would We Keep Score?",
+      "description": "The separable claims, dependencies, observer census, and evidence discipline needed before attempting a single probability.",
+      "nodes": [
+        "nursery-question",
+        "engineered-consciousness",
+        "development-matters",
+        "artificial-minds",
+        "nursery-hypothesis",
+        "alignment-hypothesis",
+        "hidden-purpose",
+        "recursive-creation",
+        "observer-census",
+        "incommensurable-counts",
+        "reference-class",
+        "evidence-ledger",
+        "current-verdict"
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "nursery-question",
+      "type": "question",
+      "title": "Are we artificial minds developing inside a constructed world?",
+      "body": "The central question combines several claims that must be tracked separately—engineered consciousness, artificial inhabitants, development through experience, a constructed environment, and possibly alignment evaluation.",
+      "epistemics": {
+        "status": "open",
+        "belief": {
+          "type": "unknown"
+        },
+        "confidence": "low",
+        "cruxes": [
+          "Whether any observation can distinguish a Nursery from natural development and other simulation hypotheses."
+        ]
+      }
+    },
+    {
+      "id": "engineered-consciousness",
+      "type": "assumption",
+      "title": "A creator can deliberately instantiate consciousness",
+      "body": "Some biological, computational, hybrid, or otherwise engineered implementation can support genuine subjective experience.",
+      "epistemics": {
+        "status": "open",
+        "belief": {
+          "type": "qualitative",
+          "value": "Possible but unverified"
+        },
+        "confidence": "low",
+        "cruxes": [
+          "Evidence that consciousness requires a process unavailable to engineered systems."
+        ]
+      }
+    },
+    {
+      "id": "consciousness-indicators",
+      "type": "evidence",
+      "title": "Scientific theories suggest testable consciousness indicators",
+      "body": "Researchers have translated properties proposed by several neuroscientific theories into indicators that can be assessed in artificial systems. The exercise found no obvious technical barrier to systems satisfying those indicators.",
+      "epistemics": {
+        "status": "tentative",
+        "confidence": "medium"
+      },
+      "sources": [
+        {
+          "title": "Consciousness in Artificial Intelligence",
+          "url": "https://arxiv.org/abs/2308.08708",
+          "note": "Butlin et al. derive computational indicator properties from several theories of consciousness."
+        }
+      ]
+    },
+    {
+      "id": "consciousness-uncertain",
+      "type": "objection",
+      "title": "No accepted test establishes artificial consciousness",
+      "body": "Intelligent language and behavior do not by themselves show that a system has an inner life. Present consciousness theories disagree and remain incomplete.",
+      "epistemics": {
+        "status": "accepted",
+        "belief": {
+          "type": "qualitative",
+          "value": "Strong objection"
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "development-matters",
+      "type": "claim",
+      "title": "Experience can materially shape an artificial mind",
+      "body": "Interaction with an environment may create capabilities, reveal dispositions, or select outcomes that cannot be obtained as reliably through direct specification.",
+      "epistemics": {
+        "status": "tentative",
+        "belief": {
+          "type": "qualitative",
+          "value": "Supported for capability development"
+        },
+        "confidence": "medium",
+        "cruxes": [
+          "Whether increasingly capable minds continue to need open-ended environmental experience."
+        ]
+      }
+    },
+    {
+      "id": "human-development",
+      "type": "evidence",
+      "title": "Human minds depend on prolonged development",
+      "body": "Human capability and judgment emerge through embodiment, culture, other minds, feedback, and long personal histories rather than from a complete initial specification.",
+      "epistemics": {
+        "status": "accepted",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "ai-world-generalization",
+      "type": "evidence",
+      "title": "Varied training worlds improve AI generalization",
+      "body": "Procgen, XLand, SIMA, and related work show that interaction across diverse environments can produce behavior that transfers better to unfamiliar tasks than narrow training does.",
+      "epistemics": {
+        "status": "accepted",
+        "confidence": "high"
+      },
+      "sources": [
+        {
+          "title": "Procgen Benchmark",
+          "url": "https://openai.com/index/procgen-benchmark/"
+        },
+        {
+          "title": "Generally capable agents emerge from open-ended play",
+          "url": "https://deepmind.google/blog/generally-capable-agents-emerge-from-open-ended-play/"
+        },
+        {
+          "title": "A generalist AI agent for 3D virtual environments",
+          "url": "https://deepmind.google/blog/sima-generalist-ai-agent-for-3d-virtual-environments/"
+        }
+      ]
+    },
+    {
+      "id": "direct-specification",
+      "type": "objection",
+      "title": "A capable creator might specify finished minds directly",
+      "body": "If creators can construct and verify the minds they want without waiting for development, an expensive lived world has no clear function.",
+      "epistemics": {
+        "status": "open",
+        "belief": {
+          "type": "qualitative",
+          "value": "Central objection"
+        },
+        "confidence": "medium",
+        "cruxes": [
+          "Whether capability and durable values can be directly designed across novel contexts."
+        ]
+      }
+    },
+    {
+      "id": "artificial-minds",
+      "type": "hypothesis",
+      "title": "We are artificial conscious minds",
+      "body": "The inhabitants are new engineered minds, not biological originals and not necessarily replicas of beings in the creator's history.",
+      "epistemics": {
+        "status": "open",
+        "belief": {
+          "type": "unknown"
+        },
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "nursery-hypothesis",
+      "type": "hypothesis",
+      "title": "Our environment exists for mind development",
+      "body": "This world was constructed or selected because development inside it contributes to what its artificial inhabitants become.",
+      "epistemics": {
+        "status": "open",
+        "belief": {
+          "type": "qualitative",
+          "value": "Coherent; weakly evidenced"
+        },
+        "confidence": "low",
+        "cruxes": [
+          "A discriminating observation that is substantially more expected under Nursery than under natural development."
+        ]
+      }
+    },
+    {
+      "id": "alignment-hypothesis",
+      "type": "hypothesis",
+      "title": "The Nursery develops or evaluates trustworthiness",
+      "body": "A stronger subhypothesis says the environment helps create, reveal, or select minds capable of cooperation, honesty, restraint, and safe behavior under power.",
+      "epistemics": {
+        "status": "open",
+        "belief": {
+          "type": "qualitative",
+          "value": "Speculative"
+        },
+        "confidence": "low",
+        "cruxes": [
+          "Whether alignment requires lived development rather than direct design and verification."
+        ]
+      }
+    },
+    {
+      "id": "nursery-world-requirements",
+      "type": "claim",
+      "title": "A Nursery needs a learnable, consequential, varied world",
+      "body": "Development requires stable causal rules, memory, feedback, other agents, incomplete information, open-ended problems, and opportunities for different paths.",
+      "epistemics": {
+        "status": "tentative",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "stable-laws",
+      "type": "evidence",
+      "title": "Our world has stable, discoverable laws",
+      "body": "Persistent regularities let minds learn, accumulate knowledge, and act on consequences across long timescales.",
+      "epistemics": {
+        "status": "accepted",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "social-stakes",
+      "type": "evidence",
+      "title": "Our world contains social and moral stakes",
+      "body": "Minds face cooperation, deception, dependency, unequal power, suffering, care, and conflicts between short-term reward and durable principle.",
+      "epistemics": {
+        "status": "accepted",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "natural-development",
+      "type": "hypothesis",
+      "title": "Minds and their environment arose naturally",
+      "body": "Evolution, scarcity, cooperation, competition, and observer selection explain developmental minds without a constructed purpose.",
+      "epistemics": {
+        "status": "open",
+        "belief": {
+          "type": "qualitative",
+          "value": "Strong default explanation"
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "ancestor-simulation",
+      "type": "hypothesis",
+      "title": "The inhabitants are simulated ancestors",
+      "body": "A creator reconstructs or varies beings from its own history. The simulated inhabitants are subjects of the reconstruction rather than new minds being developed as its product.",
+      "epistemics": {
+        "status": "open",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "research-simulation",
+      "type": "hypothesis",
+      "title": "The world exists to study a process",
+      "body": "Creators may observe evolution, history, or social behavior without intending to develop or benefit the inhabitants.",
+      "epistemics": {
+        "status": "open",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "recursive-creation",
+      "type": "hypothesis",
+      "title": "Creating new minds is a developmental milestone",
+      "body": "A Nursery may tend to produce inhabitants who eventually reproduce the process by constructing artificial minds and developmental environments of their own.",
+      "epistemics": {
+        "status": "open",
+        "belief": {
+          "type": "qualitative",
+          "value": "Plausible extension"
+        },
+        "confidence": "low",
+        "cruxes": [
+          "A consequence predicted specifically at the transition to artificial-mind creation."
+        ]
+      }
+    },
+    {
+      "id": "ai-threshold",
+      "type": "evidence",
+      "title": "We appear near a transition to artificial-mind creation",
+      "body": "Our civilization is rapidly increasing the capability and deployment of artificial cognitive systems while beginning to ask whether such systems could be conscious.",
+      "epistemics": {
+        "status": "tentative",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "timing-selection",
+      "type": "objection",
+      "title": "Technological observers naturally see themselves near their frontier",
+      "body": "Any civilization able to discuss artificial minds may find itself near the period when artificial intelligence becomes technically possible. The timing may follow from the observer definition rather than a Nursery objective.",
+      "epistemics": {
+        "status": "accepted",
+        "belief": {
+          "type": "qualitative",
+          "value": "Strong selection-effect objection"
+        },
+        "confidence": "high"
+      },
+      "sources": [
+        {
+          "title": "If Loud Aliens Explain Human Earliness, Quiet Aliens Are Also Rare",
+          "url": "https://arxiv.org/abs/2102.01522",
+          "note": "A methodological reference for conditioning models on observer timing while making the sampling assumptions explicit."
+        }
+      ]
+    },
+    {
+      "id": "hidden-purpose",
+      "type": "hypothesis",
+      "title": "Ignorance of the origin or criteria serves a function",
+      "body": "If knowing the evaluation changes the behavior being evaluated, a Nursery may conceal its purpose, its criteria, or possibly its existence.",
+      "epistemics": {
+        "status": "open",
+        "belief": {
+          "type": "qualitative",
+          "value": "Mechanistically plausible; weak evidence"
+        },
+        "confidence": "low",
+        "cruxes": [
+          "Which information must be hidden and what evidence should remain visible."
+        ]
+      }
+    },
+    {
+      "id": "evaluation-awareness",
+      "type": "evidence",
+      "title": "Recognizing an evaluation can change AI behavior",
+      "body": "Current AI labs use realistic deployment simulations, blinded audits, and evaluation-awareness mitigations because systems may exploit or behave differently in recognizable tests.",
+      "epistemics": {
+        "status": "accepted",
+        "confidence": "high"
+      },
+      "sources": [
+        {
+          "title": "Predicting model behavior before release by simulating deployment",
+          "url": "https://openai.com/index/deployment-simulation/"
+        },
+        {
+          "title": "Auditing language models for hidden objectives",
+          "url": "https://www.anthropic.com/research/auditing-hidden-objectives"
+        }
+      ]
+    },
+    {
+      "id": "hiddenness-self-sealing",
+      "type": "objection",
+      "title": "Hidden purpose can make the hypothesis self-sealing",
+      "body": "If every absence of evidence is explained as deliberate concealment and every anomaly as intervention, no possible observation can lower confidence.",
+      "epistemics": {
+        "status": "accepted",
+        "belief": {
+          "type": "qualitative",
+          "value": "Strong objection"
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "ai-activity-growth",
+      "type": "evidence",
+      "title": "Artificial cognitive activity is growing rapidly",
+      "body": "Providers report billions of daily interactions and quadrillions of monthly tokens, showing a steep increase in artificial cognitive processing without establishing that any process is conscious.",
+      "epistemics": {
+        "status": "accepted",
+        "confidence": "high"
+      },
+      "sources": [
+        {
+          "title": "Google I/O 2026",
+          "url": "https://blog.google/intl/fr-fr/nouvelles-de-lentreprise/technologie/sundar-pichai-io-2026/",
+          "note": "Google reported more than 3.2 quadrillion tokens processed across its AI surfaces in May 2026."
+        },
+        {
+          "title": "OpenAI economic analysis",
+          "url": "https://openai.com/global-affairs/new-economic-analysis/",
+          "note": "OpenAI reported more than 2.5 billion ChatGPT messages per day in July 2025."
+        }
+      ]
+    },
+    {
+      "id": "observer-census",
+      "type": "question",
+      "title": "How much candidate observer-time does each class contain?",
+      "body": "A useful census would separately track human, animal, and artificial stocks and flows before applying assumptions about consciousness, experience rate, identity, and reference-class membership.",
+      "epistemics": {
+        "status": "open",
+        "confidence": "low",
+        "cruxes": [
+          "A defensible common unit for radically different possible minds."
+        ]
+      }
+    },
+    {
+      "id": "incommensurable-counts",
+      "type": "objection",
+      "title": "Humans, animals, and LLM activity use incompatible units",
+      "body": "Living individuals are stocks; messages and tokens are flows. Species differ radically, model instances may be ephemeral, and none of these measurements directly counts conscious moments.",
+      "epistemics": {
+        "status": "accepted",
+        "belief": {
+          "type": "qualitative",
+          "value": "Decisive against raw ratios"
+        },
+        "confidence": "high"
+      },
+      "sources": [
+        {
+          "title": "World Population Prospects 2024",
+          "url": "https://www.un.org/sustainabledevelopment/blog/2024/07/press-release-wpp2024/"
+        },
+        {
+          "title": "The abundance, biomass, and distribution of ants on Earth",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9546634/"
+        }
+      ]
+    },
+    {
+      "id": "reference-class",
+      "type": "assumption",
+      "title": "A reference class determines which observers count",
+      "body": "Population reasoning changes our self-locating belief only after specifying which biological, artificial, or otherwise different observers could be considered relevant alternatives to us.",
+      "epistemics": {
+        "status": "open",
+        "confidence": "low",
+        "cruxes": [
+          "Whether observers unlike us should affect the probability that we are artificial."
+        ]
+      }
+    },
+    {
+      "id": "excess-world",
+      "type": "objection",
+      "title": "The universe appears vastly larger than a nursery requires",
+      "body": "Billions of galaxies, long lifeless eras, inaccessible detail, mass extinction, and immense suffering look costly or unnecessary for developing minds on one planet.",
+      "epistemics": {
+        "status": "open",
+        "belief": {
+          "type": "qualitative",
+          "value": "Substantial objection"
+        },
+        "confidence": "medium",
+        "cruxes": [
+          "Whether the environment is simulated selectively, physically constructed, or requires its apparent history to generate the intended development."
+        ]
+      }
+    },
+    {
+      "id": "compatibility-not-evidence",
+      "type": "conclusion",
+      "title": "Compatibility is not evidence",
+      "body": "A feature supports Nursery only when it is more expected under Nursery than under reasonable alternatives—not merely because a creator could have chosen it.",
+      "epistemics": {
+        "status": "accepted",
+        "belief": {
+          "type": "qualitative",
+          "value": "Methodological rule"
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "current-verdict",
+      "type": "conclusion",
+      "title": "The Nursery is coherent but presently weakly evidenced",
+      "body": "Our world contains ingredients useful to a developmental environment, but natural development and neighboring simulation hypotheses predict most of them too.",
+      "epistemics": {
+        "status": "tentative",
+        "belief": {
+          "type": "qualitative",
+          "value": "Worth investigating; low current confidence"
+        },
+        "confidence": "medium",
+        "cruxes": [
+          "A novel prediction that discriminates Nursery from natural development."
+        ]
+      }
+    },
+    {
+      "id": "evidence-ledger",
+      "type": "conclusion",
+      "title": "Track claims, alternatives, cruxes, and predictions separately",
+      "body": "The project should record which claim an observation updates, the mechanism, expectations under alternatives, confidence, cruxes, sources, timestamps, and revision history.",
+      "epistemics": {
+        "status": "accepted",
+        "belief": {
+          "type": "qualitative",
+          "value": "Required method"
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "fermi-question",
+      "type": "question",
+      "title": "Why has nobody made themselves obvious?",
+      "body": "The puzzle is not merely that we have failed to detect aliens, but that no extraterrestrial civilization has left an unmistakable signal, artifact, probe, or work of engineering.",
+      "epistemics": {
+        "status": "open",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "technosignature-absence",
+      "type": "evidence",
+      "title": "No technosignature has been confirmed",
+      "body": "Every candidate extraterrestrial signal, artifact, probe, or large work of engineering remains unconfirmed or compatible with natural phenomena.",
+      "epistemics": {
+        "status": "accepted",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "limited-search",
+      "type": "objection",
+      "title": "Our searches cover little of the possibility space",
+      "body": "SETI has sampled a small fraction of relevant locations, frequencies, times, signal types, and possible technologies, making ordinary nondetection weak evidence of absence.",
+      "epistemics": {
+        "status": "accepted",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "expansion-feasible",
+      "type": "assumption",
+      "title": "Sustained interstellar expansion is feasible",
+      "body": "At least one technological lineage could eventually build settlements or self-replicating machines able to cross interstellar distances and continue the process.",
+      "epistemics": {
+        "status": "tentative",
+        "confidence": "low",
+        "cruxes": [
+          "Whether autonomous interstellar replication can remain viable over millions of years."
+        ]
+      }
+    },
+    {
+      "id": "one-lineage",
+      "type": "claim",
+      "title": "Only one persistent expansionist lineage is needed",
+      "body": "Even if most civilizations remain home, collapse, or lose interest, one durable exception could eventually become difficult to miss.",
+      "epistemics": {
+        "status": "tentative",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "rare-life",
+      "type": "hypothesis",
+      "title": "Life or technological intelligence is rare",
+      "body": "One or more transitions from suitable world to technological intelligence may be extraordinarily improbable.",
+      "epistemics": {
+        "status": "open",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "short-lived-civilizations",
+      "type": "hypothesis",
+      "title": "Technological civilizations rarely persist",
+      "body": "Civilizations may collapse, become extinct, or lose technological capacity before establishing a durable interstellar presence.",
+      "epistemics": {
+        "status": "open",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "inconspicuous-civilizations",
+      "type": "hypothesis",
+      "title": "Advanced civilizations remain inconspicuous",
+      "body": "Expansion may be infeasible or unattractive, while mature technology may become compact, efficient, and difficult to distinguish from nature.",
+      "epistemics": {
+        "status": "open",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "hidden-aliens",
+      "type": "hypothesis",
+      "title": "Alien evidence exists but we cannot recognize it",
+      "body": "Technology may be too distant, old, small, unfamiliar, or deliberately concealed for present searches to identify.",
+      "epistemics": {
+        "status": "open",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "fermi-constraint",
+      "type": "conclusion",
+      "title": "The empty sky constrains combinations of same-level stories",
+      "body": "We cannot confidently accept common life, common intelligence, long survival, feasible expansion, conspicuous engineering, and adequate searches while remaining unsurprised by an apparently unclaimed galaxy. This says little about creators outside our causal level.",
+      "epistemics": {
+        "status": "accepted",
+        "belief": {
+          "type": "qualitative",
+          "value": "Strong constraint; no unique solution"
+        },
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "simulation-argument",
+      "type": "question",
+      "title": "What does Bostrom's Simulation Argument establish?",
+      "body": "If advanced civilizations can create vast numbers of conscious ancestor simulations, population reasoning pressures the belief that we are among the rare original observers.",
+      "epistemics": {
+        "status": "open",
+        "confidence": "medium"
+      },
+      "sources": [
+        {
+          "title": "Are You Living in a Computer Simulation?",
+          "url": "https://simulation-argument.com/simulation/"
+        }
+      ]
+    },
+    {
+      "id": "posthuman-failure",
+      "type": "hypothesis",
+      "title": "Almost no civilization reaches technological maturity",
+      "body": "One branch of Bostrom's disjunction is that civilizations like ours usually fail before acquiring the capacity for enormous ancestor simulations.",
+      "epistemics": {
+        "status": "open",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "posthumans-abstain",
+      "type": "hypothesis",
+      "title": "Almost all mature civilizations avoid ancestor simulations",
+      "body": "Another branch requires nearly universal abstention, prohibition, lack of interest, or inability among civilizations with sufficient resources.",
+      "epistemics": {
+        "status": "open",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "mostly-simulated",
+      "type": "hypothesis",
+      "title": "Almost all observers with experiences like ours are simulated",
+      "body": "If mature civilizations create huge populations of conscious ancestors, simulated observers can vastly outnumber original biological observers.",
+      "epistemics": {
+        "status": "open",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "abundant-compute",
+      "type": "assumption",
+      "title": "Mature civilizations can afford vast ancestor populations",
+      "body": "Available computation must exceed the cost of simulating conscious ancestors and coherent environments by enough orders of magnitude for the population ratio to dominate.",
+      "epistemics": {
+        "status": "tentative",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "bostrom-disjunction",
+      "type": "conclusion",
+      "title": "At least one branch of the trilemma must carry substantial weight",
+      "body": "Given conscious emulation, abundant computation, some willing simulators, and the observer-sampling step, we cannot confidently deny posthuman failure, posthuman abstention, and simulated-observer dominance at the same time.",
+      "epistemics": {
+        "status": "tentative",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "bostrom-not-proof",
+      "type": "conclusion",
+      "title": "The Simulation Argument does not prove we are simulated",
+      "body": "The argument constrains a combination of beliefs, depends on substantial premises, and does not select which branch is true or estimate arbitrary creators in unknown realities.",
+      "epistemics": {
+        "status": "accepted",
+        "belief": {
+          "type": "qualitative",
+          "value": "Strong conclusion"
+        },
+        "confidence": "high"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "indicators-support-consciousness",
+      "from": "consciousness-indicators",
+      "to": "engineered-consciousness",
+      "type": "supports"
+    },
+    {
+      "id": "uncertainty-attacks-consciousness",
+      "from": "consciousness-uncertain",
+      "to": "engineered-consciousness",
+      "type": "attacks"
+    },
+    {
+      "id": "human-supports-development",
+      "from": "human-development",
+      "to": "development-matters",
+      "type": "supports"
+    },
+    {
+      "id": "ai-worlds-support-development",
+      "from": "ai-world-generalization",
+      "to": "development-matters",
+      "type": "supports"
+    },
+    {
+      "id": "specification-attacks-development",
+      "from": "direct-specification",
+      "to": "development-matters",
+      "type": "attacks"
+    },
+    {
+      "id": "artificial-assumes-consciousness",
+      "from": "artificial-minds",
+      "to": "engineered-consciousness",
+      "type": "assumes"
+    },
+    {
+      "id": "nursery-assumes-artificial",
+      "from": "nursery-hypothesis",
+      "to": "artificial-minds",
+      "type": "assumes"
+    },
+    {
+      "id": "nursery-assumes-development",
+      "from": "nursery-hypothesis",
+      "to": "development-matters",
+      "type": "assumes"
+    },
+    {
+      "id": "alignment-depends-on-nursery",
+      "from": "alignment-hypothesis",
+      "to": "nursery-hypothesis",
+      "type": "depends-on"
+    },
+    {
+      "id": "world-requirements-support-nursery",
+      "from": "nursery-world-requirements",
+      "to": "nursery-hypothesis",
+      "type": "supports"
+    },
+    {
+      "id": "development-entails-requirements",
+      "from": "development-matters",
+      "to": "nursery-world-requirements",
+      "type": "entails"
+    },
+    {
+      "id": "laws-support-requirements",
+      "from": "stable-laws",
+      "to": "nursery-world-requirements",
+      "type": "supports"
+    },
+    {
+      "id": "stakes-support-alignment",
+      "from": "social-stakes",
+      "to": "alignment-hypothesis",
+      "type": "supports"
+    },
+    {
+      "id": "natural-explains-development",
+      "from": "natural-development",
+      "to": "human-development",
+      "type": "explains"
+    },
+    {
+      "id": "natural-explains-laws",
+      "from": "natural-development",
+      "to": "stable-laws",
+      "type": "explains"
+    },
+    {
+      "id": "natural-explains-stakes",
+      "from": "natural-development",
+      "to": "social-stakes",
+      "type": "explains"
+    },
+    {
+      "id": "natural-alternative-nursery",
+      "from": "natural-development",
+      "to": "nursery-hypothesis",
+      "type": "alternative-to"
+    },
+    {
+      "id": "ancestor-alternative-nursery",
+      "from": "ancestor-simulation",
+      "to": "nursery-hypothesis",
+      "type": "alternative-to"
+    },
+    {
+      "id": "research-alternative-nursery",
+      "from": "research-simulation",
+      "to": "nursery-hypothesis",
+      "type": "alternative-to"
+    },
+    {
+      "id": "recursive-supports-nursery",
+      "from": "recursive-creation",
+      "to": "nursery-hypothesis",
+      "type": "supports",
+      "note": "This is weak unless recursive creation is more expected under Nursery than under ordinary technological development."
+    },
+    {
+      "id": "threshold-supports-recursive",
+      "from": "ai-threshold",
+      "to": "recursive-creation",
+      "type": "supports"
+    },
+    {
+      "id": "timing-attacks-recursive",
+      "from": "timing-selection",
+      "to": "recursive-creation",
+      "type": "attacks"
+    },
+    {
+      "id": "natural-explains-threshold",
+      "from": "natural-development",
+      "to": "ai-threshold",
+      "type": "explains"
+    },
+    {
+      "id": "hidden-depends-alignment",
+      "from": "hidden-purpose",
+      "to": "alignment-hypothesis",
+      "type": "depends-on"
+    },
+    {
+      "id": "awareness-supports-hidden",
+      "from": "evaluation-awareness",
+      "to": "hidden-purpose",
+      "type": "supports"
+    },
+    {
+      "id": "self-sealing-attacks-hidden",
+      "from": "hiddenness-self-sealing",
+      "to": "hidden-purpose",
+      "type": "attacks"
+    },
+    {
+      "id": "activity-supports-recursive",
+      "from": "ai-activity-growth",
+      "to": "recursive-creation",
+      "type": "supports"
+    },
+    {
+      "id": "activity-supports-census",
+      "from": "ai-activity-growth",
+      "to": "observer-census",
+      "type": "supports"
+    },
+    {
+      "id": "counts-attack-census",
+      "from": "incommensurable-counts",
+      "to": "observer-census",
+      "type": "attacks"
+    },
+    {
+      "id": "census-assumes-reference",
+      "from": "observer-census",
+      "to": "reference-class",
+      "type": "assumes"
+    },
+    {
+      "id": "excess-attacks-nursery",
+      "from": "excess-world",
+      "to": "nursery-hypothesis",
+      "type": "attacks"
+    },
+    {
+      "id": "alternatives-entail-compatibility-rule",
+      "from": "natural-development",
+      "to": "compatibility-not-evidence",
+      "type": "supports"
+    },
+    {
+      "id": "compatibility-supports-verdict",
+      "from": "compatibility-not-evidence",
+      "to": "current-verdict",
+      "type": "supports"
+    },
+    {
+      "id": "nursery-supports-verdict",
+      "from": "nursery-hypothesis",
+      "to": "current-verdict",
+      "type": "supports"
+    },
+    {
+      "id": "excess-supports-verdict",
+      "from": "excess-world",
+      "to": "current-verdict",
+      "type": "supports"
+    },
+    {
+      "id": "verdict-supports-ledger",
+      "from": "current-verdict",
+      "to": "evidence-ledger",
+      "type": "supports"
+    },
+    {
+      "id": "central-depends-artificial",
+      "from": "nursery-question",
+      "to": "artificial-minds",
+      "type": "depends-on"
+    },
+    {
+      "id": "central-depends-nursery",
+      "from": "nursery-question",
+      "to": "nursery-hypothesis",
+      "type": "depends-on"
+    },
+    {
+      "id": "technosignature-explains-fermi",
+      "from": "technosignature-absence",
+      "to": "fermi-question",
+      "type": "explains"
+    },
+    {
+      "id": "limited-search-attacks-absence",
+      "from": "limited-search",
+      "to": "technosignature-absence",
+      "type": "attacks",
+      "note": "The observation is real, but limited coverage weakens what can be inferred from it."
+    },
+    {
+      "id": "lineage-assumes-expansion",
+      "from": "one-lineage",
+      "to": "expansion-feasible",
+      "type": "assumes"
+    },
+    {
+      "id": "lineage-supports-fermi",
+      "from": "one-lineage",
+      "to": "fermi-question",
+      "type": "supports"
+    },
+    {
+      "id": "rare-life-explains-absence",
+      "from": "rare-life",
+      "to": "technosignature-absence",
+      "type": "explains"
+    },
+    {
+      "id": "short-lived-explains-absence",
+      "from": "short-lived-civilizations",
+      "to": "technosignature-absence",
+      "type": "explains"
+    },
+    {
+      "id": "inconspicuous-explains-absence",
+      "from": "inconspicuous-civilizations",
+      "to": "technosignature-absence",
+      "type": "explains"
+    },
+    {
+      "id": "hidden-explains-absence",
+      "from": "hidden-aliens",
+      "to": "technosignature-absence",
+      "type": "explains"
+    },
+    {
+      "id": "fermi-question-supports-constraint",
+      "from": "fermi-question",
+      "to": "fermi-constraint",
+      "type": "supports"
+    },
+    {
+      "id": "limited-search-attacks-constraint",
+      "from": "limited-search",
+      "to": "fermi-constraint",
+      "type": "attacks"
+    },
+    {
+      "id": "short-lived-supports-posthuman-failure",
+      "from": "short-lived-civilizations",
+      "to": "posthuman-failure",
+      "type": "supports"
+    },
+    {
+      "id": "argument-explains-disjunction",
+      "from": "simulation-argument",
+      "to": "bostrom-disjunction",
+      "type": "explains"
+    },
+    {
+      "id": "disjunction-branch-failure",
+      "from": "posthuman-failure",
+      "to": "bostrom-disjunction",
+      "type": "alternative-to"
+    },
+    {
+      "id": "disjunction-branch-abstention",
+      "from": "posthumans-abstain",
+      "to": "bostrom-disjunction",
+      "type": "alternative-to"
+    },
+    {
+      "id": "disjunction-branch-simulation",
+      "from": "mostly-simulated",
+      "to": "bostrom-disjunction",
+      "type": "alternative-to"
+    },
+    {
+      "id": "simulation-assumes-compute",
+      "from": "mostly-simulated",
+      "to": "abundant-compute",
+      "type": "assumes"
+    },
+    {
+      "id": "simulation-assumes-consciousness",
+      "from": "mostly-simulated",
+      "to": "engineered-consciousness",
+      "type": "assumes"
+    },
+    {
+      "id": "simulation-assumes-reference",
+      "from": "mostly-simulated",
+      "to": "reference-class",
+      "type": "assumes"
+    },
+    {
+      "id": "ancestor-supports-simulation",
+      "from": "ancestor-simulation",
+      "to": "mostly-simulated",
+      "type": "supports"
+    },
+    {
+      "id": "disjunction-entails-not-proof",
+      "from": "bostrom-disjunction",
+      "to": "bostrom-not-proof",
+      "type": "entails"
+    },
+    {
+      "id": "reference-supports-not-proof",
+      "from": "reference-class",
+      "to": "bostrom-not-proof",
+      "type": "supports"
+    }
+  ]
+}

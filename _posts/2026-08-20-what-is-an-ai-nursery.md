@@ -2,6 +2,9 @@
 layout: post
 title: "What Is an AI Nursery?"
 date: "2026-08-20"
+section: "AI Nursery"
+argument_graph: epistemic-map
+argument_graph_view: what-is-an-ai-nursery
 tags:
   - AI Nursery
 ---

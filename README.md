@@ -6,11 +6,11 @@ Add new posts under `_posts/` with filenames like `2026-08-16-first-post.md`.
 
 ## Argument graphs
 
-Posts can optionally include one interactive argument graph. Graphs are authored as readable YAML in `_arguments/`, validated and compiled to normalized JSON in `assets/argument-graphs/`, and rendered with Cytoscape.js.
+The site's claims live in one canonical, human-editable graph: `_arguments/epistemic-map.yml`. It is validated and compiled to normalized JSON in `assets/argument-graphs/`, then rendered with Cytoscape.js. The full graph appears at `/argument-map/`; each post can select a smaller named view of that same graph.
 
 The layers are intentionally separate:
 
-1. `_arguments/*.yml` — author-edited source
+1. `_arguments/epistemic-map.yml` — author-edited source of truth, including named views
 2. `lib/argument_graph.rb` — YAML loader, normalized model validation, and post-reference checks
 3. `assets/argument-graphs/*.json` — generated canonical JSON for the browser and future non-visual consumers
 4. `_javascript/argument-graph.js` — reusable Cytoscape visualization and inspector
@@ -18,15 +18,11 @@ The layers are intentionally separate:
 
 The canonical schema is documented in `_schemas/argument-graph.schema.json`.
 
-### Add a graph to a post
+### Extend the graph for a post
 
-Create `_arguments/my-post.yml`:
+Add nodes and edges to `_arguments/epistemic-map.yml`:
 
 ```yaml
-version: 1
-id: my-post
-title: My argument
-
 nodes:
   - id: central-question
     type: question
@@ -47,14 +43,27 @@ edges:
     type: supports
 ```
 
+Then add a named view containing the nodes the post should show. A view is an induced subgraph: every canonical edge whose endpoints are both listed is included automatically.
+
+```yaml
+views:
+  - id: my-post
+    title: My post's argument
+    description: The portion of the canonical map used by this essay.
+    nodes:
+      - central-question
+      - first-observation
+```
+
 Node types are `question`, `claim`, `hypothesis`, `evidence`, `objection`, `assumption`, and `conclusion`.
 
 Relationship types are `supports`, `attacks`, `contradicts`, `entails`, `assumes`, `depends-on`, `explains`, and `alternative-to`. Use `entails` only for a logical consequence; use `supports` when something merely provides evidence or makes another node more plausible.
 
-Reference the graph in the post's frontmatter:
+Reference the canonical graph and view in the post's frontmatter:
 
 ```yaml
-argument_graph: my-post
+argument_graph: epistemic-map
+argument_graph_view: my-post
 ```
 
 Then compile and validate it:
@@ -63,7 +72,7 @@ Then compile and validate it:
 npm run arguments:build
 ```
 
-Graphs are optional. A post without `argument_graph` renders exactly as before.
+Graphs are optional. A post without `argument_graph` renders exactly as before. Omitting `argument_graph_view` displays the full canonical graph, which is how the `/argument-map/` page works.
 
 ### Development commands
 
