@@ -14,7 +14,14 @@ include: []
 # Build settings
 markdown: kramdown
 permalink: /:title/
-exclude: [vendor, "*node_modules*"]
+exclude:
+  - lib
+  - node_modules
+  - package-lock.json
+  - package.json
+  - scripts
+  - test
+  - vendor
 
 theme: jekyll-theme-hacker
 show_downloads: false

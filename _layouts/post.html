@@ -9,6 +9,10 @@ layout: default
 
 {{content}}
 
+{% if page.argument_graph %}
+  {% include argument-graph.html graph_id=page.argument_graph %}
+{% endif %}
+
 {% if page.tags %}
   <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
 {% endif %} 
