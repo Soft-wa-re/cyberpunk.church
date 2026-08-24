@@ -4,16 +4,18 @@ layout: default
 
 <div class="home">
   {% if site.posts.size > 0 %}
-    <h2>Posts</h2>
-    <ul class="post-list">
-      {% for post in site.posts %}
+    <h2>Read in order</h2>
+    {% assign ordered_posts = site.posts | sort: "date" %}
+    <ol class="post-list">
+      {% for post in ordered_posts %}
         <li>
           <h3>
             <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
           </h3>
+          <small>{{ post.date | date: "%B %-d, %Y" }}</small>
         </li>
       {% endfor %}
-    </ul>
+    </ol>
   {% else %}
     <p>No posts yet.</p>
   {% endif %}

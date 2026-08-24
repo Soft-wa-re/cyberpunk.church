@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Is Our World Nursery-Shaped?"
-date: "2026-08-23 16:00:00 -0400"
+date: "2026-08-23"
 tags:
   - AI Nursery
 ---

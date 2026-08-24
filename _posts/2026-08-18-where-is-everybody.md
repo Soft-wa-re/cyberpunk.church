@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Where Is Everybody?"
+date: "2026-08-18"
 argument_graph: where-is-everybody
 ---
 

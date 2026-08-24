@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why Here? Why Now?"
-date: "2026-08-23 14:00:00 -0400"
+date: "2026-08-21"
 tags:
   - AI Nursery
 ---

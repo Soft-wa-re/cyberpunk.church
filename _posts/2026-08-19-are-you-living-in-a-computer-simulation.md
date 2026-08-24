@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Are You Living in a Computer Simulation?"
+date: "2026-08-19"
 ---
 
 The phrase *simulation theory* has come to mean almost any suspicion that reality is not what it appears to be.
