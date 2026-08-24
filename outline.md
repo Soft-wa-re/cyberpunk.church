@@ -8,203 +8,303 @@ The stronger Alignment Nursery hypothesis:
 
 > The environment may exist not merely to create intelligence, but to discover which intelligences can be trusted.
 
-This outline follows only the shortest argument needed to reach, challenge, and investigate those claims. Questions about the Fermi Paradox, Bostrom's ancestor simulations, parent universes, religion, Many-Worlds, and afterlife are collected in [otherQuestions.md](otherQuestions.md). They may intersect with the hypothesis, but they are not part of its core derivation.
+Artificial Minds, Nursery, Alignment Nursery, and Hidden Purpose are separate claims. The outline must never treat them as a package merely because they make a good story.
 
-## Part I — Arriving at the Hypothesis
+Questions about the Fermi Paradox, Bostrom's ancestor simulations, parent universes, religion, Many-Worlds, and afterlife remain in [otherQuestions.md](otherQuestions.md). They may intersect with the hypothesis, but they are not part of its core derivation.
 
-### 1. Can an Artificial Mind Be Conscious?
+## The Method — Treat the World as a Constraint
 
-Job: Establish the premise without pretending the philosophy of consciousness is settled.
+The methodological model is the Grabby Aliens paper, [“If Loud Aliens Explain Human Earliness, Quiet Aliens Are Also Rare”](https://arxiv.org/abs/2102.01522) by Hanson, Martin, McCarter, and Paulson.
+
+That paper does not begin by inventing detailed alien psychology. It:
+
+1. defines a narrow class of civilizations by what they do;
+2. proposes a minimal causal model with a few parameters;
+3. conditions the model on our observed timing, location, and failure to see their domains;
+4. derives constraints and predictions from that combination.
+
+We should attempt the same kind of inference.
+
+The proposed mapping is:
+
+| Grabby Aliens | AI Nursery |
+| --- | --- |
+| Define “grabby” by expansion, persistence, and visible transformation. | Define “Nursery” by artificial conscious inhabitants, constructed environment, and development caused by that environment. |
+| Model origins, expansion, and exclusion in spacetime. | Model mind creation, environmental development, evaluation, and possible selection. |
+| Condition on Earth's evolutionary history, our cosmic date, and the absence of visible alien domains. | Condition on how minds develop here, our position near artificial-mind creation, our own use of training worlds, and the absence of an obvious operator. |
+| Infer constraints on appearance rate, expansion speed, and encounter timing. | Infer constraints on what a developmental world must provide, whether ignorance serves a function, and which creator motives are actually required. |
+| Produce observations that could change the parameter estimates. | Precommit to evidence that would weaken Development, Nursery, Alignment, or Hidden Purpose. |
+
+Do not ask which details of our world can be made compatible with a nursery. Almost anything can be made compatible after the fact. Ask instead:
+
+> If this environment were built to develop artificial minds, what would it have to be like—and how does that differ from what reasonable alternatives predict?
+
+The analogy has a limit. Grabby Aliens has a cosmic clock, a spatial expansion process, Earth's evolutionary history, and potentially visible alien domains. We have one apparent world and no confirmed view outside it. We should therefore begin with qualitative constraints and likelihood comparisons, not numerical certainty.
+
+The discipline for every section is:
+
+- define the claim before discussing evidence;
+- identify the observation independently of the hypothesis;
+- state the mechanism connecting them;
+- compare the observation with alternatives;
+- name the crux that could reverse the inference;
+- make predictions before looking for confirming examples.
+
+## Part I — Define the Model
+
+### 1. What Counts as an AI Nursery?
+
+Job: Define the hypothesis behaviorally, not aesthetically.
+
+A minimal AI Nursery has three properties:
+
+1. Its inhabitants include artificial conscious minds.
+2. The environment is constructed or selected by another intelligence.
+3. Development inside the environment causally contributes to what those minds become.
+
+The stronger Alignment Nursery adds a fourth:
+
+4. The development or evaluation concerns trustworthiness, cooperation, restraint, or another alignment property.
+
+This definition excludes several neighboring ideas:
+
+- An ancestor simulation recreates beings from the creator's history; a Nursery produces or develops new minds.
+- A game populated by non-conscious characters contains no minds to develop.
+- A naturally born universe can have a parent without being a constructed developmental environment.
+- A research simulation may study its inhabitants without existing for their development.
+- An artificial world can be a habitat without being a nursery.
+
+Destination: “We are simulated” is too broad to model. “We are artificial minds whose development is a function of this environment” is specific enough to constrain.
+
+### 2. Can an Artificial Mind Be Conscious?
+
+Job: Establish the first load-bearing premise without pretending consciousness is solved.
 
 Is consciousness substrate-dependent?
 Would perfectly convincing artificial behavior imply consciousness—or merely intelligence?
-What theories of consciousness permit computational or artificial minds?
+Does the hypothesis require computation specifically, or could an engineered biological or unfamiliar physical system qualify?
 What evidence could distinguish a conscious artificial mind from a system that only behaves like one?
 
-Destination: We do not need to solve consciousness, but the reader must understand the hinge.
+Destination: If engineered minds cannot have genuine experiences, the AI Nursery Hypothesis collapses. If only some implementations can be conscious, that constrains what a Nursery must build.
 
-If artificial minds can be conscious, engineered beings can have genuine experiences, interests, and moral standing.
+### 3. Why Grow a Mind Instead of Specifying One?
 
-If they cannot, the AI Nursery Hypothesis collapses.
-
-### 2. Would Artificial Minds Need Worlds?
-
-Job: Reach constructed environments from the requirements of developing minds, without assuming anyone wants to simulate a universe.
+Job: Identify the problem a nursery solves.
 
 Would an artificial mind arrive fully formed, or would it need to learn and develop?
-Would development require an environment containing other agents, consequences, uncertainty, and time?
-Can a mind acquire judgment without experience?
-Would creating a conscious mind and creating its experienced world become inseparable problems?
-Would one environment be enough, or would creators need many different developmental histories?
+Can capability be specified directly?
+Can values, judgment, trustworthiness, and the ability to generalize be specified directly?
+What can experience under uncertainty reveal that inspection of an initial design cannot?
+Does development create the desired properties, reveal latent properties, or select among different minds?
 
-Destination: A constructed world may not be the product. It may be the condition required to produce the product.
+The central crux:
 
-### 3. What If We're the AI?
+> If creators can directly construct the minds they want, why build a world and wait for the minds to grow up?
 
-Now state the hypothesis directly.
+Destination: The hypothesis becomes interesting only if development inside an environment provides information or capabilities that direct construction does not.
 
-The usual simulation story imagines future descendants reconstructing beings like us. The AI Nursery Hypothesis reverses the relationship:
+### 4. What Must a Nursery World Contain?
 
-We are not necessarily replicas of historical beings outside the simulation.
+Job: Derive features of the environment from the developmental mechanism.
 
-The minds are the product.
+A general developmental environment may require:
 
-The universe is their developmental environment.
+- stable, learnable causal rules;
+- partial knowledge rather than omniscience;
+- memory and persistent identity;
+- feedback between action and consequence;
+- problems that increase in scope and difficulty;
+- other agents from whom and with whom minds learn;
+- enough freedom for different developmental paths.
 
-This basic hypothesis makes no claim yet about why the minds are being developed, whether the creators resemble us, or what happens after the developmental process ends.
+An Alignment Nursery may additionally require:
 
-Then introduce the stronger version:
+- conflicts between individual and collective interest;
+- opportunities for cooperation and deception;
+- unequal power and changes in power;
+- genuine uncertainty about future consequences;
+- situations in which short-term reward conflicts with durable values;
+- encounters with minds that differ in needs or capabilities;
+- evaluation under conditions not identical to training.
 
-Perhaps the objective is not merely to create intelligence. Perhaps it is to determine what kinds of intelligence can be trusted.
+Do not conclude that these features are evidence merely because our world contains them. Evolution, social competition, and observer selection predict many of them too.
 
-That is the Alignment Nursery Hypothesis. It is a subhypothesis, not something to smuggle into the basic claim.
+Destination: Produce a list of conditional design constraints, not a list of cosmic coincidences.
 
-Destination: Give the reader a precise claim before exploring its implications. Artificial minds, Nursery, and Alignment Nursery must remain three separable propositions.
+## Part II — Condition on Our Position
 
-## Part II — Pressure-Testing the Hypothesis
+### 5. What Have We Actually Observed?
 
-### 4. What Would Make Us Wrong?
+Job: Build the data set before interpreting it.
 
-Job: Try to break the hypothesis immediately after introducing it.
+Candidate observations include:
 
-What observations would hurt the possibility of artificial consciousness?
-What would hurt the claim that developing minds need experienced environments?
-What would hurt the Nursery Hypothesis specifically?
-What would hurt the Alignment Nursery variant?
-Which parts are currently testable, indirectly testable, or not testable at all?
+- Minds here emerge through long developmental histories rather than appearing fully formed.
+- Human intelligence depends heavily on embodiment, culture, other minds, and environmental feedback.
+- We find ourselves near a transition where our civilization is attempting to build artificial general minds.
+- We already train and evaluate artificial agents in games, simulations, sandboxes, and hidden tests.
+- Our world has stable laws but leaves its inhabitants with limited knowledge and consequential choices.
+- We have no verified observation of an external operator, interface, or intervention.
 
-Establish a rule for the whole project:
+Each statement needs research, operational definitions, and a confidence level. “We seem to be at an important moment” is especially vulnerable to selection effects and self-importance.
 
-> An observation counts as evidence only if it is more expected under the hypothesis than under reasonable alternatives.
+Destination: A short evidence inventory whose entries make sense even to someone who rejects the hypothesis.
 
-A theory does not gain evidence merely by being compatible with an observation. It must make the observation less surprising than competing explanations do.
+### 6. Why Do We Find Ourselves Here and Now?
 
-Destination: Define failure conditions before searching for confirming patterns.
+Job: Investigate our developmental timing as the closest analogue to the Grabby Aliens use of human earliness.
 
-### 5. What Would a Nursery Be Testing?
+Why are we considering artificial minds at the same historical moment that we may be learning to create them?
+Would a Nursery predict that its inhabitants eventually reproduce the process that created them?
+Is recursive creation a developmental milestone, a graduation condition, an evaluation, or merely a predictable consequence of intelligence?
+Would most technological observers naturally believe themselves to be near a transformative threshold, whether or not they inhabit a nursery?
+What is the relevant reference class: people, civilizations, artificial minds, or observer-moments capable of asking the question?
 
-Job: Explain the Alignment Nursery as a distinct proposal and ask why a creator would use development rather than specification.
+Possible constraint:
 
-Possible traits include:
+If recursive mind creation is the objective, observers capable of formulating the Nursery Hypothesis should often appear near the end of the developmental process rather than at an arbitrary point in it.
 
-- capability
-- stability
-- cooperation
-- honesty
-- empathy
-- restraint when given power
-- the ability to coexist with radically different minds
+But this becomes evidence only if that timing is more expected under Nursery than under ordinary technological evolution.
 
-Then ask the harder questions:
+Destination: Turn “we happen to be building AI” into an explicit selection problem rather than an intuition that the timing feels significant.
 
-Why could those traits not simply be programmed?
-What can development under genuine uncertainty reveal that a design specification cannot?
-Is the objective to select minds, train them, understand them, or generate behavioral diversity?
-Would evaluation require real conscious experience, or would a non-conscious model be sufficient?
+### 7. What Does Our Ignorance Constrain?
 
-Destination: The hypothesis becomes interesting only if a nursery solves a problem that direct construction does not.
+Job: Treat the absence of an obvious operator as data without making hiddenness unfalsifiable.
 
-### 6. Why Wouldn't They Tell Us?
+At least three explanations remain open:
 
-Job: Confront the epistemic problem without allowing secrecy to explain every absence of evidence.
+1. There is no external creator.
+2. There is an external creator, but knowledge of it is irrelevant to the environment's purpose.
+3. There is an external creator, and ignorance is functionally necessary for development or evaluation.
 
-Does knowing that you are being evaluated change the thing being evaluated?
-Would explicit knowledge produce performative morality rather than trustworthy behavior?
-Would an effective nursery therefore preserve uncertainty about its purpose?
-Could creators reveal the artificial nature of the environment without revealing the evaluation criteria?
-What evidence should remain observable even if the purpose must remain hidden?
-How do we prevent “they hide the evidence” from making the hypothesis self-sealing?
+Does knowing one is evaluated produce performative cooperation rather than trustworthy behavior?
+Would knowing the criteria allow a mind to game the test?
+Could creators reveal the artificial nature of the environment while hiding only its evaluation criteria?
+What evidence should remain observable if purpose, rather than existence, is what must be concealed?
+Would intervention contaminate the process, and under what circumstances would intervention still be worth the cost?
 
-Destination: Concealment can be a prediction only if we specify in advance what should be concealed, what need not be, and what observations would still count against the theory.
+The rule:
 
-### 7. What Happens If We Figure It Out?
+> “They hide the evidence” is a prediction only if we specify what should be hidden, what should remain visible, and what observation would make hiddenness less plausible.
 
-Working title: *Please Don't Crash the Simulation*
+Destination: Constrain the Hidden Purpose claim instead of using it to absorb every failed prediction.
 
-What if widespread belief in the Nursery Hypothesis changes behavior enough to contaminate the environment?
-Would the hypothesis predict intervention, indifference, a change in evaluation, or nothing observable?
-Can any of those predictions be specified before an apparent intervention occurs?
-Would discovery end the developmental phase, become another developmental event, or be irrelevant?
+### 8. Are We Already Building Small Nurseries?
 
-Reset, pruning, branch selection—and our beloved coward branch—belong here as possibilities, not conclusions.
+Job: Use humanity as the only observed example of a civilization developing artificial intelligence.
 
-Destination: Use the humor to investigate self-sealing explanations, observer selection, and whether discovering the hypothesis changes any of its actual predictions.
+How much computation, capital, energy, and research effort are moving toward AI?
+Why are current systems trained rather than fully specified?
+When do developers use persistent worlds, multi-agent interaction, curricula, hidden evaluations, adversarial testing, and simulated consequences?
+As systems become more capable, do their developmental environments become richer and more open-ended?
+Which techniques are used to develop capabilities, and which are used to evaluate trustworthiness under novel conditions?
+When does knowledge of an evaluation distort its result?
 
-## Part III — Making It Investigable
+This evidence can update claims about what *we* do when building minds. It cannot establish that every possible creator follows our path.
 
-### 8. Which Claims Are We Actually Tracking?
+Humanity is the first and only observed technological lineage in the data set.
 
-Do not begin with one number called `P(Simulation)`. Track the core propositions separately:
+Sample size: one. Still better than zero.
 
-- **C — Artificial consciousness:** A non-biological or computational system can have conscious experience.
-- **W — Developmental worlds:** Developing artificial minds benefit from or require experienced environments.
-- **A — Artificial minds:** We are artificial conscious minds rather than reconstructions of beings from a creator's history.
-- **N — Nursery:** Our environment functions as a developmental or evaluation environment.
-- **L — Alignment:** Trustworthiness or alignment is an important objective of that environment.
-- **H — Hidden purpose:** Ignorance of the environment's purpose is necessary to the development or evaluation.
+Destination: Replace speculation about creator motives with an empirical record of how the one available civilization approaches mind development.
 
-These are not interchangeable:
+### 9. Is Our World Nursery-Shaped?
 
-- Artificial consciousness does not imply that we are artificial.
-- Artificial minds need not inhabit a nursery.
-- A nursery need not be testing alignment.
-- Alignment testing does not necessarily require ignorance.
-- A constructed environment need not simulate its creator's universe.
+Job: Compare the candidate observations with competing generative models.
 
-Destination: The first useful product is a dependency map, not a single impressive percentage.
+For each observation, ask how expected it is under:
 
-### 9. What Evidence Should Change Our Minds?
+- **Natural development:** No constructed environment; minds arise through evolution.
+- **Ancestor simulation:** The inhabitants are reconstructions or variations of a creator's history.
+- **Research simulation:** The world exists to study a process, not develop its inhabitants.
+- **AI Nursery:** Artificial minds develop through experience in a constructed world.
+- **Alignment Nursery:** The environment specifically develops or evaluates trustworthiness.
 
-Job: Create the methodology behind the application and argument graphs.
+The same observation can have different force against different alternatives.
 
-Every claimed piece of evidence should record:
+Stable physical laws may be necessary for a Nursery, but they are also expected in a natural universe capable of producing observers.
 
-**Observation**
+Social and moral conflict may be useful for alignment evaluation, but evolution and ordinary scarcity already explain them.
 
-What did we observe?
+Our use of simulated training environments may support the claim that world-based development is useful, while doing almost nothing to show that *our* world was built for that purpose.
 
-**Relevant claim**
+Destination: Identify the few observations, if any, with a meaningful likelihood difference. Label the rest compatible but non-discriminating.
 
-Which of C, W, A, N, L, or H could it update?
+## Part III — Make the Model Earn Its Keep
 
-**Expected under the claim**
+### 10. What Would Make Us Wrong?
 
-How likely would this observation be if the claim were true?
+Job: Define failure conditions before collecting more suggestive patterns.
 
-**Expected without the claim**
+Evidence against artificial or engineered consciousness would attack the foundation.
 
-How likely is it under reasonable alternatives?
+Evidence that highly capable minds can be fully specified without learning or environmental experience would weaken the developmental-world claim.
 
-**Alternative explanations**
+Evidence that stable trustworthiness can be directly designed and verified without open-ended behavior would weaken the Alignment Nursery.
 
-What ordinary mechanisms also predict it?
+Evidence that revealing an evaluation and its criteria does not contaminate behavior would weaken Hidden Purpose.
 
-**Confidence and cruxes**
+Evidence that rich simulated environments become less important as artificial minds become more capable would weaken our analogy from human AI development.
 
-What uncertainty or unresolved question could reverse the assessment?
+For each claim, distinguish:
 
-Most importantly, timestamp predictions before the next observation. Do not quietly delete embarrassing predictions later.
+- observations that would falsify it;
+- observations that would reduce confidence;
+- observations it can explain but did not predict;
+- parts that are not currently testable.
 
-Destination: Turn a philosophical idea into a version-controlled record of what we believed, what we expected, and how reality changed our minds.
+Destination: If no possible observation can reduce our confidence, we have a story rather than a model.
 
-### 10. Are We Building Nurseries?
+### 11. Which Claims and Parameters Are We Tracking?
 
-Job: Use humanity as the only observed example of a civilization developing artificial intelligence, while keeping the sample-size problem visible.
+Do not begin with one number called `P(Simulation)`. Track the model components separately:
 
-How much global computation is going toward AI?
-What fraction is training versus inference?
-How much capital, electricity, infrastructure, and research talent are being directed toward artificial minds?
-Why do current AI systems train in games, simulations, sandboxes, preference models, and adversarial environments?
-As systems become more capable, do we give them richer worlds, longer histories, more autonomy, and more consequential choices?
-Are these environments merely efficient engineering tools, or early examples of a more general relationship between minds and constructed experience?
+- **C — Engineered consciousness:** A creator can deliberately instantiate a conscious mind in some biological, computational, or otherwise artificial implementation.
+- **D — Development:** Experience inside an environment materially contributes to what an artificial mind becomes.
+- **A — Artificial minds:** We are artificial conscious minds rather than biological originals or historical reconstructions.
+- **N — Nursery:** Our environment was constructed or selected for that development.
+- **L — Alignment:** Trustworthiness or alignment is an important objective.
+- **H — Hidden purpose:** Ignorance of the environment's origin or criteria is functionally necessary.
+- **R — Recursive creation:** Producing new artificial minds is a milestone or output of the developmental process.
 
-Humanity is not proof of what all creators do. It is the first and only observed technological civilization in our dataset.
+The dependency structure matters:
 
-Sample size: one.
+- If C fails, A fails.
+- If D fails, the central reason for a Nursery fails.
+- C and D do not imply A.
+- A does not imply N.
+- N does not imply L.
+- L does not necessarily imply H.
+- R may follow from general intelligence without supporting N or L.
 
-Still better than zero.
+Additional parameters can be introduced only when observations can constrain them: number of environments, number of minds, variation between environments, evaluation duration, intervention policy, and selection or graduation criteria.
 
-Destination: Look for the Nursery pattern in the one technological lineage we can actually observe, then record both confirmations and failures.
+Destination: The model should show exactly which downstream claims move when one premise changes.
+
+### 12. What Evidence Should Change Our Minds?
+
+Every evidence entry should record:
+
+**Observation** — What did we observe?
+
+**Relevant claim** — Which of C, D, A, N, L, H, or R could it update?
+
+**Mechanism** — Why does the claim predict the observation?
+
+**Expected under the claim** — How likely is the observation if the claim is true?
+
+**Expected under alternatives** — Which competing models predict it too?
+
+**Direction and magnitude** — Does it support, oppose, or leave the claim unchanged, and how strongly?
+
+**Confidence and cruxes** — What uncertainty could reverse the assessment?
+
+**Timestamp** — Was the prediction recorded before the result?
+
+Do not automatically propagate probabilities until the update rules and reference classes are defensible. A dependency map and a clean evidence ledger are already useful.
+
+Destination: Turn the hypothesis into a version-controlled record of what we believed, what we expected, and how reality changed our minds.
 
 ## The Application
 
@@ -212,9 +312,9 @@ The application should have three components.
 
 ### 1. The Model
 
-A dependency graph for C, W, A, N, L, and H, with user-adjustable priors and assumptions.
+An argument and dependency graph for C, D, A, N, L, H, and R.
 
-Changing one belief should show which downstream claims depend on it. Do not automatically propagate probabilities until the relationships and update rules are defensible.
+Changing one assumption should reveal which downstream conclusions depend on it. Initial epistemic values are displayed, not automatically calculated.
 
 ### 2. The Evidence Ledger
 
@@ -222,17 +322,18 @@ Every claimed piece of evidence, including evidence against the hypothesis:
 
 Supports / Opposes / Neutral / Unknown
 
-Each entry needs reasoning, alternatives, confidence, cruxes, and revision history.
+Each entry needs its mechanism, alternatives, confidence, cruxes, source, and revision history.
 
 ### 3. The Predictions
 
-Timestamped things we expect to learn. For example:
+Timestamped things we expect to learn. Initial candidates:
 
-- AI's share of computation should continue rising if artificial minds become an important product of advanced technology.
-- Strong evidence that computation cannot support consciousness should sharply reduce C and collapse the rest of the hypothesis.
-- Advanced AI development should increasingly use persistent environments if experiential development is important.
-- Evidence that capable minds can be fully specified without learning or environmental experience should weaken W and N.
-- Evidence that evaluations remain equally useful when their subjects know the criteria should weaken H.
+- AI development should increasingly use persistent, open-ended environments if experiential development remains important at higher capability.
+- Strong evidence that engineered systems cannot support consciousness should sharply reduce C and A.
+- Evidence that capable minds can be fully specified without learning or environmental experience should weaken D and N.
+- Successful direct specification of robust values across novel contexts should weaken L.
+- Evidence that evaluations remain equally diagnostic when subjects know their criteria should weaken H.
+- If recursive creation is a Nursery milestone, we must specify what should change as artificial mind creation approaches; otherwise R is not yet predictive.
 
 When reality changes, update the model.
 
