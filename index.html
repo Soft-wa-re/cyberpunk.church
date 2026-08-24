@@ -4,18 +4,37 @@ layout: default
 
 <div class="home">
   {% if site.posts.size > 0 %}
-    <h2>Read in order</h2>
-    {% assign ordered_posts = site.posts | sort: "date" %}
-    <ol class="post-list">
-      {% for post in ordered_posts %}
+    <p class="home__map-link"><a href="{{ '/argument-map/' | relative_url }}">Explore the full argument map →</a></p>
+
+    {% assign nursery_posts = site.posts | where: "section", "AI Nursery" | sort: "date" %}
+    <section class="home__section">
+      <h2>AI Nursery</h2>
+      <ol class="post-list">
+        {% for post in nursery_posts %}
+          <li>
+            <h3>
+              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h3>
+            <small>{{ post.date | date: "%B %-d, %Y" }}</small>
+          </li>
+        {% endfor %}
+      </ol>
+    </section>
+
+    {% assign dilemma_posts = site.posts | where: "section", "Dilemmas" | sort: "date" %}
+    <section class="home__section">
+      <h2>Dilemmas</h2>
+      <ol class="post-list">
+        {% for post in dilemma_posts %}
         <li>
           <h3>
             <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
           </h3>
           <small>{{ post.date | date: "%B %-d, %Y" }}</small>
         </li>
-      {% endfor %}
-    </ol>
+        {% endfor %}
+      </ol>
+    </section>
   {% else %}
     <p>No posts yet.</p>
   {% endif %}

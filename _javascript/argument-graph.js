@@ -44,6 +44,34 @@ function beliefLabel(belief) {
   return "Unknown";
 }
 
+function selectGraphView(canonicalGraph, viewId) {
+  if (!viewId) {
+    return {
+      ...canonicalGraph,
+      canonicalTitle: canonicalGraph.title,
+      canonicalNodeCount: canonicalGraph.nodes.length
+    };
+  }
+
+  const view = canonicalGraph.views?.find((candidate) => candidate.id === viewId);
+  if (!view) throw new Error(`Graph view “${viewId}” does not exist.`);
+
+  const selectedIds = new Set(view.nodes);
+  const nodes = canonicalGraph.nodes.filter((node) => selectedIds.has(node.id));
+  const edges = canonicalGraph.edges.filter((edge) => selectedIds.has(edge.from) && selectedIds.has(edge.to));
+
+  return {
+    ...canonicalGraph,
+    title: view.title,
+    description: view.description || canonicalGraph.description,
+    nodes,
+    edges,
+    activeView: view.id,
+    canonicalTitle: canonicalGraph.title,
+    canonicalNodeCount: canonicalGraph.nodes.length
+  };
+}
+
 function renderOverview(container, graph) {
   container.replaceChildren();
   container.append(
@@ -55,6 +83,7 @@ function renderOverview(container, graph) {
   const counts = element("dl", "argument-graph__meta");
   appendMeta(counts, "Nodes", String(graph.nodes.length));
   appendMeta(counts, "Relationships", String(graph.edges.length));
+  if (graph.activeView) appendMeta(counts, "Canonical map", `${graph.canonicalNodeCount} nodes`);
   appendMeta(counts, "Schema", `v${graph.version}`);
   container.append(counts, element("p", "argument-graph__inspector-prompt", "Select any node in the map to examine it."));
 }
@@ -260,7 +289,8 @@ async function initializeGraph(root) {
   try {
     const response = await fetch(root.dataset.graphSrc, { headers: { Accept: "application/json" } });
     if (!response.ok) throw new Error(`Graph request returned ${response.status}.`);
-    const graph = await response.json();
+    const canonicalGraph = await response.json();
+    const graph = selectGraphView(canonicalGraph, root.dataset.graphView);
     const nodeById = new Map(graph.nodes.map((node) => [node.id, node]));
 
     summary.textContent = graph.description || "Explore the claims, evidence, objections, and assumptions behind this post.";

@@ -2,6 +2,9 @@
 layout: post
 title: "Is Our World Nursery-Shaped?"
 date: "2026-08-23"
+section: "AI Nursery"
+argument_graph: epistemic-map
+argument_graph_view: is-our-world-nursery-shaped
 tags:
   - AI Nursery
 ---

@@ -2,6 +2,9 @@
 layout: post
 title: "Why Here? Why Now?"
 date: "2026-08-21"
+section: "AI Nursery"
+argument_graph: epistemic-map
+argument_graph_view: why-here-why-now
 tags:
   - AI Nursery
 ---

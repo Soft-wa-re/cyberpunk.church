@@ -1,9 +1,13 @@
 {% assign graph_path = '/assets/argument-graphs/' | append: include.graph_id | append: '.json' | relative_url %}
-<section class="argument-graph" data-argument-graph data-graph-src="{{ graph_path }}" aria-labelledby="argument-graph-title-{{ include.graph_id }}">
+{% assign graph_instance_id = include.graph_id %}
+{% if include.view_id %}
+  {% assign graph_instance_id = graph_instance_id | append: '-' | append: include.view_id %}
+{% endif %}
+<section class="argument-graph{% unless include.view_id %} argument-graph--canonical{% endunless %}" data-argument-graph data-graph-src="{{ graph_path }}"{% if include.view_id %} data-graph-view="{{ include.view_id }}"{% endif %} aria-labelledby="argument-graph-title-{{ graph_instance_id }}">
   <header class="argument-graph__header">
     <div>
-      <p class="argument-graph__eyebrow">Structured argument · schema v1</p>
-      <h2 id="argument-graph-title-{{ include.graph_id }}">Argument map</h2>
+      <p class="argument-graph__eyebrow">{% if include.view_id %}Filtered post view{% else %}Canonical argument graph{% endif %} · schema v1</p>
+      <h2 id="argument-graph-title-{{ graph_instance_id }}">{{ include.heading | default: "Argument map" }}</h2>
       <p class="argument-graph__summary" data-argument-graph-summary>Loading the claims, evidence, objections, and assumptions behind this post…</p>
     </div>
 
@@ -36,10 +40,10 @@
         data-argument-graph-canvas
         role="group"
         tabindex="0"
-        aria-describedby="argument-graph-help-{{ include.graph_id }}"
+        aria-describedby="argument-graph-help-{{ graph_instance_id }}"
         aria-label="Interactive argument graph. Drag to pan, scroll or pinch to zoom, and select nodes to inspect them."
       ></div>
-      <p class="argument-graph__gesture-hint" id="argument-graph-help-{{ include.graph_id }}">Drag to pan · scroll or pinch to zoom · select a node for details</p>
+      <p class="argument-graph__gesture-hint" id="argument-graph-help-{{ graph_instance_id }}">Drag to pan · scroll or pinch to zoom · select a node for details</p>
     </div>
 
     <aside class="argument-graph__inspector" data-argument-graph-inspector aria-live="polite">
@@ -48,10 +52,11 @@
   </div>
 
   <div class="argument-graph__browser">
-    <label for="argument-graph-select-{{ include.graph_id }}">Browse nodes</label>
-    <select id="argument-graph-select-{{ include.graph_id }}" data-argument-graph-select disabled>
+    <label for="argument-graph-select-{{ graph_instance_id }}">Browse nodes</label>
+    <select id="argument-graph-select-{{ graph_instance_id }}" data-argument-graph-select disabled>
       <option value="">Select a node…</option>
     </select>
+    {% if include.view_id %}<a href="{{ '/argument-map/' | relative_url }}">Open full map</a>{% endif %}
     <a href="{{ graph_path }}">View normalized JSON</a>
   </div>
 

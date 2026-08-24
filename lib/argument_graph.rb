@@ -50,7 +50,8 @@ module ArgumentGraph
   end
 
   class Validator
-    GRAPH_KEYS = %w[version id title description nodes edges].freeze
+    GRAPH_KEYS = %w[version id title description views nodes edges].freeze
+    VIEW_KEYS = %w[id title description nodes].freeze
     NODE_KEYS = %w[id type title body epistemics sources].freeze
     EPISTEMIC_KEYS = %w[status belief confidence cruxes].freeze
     BELIEF_KEYS = %w[type value].freeze
@@ -74,9 +75,11 @@ module ArgumentGraph
 
       nodes = validate_array(graph["nodes"], "nodes", nonempty: true)
       edges = validate_array(graph["edges"], "edges")
+      views = validate_array(graph["views"], "views") if graph.key?("views")
 
       validate_nodes(nodes)
       validate_edges(edges, nodes)
+      validate_views(views, nodes) if graph.key?("views")
       @errors
     end
 
@@ -144,6 +147,45 @@ module ArgumentGraph
       end
 
       duplicate_values(edge_ids).each { |id| error("duplicate edge id '#{id}'") }
+    end
+
+    def validate_views(views, nodes)
+      return unless views
+
+      node_ids = Array(nodes).filter_map { |node| node["id"] if node.is_a?(Hash) }.to_set
+      view_ids = []
+
+      views.each_with_index do |view, index|
+        context = "view ##{index + 1}"
+        unless view.is_a?(Hash)
+          error("#{context} must be an object")
+          next
+        end
+
+        context = "view '#{view["id"] || index + 1}'"
+        validate_keys(view, VIEW_KEYS, context)
+        validate_id(view["id"], "#{context} id")
+        validate_nonempty_string(view["title"], "#{context} title")
+        validate_optional_string(view["description"], "#{context} description")
+
+        selected_nodes = validate_array(view["nodes"], "#{context} nodes", nonempty: true)
+        if selected_nodes
+          selected_nodes.each_with_index do |node_id, node_index|
+            label = "#{context} node ##{node_index + 1}"
+            validate_id(node_id, label)
+            if node_id.is_a?(String) && !node_ids.include?(node_id)
+              error("#{context} refers to nonexistent node '#{node_id}'")
+            end
+          end
+          duplicate_values(selected_nodes.select { |node_id| node_id.is_a?(String) }).each do |node_id|
+            error("#{context} includes duplicate node '#{node_id}'")
+          end
+        end
+
+        view_ids << view["id"] if view["id"].is_a?(String)
+      end
+
+      duplicate_values(view_ids).each { |id| error("duplicate view id '#{id}'") }
     end
 
     def validate_epistemics(epistemics, context)
@@ -280,7 +322,7 @@ module ArgumentGraph
         graphs[graph["id"]] = graph
       end
 
-      errors.concat(validate_post_references(graphs.keys))
+      errors.concat(validate_post_references(graphs))
       raise ValidationError, errors unless errors.empty?
 
       graphs
@@ -288,7 +330,7 @@ module ArgumentGraph
 
     private
 
-    def validate_post_references(graph_ids)
+    def validate_post_references(graphs)
       errors = []
       Dir[@root.join("_posts", "*")].sort.each do |post_path|
         path = Pathname(post_path)
@@ -303,7 +345,25 @@ module ArgumentGraph
           errors << "#{relative}: argument_graph must be a graph id string"
           next
         end
-        errors << "#{relative}: argument_graph '#{graph_id}' does not exist" unless graph_ids.include?(graph_id)
+        unless graphs.key?(graph_id)
+          errors << "#{relative}: argument_graph '#{graph_id}' does not exist"
+          next
+        end
+
+        next unless frontmatter.key?("argument_graph_view")
+
+        view_id = frontmatter["argument_graph_view"]
+        unless view_id.is_a?(String)
+          errors << "#{relative}: argument_graph_view must be a view id string"
+          next
+        end
+
+        view_ids = Array(graphs.fetch(graph_id)["views"]).filter_map do |view|
+          view["id"] if view.is_a?(Hash)
+        end
+        unless view_ids.include?(view_id)
+          errors << "#{relative}: argument graph '#{graph_id}' has no view '#{view_id}'"
+        end
       end
       errors
     end

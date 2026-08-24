@@ -2,6 +2,9 @@
 layout: post
 title: "Are We Building AI Nurseries?"
 date: "2026-08-22"
+section: "AI Nursery"
+argument_graph: epistemic-map
+argument_graph_view: are-we-building-ai-nurseries
 tags:
   - AI Nursery
 ---

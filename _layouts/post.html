@@ -10,7 +10,7 @@ layout: default
 {{content}}
 
 {% if page.argument_graph %}
-  {% include argument-graph.html graph_id=page.argument_graph %}
+  {% include argument-graph.html graph_id=page.argument_graph view_id=page.argument_graph_view %}
 {% endif %}
 
 {% if page.tags %}
