@@ -22,7 +22,25 @@ Destination: The empty sky constrains possible technological lineages within our
 
 Fermi is still a strong opening question. It establishes the mystery and, just as importantly, the boundary of what that mystery can tell us.
 
-2. Are There Levels of Reality?
+2. Are You Living in a Computer Simulation?
+
+Job: State Nick Bostrom's Simulation Argument precisely, before the phrase "simulation theory" expands to cover every imaginable creator or parent reality.
+
+What is the difference between the Simulation Argument and the Simulation Hypothesis?
+Why does Bostrom focus on posthuman descendants running ancestor simulations?
+How do a small number of original civilizations and a very large number of simulated observers produce the trilemma?
+Which premises carry the argument: survival to technological maturity, substrate-independent consciousness, abundant computation, interest in ancestor simulations, and the observer reference class?
+Why does the argument not tell us which of its three possibilities is true?
+What happens when we broaden the imagined simulators beyond descendants whose minds and physics resemble ours?
+
+Destination: The argument does not prove that we are simulated. It says we cannot confidently believe all three of the following at once: civilizations like ours commonly survive to technological maturity, some of them create enormous populations of conscious ancestor simulations, and we are probably among the original observers. It gives the series a set of load-bearing premises to investigate.
+
+Research anchors:
+
+- [Are You Living in a Computer Simulation?](https://simulation-argument.com/simulation/) — Nick Bostrom (2003)
+- [The Simulation Argument FAQ](https://simulation-argument.com/faq/) — Nick Bostrom (2025)
+
+3. Are There Levels of Reality?
 
 Job: Work out what a “higher” or “parent” reality could mean before calling anything a simulation.
 
@@ -34,7 +52,7 @@ Would inhabitants of a child reality have any way to distinguish a parent from n
 
 Destination: “Creator” is not one hypothesis. Before assigning probabilities or motives, we need a map of the possible relationships between realities.
 
-3. Can Universes Have Parents?
+4. Can Universes Have Parents?
 
 Job: Investigate models in which black holes produce new expanding regions of spacetime.
 
@@ -52,7 +70,7 @@ Research anchors:
 - [Through a black hole into a new universe?](https://doi.org/10.1016/0370-2693(89)91114-3) — Frolov, Markov, and Mukhanov (1989)
 - [Black holes as possible sources of closed and semiclosed worlds](https://doi.org/10.1103/PhysRevD.41.383) — Frolov, Markov, and Mukhanov (1990)
 
-4. Was the Big Bang a White Hole?
+5. Was the Big Bang a White Hole?
 
 Job: Test the tempting analogy instead of treating it as an identity.
 
@@ -68,7 +86,7 @@ Research anchor:
 
 - [Out of the White Hole: A Holographic Origin for the Big Bang](https://arxiv.org/abs/1309.1487) — Pourhasan, Afshordi, and Mann (2014)
 
-5. What Does a Universe Inherit?
+6. What Does a Universe Inherit?
 
 Job: Ask whether a child universe must share its parent's physics.
 
@@ -87,7 +105,7 @@ Research anchors:
 - [The fate of black hole singularities and the parameters of the standard models of particle physics and cosmology](https://arxiv.org/abs/gr-qc/9404011) — Lee Smolin (1994)
 - [The status of cosmological natural selection](https://arxiv.org/abs/hep-th/0612185) — Lee Smolin (2006)
 
-6. Can We Reason About a Reality Above Our Own?
+7. Can We Reason About a Reality Above Our Own?
 
 Job: Make the extrapolation problem explicit.
 
@@ -101,7 +119,7 @@ Destination: The Fermi Paradox and humanity's technological trajectory bear on s
 
 This is the objection the old outline missed.
 
-7. Could We Become Creators?
+8. Could We Become Creators?
 
 Job: Preserve the useful part of “Does Anybody Make It?” without treating it as a premise for every kind of creator.
 
@@ -119,7 +137,7 @@ Research anchor:
 
 - [Is it possible to create a universe in the laboratory by quantum tunneling?](https://doi.org/10.1016/055032139090357J) — Farhi, Guth, and Guven (1990)
 
-8. Does a Parent Universe Count as a Creator?
+9. Does a Parent Universe Count as a Creator?
 
 Job: Separate physical ancestry from intention and computation.
 
@@ -131,7 +149,7 @@ What evidence could distinguish a naturally born universe from an engineered or 
 
 Destination: Levels of reality make simulation conceivable, but do not establish it. Simulation is a particular relationship between levels, with additional commitments about implementation and perhaps intention.
 
-9. Can Quantum Mechanics Tell Us Anything?
+10. Can Quantum Mechanics Tell Us Anything?
 
 Job: Investigate physics before introducing our preferred interpretation of it.
 
@@ -143,18 +161,6 @@ Which popular “quantum proves simulation” arguments are simply bad?
 Destination: Quantum mechanics may make certain computational descriptions of reality interesting, but it does not presently establish that reality is simulated.
 
 Do not introduce the behavioral-dataset idea here. Save that.
-
-10. Why Would Anyone Simulate a Universe?
-
-This is where Bostrom properly enters—and where we have to keep his argument's scope visible.
-
-What does the Simulation Argument actually claim?
-Why does Bostrom focus on posthuman descendants and ancestor simulations?
-Which parts of his reasoning depend on simulators arising in a reality enough like ours for extrapolation to work?
-If we broaden “creator” to include unknown parent realities, can we still justify his observer-count assumptions?
-Is the important variable ancestor simulations, or the number of conscious simulated observers?
-
-Destination: Simulated conscious beings do not have to be replicas of historical humans. But broadening the category also weakens our ability to estimate the motives, resources, or abundance of whoever creates them.
 
 11. Can an Artificial Mind Be Conscious?
 
