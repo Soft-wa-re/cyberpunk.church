@@ -209,7 +209,56 @@ Sample size: one. Still better than zero.
 
 Destination: Replace speculation about creator motives with an empirical record of how the one available civilization approaches mind development.
 
-### 9. Is Our World Nursery-Shaped?
+### 9. How Many Candidate Minds Are We Creating?
+
+Job: Build an observer census without pretending unlike units are interchangeable.
+
+There is real numerical data here:
+
+- The UN estimated about 8.2 billion living humans in 2024.
+- A bottom-up ecological estimate found about 20 quadrillion living ants, roughly 2.5 million per human, while estimating their combined dry-carbon biomass at only about 20% of human biomass.
+- Google reported more than 3.2 quadrillion tokens processed across its AI surfaces in May 2026.
+- OpenAI reported more than 2.5 billion ChatGPT messages per day in July 2025.
+
+Research anchors:
+
+- [World Population Prospects 2024](https://www.un.org/sustainabledevelopment/blog/2024/07/press-release-wpp2024/) — United Nations
+- [The abundance, biomass, and distribution of ants on Earth](https://pmc.ncbi.nlm.nih.gov/articles/PMC9546634/) — Schultheiss et al. (2022)
+- [Google I/O 2026](https://blog.google/intl/fr-fr/nouvelles-de-lentreprise/technologie/sundar-pichai-io-2026/) — reported AI token volume
+- [OpenAI's economic analysis](https://openai.com/global-affairs/new-economic-analysis/) — reported ChatGPT usage
+
+But these are not yet one comparable number:
+
+| Population | Observable quantity | Missing conversion |
+| --- | --- | --- |
+| Humans | Living individuals and person-time | A normalization for conscious experience |
+| Animals | Individuals or animal-time by species | Sentience probability, experience rate, and relevant taxonomic boundary |
+| LLMs | Model copies, active instances, inference calls, tokens, or compute-time | Identity, continuity, consciousness, and experience rate |
+
+A stock cannot be compared directly with a flow. “Eight billion humans alive” and “three quadrillion tokens per month” have different dimensions. The least-bad common form would be a range of *candidate observer-time* estimates:
+
+`candidate observer-time = active process duration × consciousness probability × relative experience rate × reference-class weight`
+
+Every factor must remain visible. In particular:
+
+- One set of model weights is not obviously one mind.
+- A thousand simultaneous inference processes are not obviously a thousand persistent individuals.
+- A token is an activity measure, not an observer-moment.
+- “Animals” cannot be one consciousness category ranging from apes to nematodes.
+- A large LLM count changes our odds only if LLM processes are conscious and belong in the relevant reference class.
+
+Use ranges and sensitivity analysis. Ask what values would be required for artificial candidate observer-time to exceed human or animal observer-time. The point is not to hide uncertainty inside a single estimate, but to discover which uncertain conversion dominates the result.
+
+What this census could update:
+
+- Rapid growth in artificial cognitive activity supports **R**, the claim that recursive mind creation is becoming a major civilizational process.
+- Increasing use of persistent, world-based training can support **D**.
+- Counts alone do not establish **C**; scale is not evidence of consciousness.
+- Counts alone provide little evidence for **A** or **N** without a defensible sampling principle.
+
+Destination: Track the measurable expansion of candidate artificial cognition while showing exactly which philosophical assumptions are needed to turn activity into observers.
+
+### 10. Is Our World Nursery-Shaped?
 
 Job: Compare the candidate observations with competing generative models.
 
@@ -233,7 +282,7 @@ Destination: Identify the few observations, if any, with a meaningful likelihood
 
 ## Part III — Make the Model Earn Its Keep
 
-### 10. What Would Make Us Wrong?
+### 11. What Would Make Us Wrong?
 
 Job: Define failure conditions before collecting more suggestive patterns.
 
@@ -256,7 +305,7 @@ For each claim, distinguish:
 
 Destination: If no possible observation can reduce our confidence, we have a story rather than a model.
 
-### 11. Which Claims and Parameters Are We Tracking?
+### 12. Which Claims and Parameters Are We Tracking?
 
 Do not begin with one number called `P(Simulation)`. Track the model components separately:
 
@@ -282,7 +331,7 @@ Additional parameters can be introduced only when observations can constrain the
 
 Destination: The model should show exactly which downstream claims move when one premise changes.
 
-### 12. What Evidence Should Change Our Minds?
+### 13. What Evidence Should Change Our Minds?
 
 Every evidence entry should record:
 
@@ -338,3 +387,11 @@ Timestamped things we expect to learn. Initial candidates:
 When reality changes, update the model.
 
 That is more compelling than declaring a probability once.
+
+### 4. The Observer Census
+
+A time series of the measurable stocks and flows for humans, animal groups, and artificial systems.
+
+Keep raw measurements separate from judgment calls. Users should be able to vary consciousness probability, experience-rate, and reference-class assumptions and see which conclusions change.
+
+The first output should be a sensitivity chart, not a headline declaring how many minds exist.
