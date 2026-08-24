@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Where Is Everybody?"
+argument_graph: where-is-everybody
 ---
 
 The strangest part of the Fermi Paradox[^fermi-paradox] is not that we do not see aliens. It is that, as far as we can tell, nobody has made themselves obvious.

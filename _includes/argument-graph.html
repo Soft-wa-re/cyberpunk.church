@@ -1,0 +1,63 @@
+{% assign graph_path = '/assets/argument-graphs/' | append: include.graph_id | append: '.json' | relative_url %}
+<section class="argument-graph" data-argument-graph data-graph-src="{{ graph_path }}" aria-labelledby="argument-graph-title-{{ include.graph_id }}">
+  <header class="argument-graph__header">
+    <div>
+      <p class="argument-graph__eyebrow">Structured argument · schema v1</p>
+      <h2 id="argument-graph-title-{{ include.graph_id }}">Argument map</h2>
+      <p class="argument-graph__summary" data-argument-graph-summary>Loading the claims, evidence, objections, and assumptions behind this post…</p>
+    </div>
+
+    <ul class="argument-graph__edge-key" aria-label="Relationship colors">
+      <li><span class="argument-graph__edge-swatch argument-graph__edge-swatch--support"></span>Supports / entails</li>
+      <li><span class="argument-graph__edge-swatch argument-graph__edge-swatch--challenge"></span>Attacks / contradicts</li>
+      <li><span class="argument-graph__edge-swatch argument-graph__edge-swatch--structural"></span>Structural relation</li>
+    </ul>
+  </header>
+
+  <ul class="argument-graph__node-key" aria-label="Node types">
+    <li class="argument-graph__type--question">Question</li>
+    <li class="argument-graph__type--claim">Claim</li>
+    <li class="argument-graph__type--hypothesis">Hypothesis</li>
+    <li class="argument-graph__type--evidence">Evidence</li>
+    <li class="argument-graph__type--objection">Objection</li>
+    <li class="argument-graph__type--assumption">Assumption</li>
+    <li class="argument-graph__type--conclusion">Conclusion</li>
+  </ul>
+
+  <div class="argument-graph__workspace">
+    <div class="argument-graph__stage">
+      <div class="argument-graph__toolbar" role="group" aria-label="Graph view controls">
+        <button type="button" data-argument-graph-action="zoom-out" aria-label="Zoom out">−</button>
+        <button type="button" data-argument-graph-action="zoom-in" aria-label="Zoom in">+</button>
+        <button type="button" data-argument-graph-action="fit">Fit</button>
+      </div>
+      <div
+        class="argument-graph__canvas"
+        data-argument-graph-canvas
+        role="group"
+        tabindex="0"
+        aria-describedby="argument-graph-help-{{ include.graph_id }}"
+        aria-label="Interactive argument graph. Drag to pan, scroll or pinch to zoom, and select nodes to inspect them."
+      ></div>
+      <p class="argument-graph__gesture-hint" id="argument-graph-help-{{ include.graph_id }}">Drag to pan · scroll or pinch to zoom · select a node for details</p>
+    </div>
+
+    <aside class="argument-graph__inspector" data-argument-graph-inspector aria-live="polite">
+      <p class="argument-graph__inspector-kicker">Loading graph</p>
+    </aside>
+  </div>
+
+  <div class="argument-graph__browser">
+    <label for="argument-graph-select-{{ include.graph_id }}">Browse nodes</label>
+    <select id="argument-graph-select-{{ include.graph_id }}" data-argument-graph-select disabled>
+      <option value="">Select a node…</option>
+    </select>
+    <a href="{{ graph_path }}">View normalized JSON</a>
+  </div>
+
+  <p class="argument-graph__error" data-argument-graph-error role="alert" hidden></p>
+  <noscript>
+    <p class="argument-graph__error">JavaScript is required for the interactive map. <a href="{{ graph_path }}">View its normalized JSON data.</a></p>
+  </noscript>
+</section>
+<script src="{{ '/assets/js/argument-graph.js' | relative_url }}" defer></script>

@@ -11,6 +11,7 @@ Gemfile.lock
 .jekyll-cache
 .jekyll-metadata
 vendor
+node_modules
 .DS_Store
 .idea
 .ruby-version

@@ -1,0 +1,17 @@
+{
+  "name": "cyberpunk-church",
+  "private": true,
+  "scripts": {
+    "arguments:build": "ruby scripts/build_argument_graphs.rb",
+    "arguments:check": "ruby scripts/build_argument_graphs.rb --check",
+    "assets:build": "esbuild _javascript/argument-graph.js --bundle --minify --legal-comments=eof --outfile=assets/js/argument-graph.js",
+    "test": "ruby -Itest test/argument_graph_test.rb && node --check _javascript/argument-graph.js && npm run arguments:check",
+    "build": "npm run arguments:build && npm run assets:build && JEKYLL_NO_BUNDLER_REQUIRE=true bundle exec jekyll build"
+  },
+  "dependencies": {
+    "cytoscape": "3.34.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}

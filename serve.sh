@@ -1,4 +1,7 @@
 bundle install
+npm install
+npm run arguments:build
+npm run assets:build
 
 bundle exec jekyll serve --livereload &
 JEKYLL_PID=$!
