@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Are We Building AI Nurseries?"
-date: "2026-08-23 15:00:00 -0400"
+date: "2026-08-22"
 tags:
   - AI Nursery
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What Is an AI Nursery?"
-date: "2026-08-23 13:00:00 -0400"
+date: "2026-08-20"
 tags:
   - AI Nursery
 ---

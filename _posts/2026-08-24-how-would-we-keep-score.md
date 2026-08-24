@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How Would We Keep Score?"
-date: "2026-08-23 17:00:00 -0400"
+date: "2026-08-24"
 tags:
   - AI Nursery
 ---
