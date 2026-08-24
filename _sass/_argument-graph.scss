@@ -293,6 +293,16 @@ $argument-conclusion: #75b5aa;
   color: $argument-question;
 }
 
+.argument-graph__updates--up li::before {
+  color: $argument-evidence;
+  content: "+";
+}
+
+.argument-graph__updates--down li::before {
+  color: $argument-objection;
+  content: "−";
+}
+
 .argument-graph__relationship-list {
   .argument-graph__relation--supports::before,
   .argument-graph__relation--entails::before { color: $argument-evidence; }

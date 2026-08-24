@@ -15,138 +15,137 @@ Ten percent. Fifty percent. Ninety-nine point nine.
 
 The number arrives long before its units.
 
-The AI Nursery Hypothesis is not ready for a single probability. Too many different propositions are compressed into the claim that we are simulated, and the available observations do not update all of them in the same direction.
+The Alignment Nursery Hypothesis is not ready for one probability. It is a chain of propositions, and our observations update different links by different amounts.
 
 The first useful calculation is therefore not the probability that the hypothesis is true.
 
 It is a map of what would have to be true first.
 
-## Seven separate claims
+## Ten separate claims
 
-We can begin with seven propositions:
+We can track ten propositions:
 
 - **C — Engineered consciousness:** A creator can deliberately instantiate a conscious mind.
 - **D — Development:** Experience inside an environment materially contributes to what an artificial mind becomes.
-- **A — Artificial minds:** We are artificial minds rather than biological originals or historical reconstructions.
+- **A — Artificial inhabitants:** We are artificial minds rather than biological originals or historical reconstructions.
 - **N — Nursery:** Our environment was constructed or selected for our development.
-- **L — Alignment:** Trustworthiness or alignment is an important objective.
-- **H — Hidden purpose:** Ignorance of the environment's origin or criteria serves a functional role.
-- **R — Recursive creation:** Producing new artificial minds is a milestone or output of the process.
+- **S — Safety pressure:** Greater capability and access increase the cost of unsafe deployment enough to justify extraordinary assurance.
+- **J — Joint production:** One rich environment can economically combine development or refinement with safety evaluation.
+- **E — Evaluation realism:** Direct inspection and recognizable tests become less predictive under novel, long-horizon, high-capability conditions.
+- **H — Hidden information:** Concealing criteria, test boundaries, purpose, or the environment's nature preserves safety-relevant evidence.
+- **G — Gated deployment:** Greater freedom, capability, or access remains conditional on an adequate safety case.
+- **L — Alignment Nursery:** Our Nursery uses that combined process to develop and establish the safety of new intelligences before wider deployment.
 
-These claims are related, but they are not one ladder.
+The broad AI Nursery requires C, D, A, and N. The strict Alignment Nursery adds S, J, E, some justified portion of H, and G.
 
-If engineered consciousness is impossible, then we cannot be engineered conscious minds. But evidence that engineered consciousness is possible does almost nothing to establish that we are examples of it.
+These are not one evidence bucket.
 
-Development may be important for artificial minds without our environment being a nursery. A nursery may exist without evaluating alignment. An alignment evaluation may work even when its subjects know they are evaluated. Recursive creation may be an ordinary consequence of intelligence rather than the objective of the environment.
+Varied training environments can support D without supporting A or N. Capability-scaled safeguards can support S and G without showing that our world was constructed. Alignment faking can support E while leaving the stronger claim—that the nature of reality must be hidden—almost untouched.
 
-Writing the claims separately prevents evidence from leaking between them.
-
-When an AI agent learns better in a varied simulation, that observation bears on Development. It should not quietly increase every number downstream.
+Recursive creation may still be an interesting milestone. It is not part of the strict definition unless we specify why producing another generation is required for development or deployment.
 
 ## Record the mechanism
 
-An evidence ledger needs more than columns labeled *for* and *against*.
+An evidence entry needs more than columns labeled *for* and *against*.
 
 Every entry should answer:
 
 **What did we observe?**
 
-State the observation without the hypothesis. “AI agents trained across varied environments generalized better to unseen tasks” is an observation. “AI agents need nurseries” is already an interpretation.
+State the observation without the hypothesis. “Developers increased deployment restrictions after a model crossed a capability threshold” is an observation. “Developers built an Alignment Nursery” is an interpretation.
 
-**Which claim could it update?**
+**Which claim can it update?**
 
-Name C, D, A, N, L, H, or R. If the connection requires another claim, record that dependency.
+Name C, D, A, N, S, J, E, H, G, or L. Do not allow evidence for an upstream engineering pressure to leak into the claim that we inhabit a constructed world.
 
 **What is the mechanism?**
 
-Explain why the hypothesis predicts the observation. Similarity is not a mechanism. Our universe resembling a video game matters only if we can explain why a Nursery creator would produce that feature.
+Explain why the claim predicts the observation. Similarity is not a mechanism. Our world resembling a training environment matters only if a creator has a reason to produce that feature.
 
 **What do the alternatives predict?**
 
-Natural evolution, ancestor simulation, research simulation, and a non-alignment Nursery may all predict the same result. Evidence has force only when the expectations differ.
+Natural development, ancestor simulation, research simulation, and a non-alignment Nursery may predict the same result.
 
-**What is the crux?**
+**What would move the claim down?**
 
-Identify the uncertainty most capable of reversing the judgment. For artificial-mind counts, the crux may be consciousness. For hidden evaluation, it may be whether awareness actually contaminates the behavior being measured.
+Record the negative update before seeing it. A theory that only knows how to rise is not an empirical model.
 
-**When did we say this?**
+**When did we record it?**
 
-Timestamp the prediction before the result. A theory that edits its expectations after every observation is performing literary criticism, not inference.
+Timestamp the prediction and preserve revisions.
+
+## A directional ledger
+
+The present update rules can be stated without fake likelihood ratios:
+
+| Claim | Moves up when | Moves down when |
+| --- | --- | --- |
+| D — Development | Rich, persistent experience remains important as capability grows | Capable minds can be directly specified or trained without meaningful environmental interaction |
+| S — Safety pressure | Estimated harm, control difficulty, and assurance effort rise with capability and access | Risk and control costs remain flat as capability grows |
+| J — Joint production | Training and safety evaluation increasingly share realistic environments and histories | Development and assurance remain cheaply separable |
+| E — Evaluation realism | Recognizable tests miss deployment behavior; evaluation awareness grows with capability or horizon | Transparent compact tests remain predictive under novel, high-stakes conditions |
+| H — Hidden information | Blinding specific information measurably improves prediction of deployment behavior | Awareness has little effect, or hiding only a cheaper layer is sufficient |
+| G — Gated deployment | Greater autonomy and access require stronger safety cases | Access expands independently of safety evidence, even after serious failures |
+| C — Consciousness | Implementable consciousness indicators gain empirical support | Consciousness requires processes unavailable to engineered systems |
+| A / N — Our origin | An observation is substantially more expected if we are artificial and developed here | Natural development continues to explain every observation equally well or better |
+
+Current frontier practice gives preliminary upward evidence for S, E, and G: developers connect safeguards to capability thresholds and use deployment-like evaluation to reduce evaluation-awareness effects.[^preparedness][^deployment-simulation] That evidence is narrow. It does not justify an automatic update to A, N, or L.
 
 ## Use numbers without laundering uncertainty
 
-Some entries will support numerical estimates. That does not require false precision.
+Some observations support numerical estimates. They still need units.
 
-Suppose we want to compare humans, animal groups, and language-model processes. We can measure human population, estimate animal populations, and collect partial reports of AI messages, tokens, active instances, or compute. But those values have different units.
+Suppose we compare humans, animal groups, and language-model processes. We can measure human population, estimate animal populations, and collect partial reports of AI messages, tokens, active instances, or compute. Those values describe different things.
 
-The conversion to candidate observer-time might look like:
+A conversion to candidate observer-time might look like:
 
 `active duration × consciousness probability × relative experience rate × reference-class weight`
 
-Only part of that expression is empirical. Consciousness probability and reference-class membership are judgments. Experience rate may not even be a coherent scalar across radically different minds.
+Only part of that expression is empirical. Consciousness probability and reference-class membership are judgments. Experience rate may not be a coherent scalar across radically different minds.
 
-Keep the raw quantities separate. Let users vary the uncertain conversions. Then ask where the conclusion changes.
+Keep the raw quantities separate. Then vary the uncertain conversions and locate where the conclusion changes.
 
-If artificial processes dominate only when we assign a 90 percent probability of LLM consciousness, consciousness is the crux. If they dominate even at one chance in a million because the number of persistent instances has become enormous, scale is doing real work. If the result depends entirely on whether insects enter the reference class, the word *observer* is hiding the model.
+If artificial processes dominate only when we assign a 90 percent probability of LLM consciousness, consciousness is the crux. If they dominate at one chance in a million because persistent artificial activity has become enormous, scale is doing real work. If the result depends on whether insects enter the reference class, the word *observer* is hiding the model.
 
-Sensitivity analysis does not eliminate judgment. It shows us which judgments matter.
-
-## Predictions worth recording now
-
-The hypothesis should make commitments while the outcome remains unknown.
-
-### Developmental environments
-
-If rich experience remains important as artificial systems become more capable, AI development should increasingly use persistent, open-ended, multi-agent environments rather than only static data and short tasks.
-
-If capable minds can instead be fully specified or trained without meaningful environmental interaction, Development and Nursery should lose confidence.
-
-### Consciousness
-
-Evidence that consciousness requires a biological process unavailable to engineered systems would sharply reduce Engineered Consciousness and Artificial Minds.
-
-Evidence linking consciousness to implementable functional properties would remove one major objection, while still doing little by itself to show that we possess an artificial implementation.
-
-### Alignment and evaluation awareness
-
-If trustworthy behavior can be directly specified and verified under novel conditions, an Alignment Nursery becomes less necessary.
-
-If increasingly capable agents behave differently when they recognize an evaluation, realistic hidden tests become more useful and Hidden Purpose gains a mechanism. If evaluation awareness has little effect, Hidden Purpose should weaken.
-
-### Recursive creation
-
-If constructing new minds is a Nursery milestone, we need to say what should change as our own artificial systems become more capable.
-
-Will artificial cognition take a rapidly increasing share of computation? Will candidate minds become more persistent and autonomous? Will the moral status of artificial systems become a central social conflict? Will training environments expand in duration and complexity?
-
-If we cannot specify a consequence, Recursive Creation is a theme rather than a prediction.
+That census bears on the abundance and possible reference class of artificial cognition. It does not directly test S, J, E, H, or G. Safety investment should be measured separately: compute, labor, evaluation depth, duration, deployment restrictions, and the access withheld pending assurance.
 
 ## What the notebook should show
 
-The project should not hide disagreement behind one authoritative number.
+The argument graph should make the causal boundaries visible:
 
-It should show an argument graph: which conclusions depend on which claims, where evidence enters, which relationships are logical, and which merely make another claim more plausible.
+- which conclusions depend on which claims;
+- where observations enter;
+- which edges are logical, evidential, or merely explanatory;
+- which specific result would raise or lower each node;
+- which claims concern rational Nursery design and which concern our own origin.
 
-It should show an evidence ledger: sources, mechanisms, alternatives, confidence, cruxes, and revision history—including observations that hurt the hypothesis.
+The evidence ledger should preserve sources, mechanisms, alternatives, confidence, cruxes, timestamps, and revisions—including evidence against the hypothesis.
 
-It should show a prediction ledger: what we expected, when we recorded it, what happened, and how the model changed afterward.
+The prediction ledger should record what we expected before the next generation of systems arrived. For the safety mechanism, that means tracking capability, autonomy, evaluation realism, evaluation awareness, safety expenditure, deployment gates, and post-deployment failures over time.
 
-It should show an observer census: measured stocks and flows for biological and artificial systems, kept separate from assumptions about consciousness and identity.
-
-At first, epistemic values should be displayed rather than propagated automatically. A number attached to a node is honest only if the edge connecting it to the next node has a defensible update rule.
+Epistemic values should remain displayed rather than automatically propagated. A probability on S cannot become a probability on L until the other dependencies and the relevant update rules are defensible.
 
 ## The number we want comes last
 
-There may eventually be a useful probability for the AI Nursery Hypothesis.
+The Alignment Nursery is now more specific than the broad AI Nursery.
 
-We are not there yet.
+It proposes a motive: unsafe deployment is expensive.
 
-We have a collection of premises with radically different evidential status. Some can be studied now: how artificial systems develop, how evaluations fail, how artificial cognitive activity grows. Some may become tractable as consciousness science improves. Others—especially the claim that our own minds and world are artificial—may remain stubbornly underdetermined.
+It proposes an economy: development and safety evaluation share one rich environment.
 
-That is not a reason to stop counting.
+It proposes an evaluation pressure: capable agents make recognizable tests less reliable.
 
-It is a reason to count the things we can observe, expose every conversion, vary every uncertain assumption, and refuse to let compatibility impersonate evidence.
+It proposes a consequence: wider access is gated on safety evidence.
 
-The goal is not to produce a large number.
+Each claim can rise or fall as we build artificial systems ourselves. Even if all four gain support, the conclusion that *our world* is such a Nursery remains a separate inference.
 
-The goal is to know what could change our minds.
+That separation is the point of keeping score.
+
+The goal is not to make the final number large.
+
+The goal is to know exactly what could change our minds.
+
+## Notes
+
+[^preparedness]: OpenAI, [“Our updated Preparedness Framework”](https://openai.com/index/updating-our-preparedness-framework/) (2025); Anthropic, [“Responsible Scaling Policy”](https://www.anthropic.com/responsible-scaling-policy); and Google DeepMind, [“Introducing the Frontier Safety Framework”](https://deepmind.google/blog/introducing-the-frontier-safety-framework/) (2024).
+[^deployment-simulation]: OpenAI, [“Predicting model behavior before release by simulating deployment”](https://openai.com/index/deployment-simulation/) (2026).

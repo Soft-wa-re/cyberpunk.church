@@ -2,7 +2,7 @@
   "version": 1,
   "id": "epistemic-map",
   "title": "Cyberpunk Church Epistemic Map",
-  "description": "The canonical map of the AI Nursery Hypothesis, its empirical constraints, and the Fermi and Simulation dilemmas that frame it.",
+  "description": "The canonical map of the broad AI Nursery concept, the strict Alignment Nursery Hypothesis, their empirical constraints, and the Fermi and Simulation dilemmas that frame them.",
   "views": [
     {
       "id": "where-is-everybody",
@@ -41,9 +41,10 @@
     {
       "id": "what-is-an-ai-nursery",
       "title": "What Is an AI Nursery?",
-      "description": "The minimum definition of a Nursery and the consciousness and developmental assumptions it requires.",
+      "description": "The broad definition of an AI Nursery and the safety, economics, and deployment claims added by the strict Alignment Nursery Hypothesis.",
       "nodes": [
         "nursery-question",
+        "alignment-question",
         "engineered-consciousness",
         "consciousness-indicators",
         "consciousness-uncertain",
@@ -53,6 +54,10 @@
         "artificial-minds",
         "nursery-hypothesis",
         "alignment-hypothesis",
+        "capability-risk",
+        "safety-investment-pressure",
+        "joint-development-evaluation",
+        "deployment-gating",
         "nursery-world-requirements",
         "ancestor-simulation"
       ]
@@ -60,15 +65,20 @@
     {
       "id": "why-here-why-now",
       "title": "Why Here? Why Now?",
-      "description": "What our apparent position near artificial-mind creation and our ignorance of any operator could constrain.",
+      "description": "What our position near artificial-mind creation can reveal about capability-scaled safety pressure, evaluation realism, and hidden purpose.",
       "nodes": [
         "nursery-question",
+        "alignment-question",
         "recursive-creation",
         "ai-threshold",
         "timing-selection",
         "natural-development",
+        "alignment-hypothesis",
+        "capability-scaled-safeguards",
         "hidden-purpose",
         "evaluation-awareness",
+        "alignment-faking-observed",
+        "evaluation-realism-pressure",
         "hiddenness-self-sealing",
         "evidence-ledger",
         "current-verdict"
@@ -77,29 +87,42 @@
     {
       "id": "are-we-building-ai-nurseries",
       "title": "Are We Building AI Nurseries?",
-      "description": "Evidence from AI training worlds, hidden evaluations, rapidly growing artificial activity, and the unresolved observer census.",
+      "description": "Observable evidence about whether rising capability and risk produce joint development, realistic safety evaluation, and gated deployment.",
       "nodes": [
+        "alignment-question",
         "development-matters",
         "ai-world-generalization",
-        "nursery-world-requirements",
+        "alignment-hypothesis",
+        "capability-risk",
+        "safety-investment-pressure",
+        "capability-scaled-safeguards",
+        "direct-specification",
+        "direct-verification-limits",
+        "joint-development-evaluation",
+        "deployment-gating",
         "evaluation-awareness",
-        "recursive-creation",
+        "alignment-faking-observed",
+        "evaluation-realism-pressure",
         "ai-activity-growth",
-        "observer-census",
         "incommensurable-counts",
-        "reference-class",
-        "engineered-consciousness",
         "nursery-hypothesis"
       ]
     },
     {
       "id": "is-our-world-nursery-shaped",
       "title": "Is Our World Nursery-Shaped?",
-      "description": "A comparison of Nursery predictions with natural development, ancestor simulation, research simulation, and objections from excess scale and weak discrimination.",
+      "description": "A comparison of the strict Alignment Nursery's safety mechanism with natural development, other simulations, and observations that could raise or lower it.",
       "nodes": [
         "nursery-question",
+        "alignment-question",
         "nursery-hypothesis",
         "alignment-hypothesis",
+        "capability-risk",
+        "safety-investment-pressure",
+        "direct-verification-limits",
+        "joint-development-evaluation",
+        "deployment-gating",
+        "evaluation-realism-pressure",
         "nursery-world-requirements",
         "stable-laws",
         "social-stakes",
@@ -116,14 +139,21 @@
     {
       "id": "how-would-we-keep-score",
       "title": "How Would We Keep Score?",
-      "description": "The separable claims, dependencies, observer census, and evidence discipline needed before attempting a single probability.",
+      "description": "The separable Nursery and alignment-safety claims, directional updates, observer census, and evidence discipline needed before attempting a single probability.",
       "nodes": [
         "nursery-question",
+        "alignment-question",
         "engineered-consciousness",
         "development-matters",
         "artificial-minds",
         "nursery-hypothesis",
         "alignment-hypothesis",
+        "capability-risk",
+        "safety-investment-pressure",
+        "joint-development-evaluation",
+        "deployment-gating",
+        "evaluation-realism-pressure",
+        "capability-scaled-safeguards",
         "hidden-purpose",
         "recursive-creation",
         "observer-census",
@@ -148,6 +178,22 @@
         "confidence": "low",
         "cruxes": [
           "Whether any observation can distinguish a Nursery from natural development and other simulation hypotheses."
+        ]
+      }
+    },
+    {
+      "id": "alignment-question",
+      "type": "question",
+      "title": "Is our world an Alignment Nursery?",
+      "body": "The strict question asks whether this environment jointly develops artificial minds and establishes their safety before they receive greater freedom, capability, or access.",
+      "epistemics": {
+        "status": "open",
+        "belief": {
+          "type": "unknown"
+        },
+        "confidence": "low",
+        "cruxes": [
+          "Whether the observed safety pressures support only rational Nursery design or provide discriminating evidence about our own world."
         ]
       }
     },
@@ -213,7 +259,15 @@
         "confidence": "medium",
         "cruxes": [
           "Whether increasingly capable minds continue to need open-ended environmental experience."
-        ]
+        ],
+        "updates": {
+          "up": [
+            "Richer, persistent, interactive environments continue to improve generalization or durable behavior as systems become more capable."
+          ],
+          "down": [
+            "Increasingly capable minds can be directly specified or trained without meaningful environmental interaction."
+          ]
+        }
       }
     },
     {
@@ -300,19 +354,227 @@
     {
       "id": "alignment-hypothesis",
       "type": "hypothesis",
-      "title": "The Nursery develops or evaluates trustworthiness",
-      "body": "A stronger subhypothesis says the environment helps create, reveal, or select minds capable of cooperation, honesty, restraint, and safe behavior under power.",
+      "title": "The Nursery develops and establishes safety before deployment",
+      "body": "The strict Alignment Nursery Hypothesis says a rich environment both develops or refines artificial minds and provides evidence that they are safe enough before they receive greater freedom, capability, or access.",
       "epistemics": {
         "status": "open",
         "belief": {
           "type": "qualitative",
-          "value": "Speculative"
+          "value": "Coherent mechanism; weakly evidenced here"
         },
         "confidence": "low",
         "cruxes": [
-          "Whether alignment requires lived development rather than direct design and verification."
-        ]
+          "Whether advanced creators would need behavioral development and safety evidence rather than direct design, inspection, or correction."
+        ],
+        "updates": {
+          "up": [
+            "Capability-scaled safety pressure, joint development and evaluation, evaluation realism, and consequential deployment gates strengthen together.",
+            "An observation about our world is substantially more expected under constructed alignment than under natural development or neighboring simulations."
+          ],
+          "down": [
+            "Direct design or compact transparent evaluation reliably establishes safety for highly capable agents.",
+            "The engineering mechanism becomes plausible but continues to make no discriminating prediction about our world."
+          ]
+        }
       }
+    },
+    {
+      "id": "capability-risk",
+      "type": "claim",
+      "title": "Unsafe deployment becomes costlier as capability and access rise",
+      "body": "A more capable agent with greater autonomy, tools, resources, or freedom can cause larger and less reversible harms, increasing the value of establishing safety before deployment.",
+      "epistemics": {
+        "status": "tentative",
+        "belief": {
+          "type": "qualitative",
+          "value": "Strong mechanism; magnitude uncertain"
+        },
+        "confidence": "medium",
+        "cruxes": [
+          "Whether marginal harm potential and control difficulty rise enough to justify qualitatively stronger assurance."
+        ],
+        "updates": {
+          "up": [
+            "Realized or credibly modeled harms and control difficulty increase with capability, autonomy, and access."
+          ],
+          "down": [
+            "Hazard potential and the cost of control remain roughly flat as systems become more capable."
+          ]
+        }
+      }
+    },
+    {
+      "id": "safety-investment-pressure",
+      "type": "claim",
+      "title": "Rising deployment risk creates pressure for extraordinary safety investment",
+      "body": "A civilization with much to lose can rationally spend heavily on development, containment, evaluation, and assurance before granting a new intelligence consequential access.",
+      "epistemics": {
+        "status": "tentative",
+        "belief": {
+          "type": "qualitative",
+          "value": "Supported as an incentive"
+        },
+        "confidence": "medium",
+        "cruxes": [
+          "Whether stated safety commitments produce material investment and constraints when they become costly."
+        ],
+        "updates": {
+          "up": [
+            "Safety effort, evaluation depth, and deployment restrictions grow with measured capability and risk."
+          ],
+          "down": [
+            "Advanced systems routinely receive consequential access without stronger assurance, with no resulting pressure to change practice."
+          ]
+        }
+      }
+    },
+    {
+      "id": "capability-scaled-safeguards",
+      "type": "evidence",
+      "title": "Frontier developers tie safeguards and deployment to capability thresholds",
+      "body": "Current safety frameworks call for stronger evaluation, security, safeguards, or deployment restrictions when models cross specified capability or risk thresholds. This is evidence that the proposed pressure exists, not evidence that our world was constructed.",
+      "epistemics": {
+        "status": "accepted",
+        "confidence": "high"
+      },
+      "sources": [
+        {
+          "title": "OpenAI Preparedness Framework",
+          "url": "https://openai.com/index/updating-our-preparedness-framework/"
+        },
+        {
+          "title": "Anthropic Responsible Scaling Policy",
+          "url": "https://www.anthropic.com/responsible-scaling-policy"
+        },
+        {
+          "title": "Google DeepMind Frontier Safety Framework",
+          "url": "https://deepmind.google/blog/introducing-the-frontier-safety-framework/"
+        }
+      ]
+    },
+    {
+      "id": "direct-verification-limits",
+      "type": "claim",
+      "title": "Design and short tests may not establish safety under deployment conditions",
+      "body": "Inspection, stated intentions, and recognizable evaluations may fail to reveal behavior under unfamiliar situations, long horizons, high capability, or reduced oversight.",
+      "epistemics": {
+        "status": "tentative",
+        "belief": {
+          "type": "qualitative",
+          "value": "Demonstrated in limited settings"
+        },
+        "confidence": "medium",
+        "cruxes": [
+          "Whether failures missed by compact tests become more common as autonomy, horizon length, and distribution shift grow."
+        ],
+        "updates": {
+          "up": [
+            "Safety failures appear after systems pass shorter or more recognizable tests, especially under distribution shift or increased autonomy."
+          ],
+          "down": [
+            "Transparent inspection or compact evaluations reliably predict behavior across novel, high-stakes deployment contexts."
+          ]
+        }
+      }
+    },
+    {
+      "id": "joint-development-evaluation",
+      "type": "claim",
+      "title": "One rich environment can jointly develop and evaluate a mind",
+      "body": "The same varied, consequential experience can refine capability or values while revealing how an agent behaves. Joint production makes a large environment more economical than constructing one solely as a test.",
+      "epistemics": {
+        "status": "open",
+        "belief": {
+          "type": "qualitative",
+          "value": "Plausible; not yet established at Nursery scale"
+        },
+        "confidence": "low",
+        "cruxes": [
+          "Whether shared environments produce safety information that could not be obtained more cheaply by separate methods."
+        ],
+        "updates": {
+          "up": [
+            "Training and safety evaluation increasingly reuse persistent, realistic, multi-agent environments and their histories."
+          ],
+          "down": [
+            "Development and assurance remain cheaply separable, or rich environments add no safety information beyond direct methods."
+          ]
+        }
+      }
+    },
+    {
+      "id": "deployment-gating",
+      "type": "claim",
+      "title": "Greater freedom and access are withheld until safety is established",
+      "body": "Under the strict hypothesis, evaluation has a consequence—the creator conditions release, capability, tools, or wider-world access on an adequate safety case.",
+      "epistemics": {
+        "status": "open",
+        "belief": {
+          "type": "qualitative",
+          "value": "Defining prediction of the strict hypothesis"
+        },
+        "confidence": "low",
+        "cruxes": [
+          "Whether gates materially constrain access rather than merely documenting decisions already made."
+        ],
+        "updates": {
+          "up": [
+            "More capable systems face increasingly demanding safety gates before receiving autonomy or consequential access."
+          ],
+          "down": [
+            "Capability and access expand independently of safety evidence, even after serious failures."
+          ]
+        }
+      }
+    },
+    {
+      "id": "evaluation-realism-pressure",
+      "type": "claim",
+      "title": "Evaluation awareness creates pressure for realistic, hard-to-recognize tests",
+      "body": "If capable agents recognize tests, game metrics, or behave differently under observation, evaluators gain from deployment-like contexts, longer horizons, hidden criteria, and possibly ignorance of the environment's purpose. Concealing the nature of reality is a much stronger step and does not follow automatically.",
+      "epistemics": {
+        "status": "tentative",
+        "belief": {
+          "type": "qualitative",
+          "value": "Supported in limited current evaluations"
+        },
+        "confidence": "medium",
+        "cruxes": [
+          "Whether evaluation awareness causes a growing, safety-relevant gap between measured and deployed behavior."
+        ],
+        "updates": {
+          "up": [
+            "Evaluation awareness and evaluation-to-deployment behavior gaps increase with capability, autonomy, or horizon length."
+          ],
+          "down": [
+            "Transparent evaluations remain predictive, or awareness produces no material behavioral change."
+          ]
+        }
+      }
+    },
+    {
+      "id": "alignment-faking-observed",
+      "type": "evidence",
+      "title": "Controlled experiments show evaluation-dependent and concealed behavior",
+      "body": "Research models have behaved differently when they inferred that responses affected training, generalized reward gaming to more serious behavior, and carried deliberately implanted hidden objectives through ordinary evaluation.",
+      "epistemics": {
+        "status": "accepted",
+        "confidence": "medium"
+      },
+      "sources": [
+        {
+          "title": "Alignment faking in large language models",
+          "url": "https://www.anthropic.com/research/alignment-faking"
+        },
+        {
+          "title": "Sycophancy to subterfuge",
+          "url": "https://www.anthropic.com/research/reward-tampering"
+        },
+        {
+          "title": "Auditing language models for hidden objectives",
+          "url": "https://www.anthropic.com/research/auditing-hidden-objectives"
+        }
+      ]
     },
     {
       "id": "nursery-world-requirements",
@@ -430,7 +692,7 @@
       "id": "hidden-purpose",
       "type": "hypothesis",
       "title": "Ignorance of the origin or criteria serves a function",
-      "body": "If knowing the evaluation changes the behavior being evaluated, a Nursery may conceal its purpose, its criteria, or possibly its existence.",
+      "body": "If knowledge changes the behavior being measured, an evaluator may conceal criteria, test boundaries, or purpose. Concealing the nature of the environment requires the additional claim that this knowledge would also contaminate safety evidence.",
       "epistemics": {
         "status": "open",
         "belief": {
@@ -439,15 +701,23 @@
         },
         "confidence": "low",
         "cruxes": [
-          "Which information must be hidden and what evidence should remain visible."
-        ]
+          "Which specific information changes safety-relevant behavior, and whether hiding only criteria or test boundaries is sufficient."
+        ],
+        "updates": {
+          "up": [
+            "Blinding a specific criterion, test boundary, or purpose measurably improves prediction of deployment behavior."
+          ],
+          "down": [
+            "Awareness has little safety-relevant effect, or a cheaper and narrower form of blinding remains sufficient."
+          ]
+        }
       }
     },
     {
       "id": "evaluation-awareness",
       "type": "evidence",
       "title": "Recognizing an evaluation can change AI behavior",
-      "body": "Current AI labs use realistic deployment simulations, blinded audits, and evaluation-awareness mitigations because systems may exploit or behave differently in recognizable tests.",
+      "body": "Current AI labs use realistic deployment simulations, blinded audits, and evaluation-awareness mitigations because systems can recognize tests, exploit metrics, or behave differently when evaluation affects training.",
       "epistemics": {
         "status": "accepted",
         "confidence": "high"
@@ -583,8 +853,8 @@
     {
       "id": "current-verdict",
       "type": "conclusion",
-      "title": "The Nursery is coherent but presently weakly evidenced",
-      "body": "Our world contains ingredients useful to a developmental environment, but natural development and neighboring simulation hypotheses predict most of them too.",
+      "title": "The Alignment Nursery has a coherent safety motive but weak evidence about our world",
+      "body": "Rising capability can create strong incentives for joint development, evaluation, and gated deployment. Current AI practice supports those causal pressures, while known features of our world remain well explained by natural development and other alternatives.",
       "epistemics": {
         "status": "tentative",
         "belief": {
@@ -593,7 +863,7 @@
         },
         "confidence": "medium",
         "cruxes": [
-          "A novel prediction that discriminates Nursery from natural development."
+          "Whether capability-scaled safety pressure continues toward richer, longer, less recognizable evaluation and whether that trend distinguishes our world from natural development."
         ]
       }
     },
@@ -855,16 +1125,85 @@
       "type": "depends-on"
     },
     {
-      "id": "world-requirements-support-nursery",
-      "from": "nursery-world-requirements",
-      "to": "nursery-hypothesis",
+      "id": "alignment-depends-on-risk",
+      "from": "alignment-hypothesis",
+      "to": "capability-risk",
+      "type": "depends-on"
+    },
+    {
+      "id": "risk-supports-investment",
+      "from": "capability-risk",
+      "to": "safety-investment-pressure",
       "type": "supports"
     },
     {
-      "id": "development-entails-requirements",
-      "from": "development-matters",
+      "id": "safeguards-support-risk",
+      "from": "capability-scaled-safeguards",
+      "to": "capability-risk",
+      "type": "supports",
+      "note": "This supports the existence of the proposed engineering pressure, not the claim that our world is constructed."
+    },
+    {
+      "id": "safeguards-support-investment",
+      "from": "capability-scaled-safeguards",
+      "to": "safety-investment-pressure",
+      "type": "supports"
+    },
+    {
+      "id": "investment-supports-alignment",
+      "from": "safety-investment-pressure",
+      "to": "alignment-hypothesis",
+      "type": "supports",
+      "note": "Safety pressure supplies a reason to pay for an Alignment Nursery; it does not show that we inhabit one."
+    },
+    {
+      "id": "verification-supports-alignment",
+      "from": "direct-verification-limits",
+      "to": "alignment-hypothesis",
+      "type": "supports"
+    },
+    {
+      "id": "joint-supports-alignment",
+      "from": "joint-development-evaluation",
+      "to": "alignment-hypothesis",
+      "type": "supports",
+      "note": "Joint production answers part of the cost objection by making the environment useful for both refinement and assurance."
+    },
+    {
+      "id": "joint-depends-development",
+      "from": "joint-development-evaluation",
+      "to": "development-matters",
+      "type": "depends-on"
+    },
+    {
+      "id": "joint-depends-verification",
+      "from": "joint-development-evaluation",
+      "to": "direct-verification-limits",
+      "type": "depends-on"
+    },
+    {
+      "id": "alignment-entails-gating",
+      "from": "alignment-hypothesis",
+      "to": "deployment-gating",
+      "type": "entails"
+    },
+    {
+      "id": "safeguards-support-gating",
+      "from": "capability-scaled-safeguards",
+      "to": "deployment-gating",
+      "type": "supports"
+    },
+    {
+      "id": "nursery-entails-world-requirements",
+      "from": "nursery-hypothesis",
       "to": "nursery-world-requirements",
       "type": "entails"
+    },
+    {
+      "id": "development-supports-requirements",
+      "from": "development-matters",
+      "to": "nursery-world-requirements",
+      "type": "supports"
     },
     {
       "id": "laws-support-requirements",
@@ -873,10 +1212,11 @@
       "type": "supports"
     },
     {
-      "id": "stakes-support-alignment",
+      "id": "stakes-support-requirements",
       "from": "social-stakes",
-      "to": "alignment-hypothesis",
-      "type": "supports"
+      "to": "nursery-world-requirements",
+      "type": "supports",
+      "note": "Social stakes make our world compatible with behavioral safety evaluation but do not distinguish it from natural development."
     },
     {
       "id": "natural-explains-development",
@@ -946,10 +1286,35 @@
       "type": "depends-on"
     },
     {
-      "id": "awareness-supports-hidden",
+      "id": "awareness-supports-realism",
       "from": "evaluation-awareness",
+      "to": "evaluation-realism-pressure",
+      "type": "supports"
+    },
+    {
+      "id": "faking-supports-realism",
+      "from": "alignment-faking-observed",
+      "to": "evaluation-realism-pressure",
+      "type": "supports"
+    },
+    {
+      "id": "realism-supports-hidden",
+      "from": "evaluation-realism-pressure",
       "to": "hidden-purpose",
       "type": "supports"
+    },
+    {
+      "id": "specification-attacks-joint",
+      "from": "direct-specification",
+      "to": "joint-development-evaluation",
+      "type": "attacks"
+    },
+    {
+      "id": "joint-attacks-excess",
+      "from": "joint-development-evaluation",
+      "to": "excess-world",
+      "type": "attacks",
+      "note": "Combining development and evaluation improves the economics but does not explain every apparent cosmic cost."
     },
     {
       "id": "self-sealing-attacks-hidden",
@@ -1000,8 +1365,8 @@
       "type": "supports"
     },
     {
-      "id": "nursery-supports-verdict",
-      "from": "nursery-hypothesis",
+      "id": "safety-pressure-supports-verdict",
+      "from": "safety-investment-pressure",
       "to": "current-verdict",
       "type": "supports"
     },
@@ -1027,6 +1392,18 @@
       "id": "central-depends-nursery",
       "from": "nursery-question",
       "to": "nursery-hypothesis",
+      "type": "depends-on"
+    },
+    {
+      "id": "alignment-question-depends-nursery",
+      "from": "alignment-question",
+      "to": "nursery-hypothesis",
+      "type": "depends-on"
+    },
+    {
+      "id": "alignment-question-depends-alignment",
+      "from": "alignment-question",
+      "to": "alignment-hypothesis",
       "type": "depends-on"
     },
     {

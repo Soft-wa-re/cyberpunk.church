@@ -9,107 +9,124 @@ tags:
   - AI Nursery
 ---
 
-We do not know how an intelligence capable of constructing conscious minds would develop them.
+We do not know how a civilization capable of constructing conscious minds would develop them or decide when they are safe.
 
-We can observe how one civilization—ours—has begun trying to build general artificial intelligence.
+We can observe how one civilization—ours—has begun building increasingly capable artificial agents.
 
-We train systems on records of human behavior. We place agents inside games and simulated environments. We expose them to varied problems, reward some actions, punish others, hide parts of the evaluation, and test whether what they learned survives outside the situations they have seen.
+We train systems on records of human behavior. We place agents inside games and simulated environments. We expose them to varied problems, test whether their behavior generalizes, search for concealed objectives, and restrict some deployments when capabilities cross risk thresholds.
 
-None of this proves that the universe is an AI nursery.
+None of this shows that our universe is an AI Nursery.
 
-It does show that nurseries are not an arbitrary answer to the question “Why would anyone simulate a world?” Constructed environments are among the first tools *we* reached for when we wanted artificial systems to learn, adapt, and reveal how they behave.
+It lets us test whether the engineering pressures proposed by the stricter **Alignment Nursery** actually emerge.
 
-## Worlds produce experience
+## Worlds develop capability
 
 A static training set contains examples. An environment contains consequences.
 
-An agent acts, the state of the world changes, and the result becomes part of what the agent encounters next. Other agents can cooperate, compete, deceive, surprise, and create situations the designer did not specify individually. A procedurally generated world can produce more experiences than its designers could write by hand.
+An agent acts, the state changes, and the result becomes part of what it encounters next. Other agents can cooperate, compete, deceive, and create situations the designer did not specify individually. Procedural generation can produce more experiences than a team could write by hand.
 
-OpenAI's Procgen project illustrated one reason this matters. Reinforcement-learning agents trained on small collections of levels often appeared competent while overfitting to familiar situations. Depending on the task, hundreds or thousands of varied levels were needed before performance generalized reliably to new ones.[^procgen]
+OpenAI's Procgen benchmark showed that reinforcement-learning agents trained on small collections of levels could appear competent while overfitting; depending on the task, hundreds or thousands of varied levels were needed for reliable generalization.[^procgen]
 
-Google DeepMind's XLand extended the idea into a large space of multiplayer games. Its agents trained across thousands of worlds and millions of tasks, with the training process generating new challenges as the agents improved. The resulting systems displayed more general behavior on held-out tasks than systems trained on narrow environments.[^xland]
+Google DeepMind's XLand trained agents across thousands of worlds and millions of tasks, generating new challenges as the agents improved.[^xland] SIMA later trained one agent across multiple commercial games and research environments; training across games improved performance even in an environment withheld from training.[^sima]
 
-SIMA later trained a single agent across multiple commercial video games and research worlds. An agent trained across games generalized better than agents confined to one, including in an environment withheld from training.[^sima]
+These systems are not evidence of artificial consciousness. Their apparent development may be optimization without experience.
 
-These systems are not evidence of artificial consciousness. Their worlds are crude compared with ours, their objectives are supplied from outside, and their apparent development may be optimization without experience.
+They do support one premise:
 
-But they demonstrate a relationship the Nursery Hypothesis requires:
+> When we want behavior that survives unfamiliar situations, we use varied environments and let interaction do work that direct specification did not.
 
-> When we want behavior that survives unfamiliar situations, we create varied environments and let interaction do work that direct specification did not.
+## Safety changes the economics
+
+Capability is valuable. Unsafe capability is costly.
+
+A system with more autonomy, tools, resources, and access can create larger harms. If a failure could be severe or irreversible, an advanced civilization has a reason to spend much more before deployment than it would on an ordinary product test.
+
+Our current institutions already express this pressure. OpenAI's Preparedness Framework requires stronger safeguards before deploying systems with specified high-risk capabilities.[^preparedness] Anthropic's Responsible Scaling Policy and Google DeepMind's Frontier Safety Framework similarly connect capability thresholds to evaluations, security, safeguards, or deployment controls.[^responsible-scaling][^frontier-safety]
+
+Policies are not outcomes, and public commitments are not proof that safeguards work. They are still an observation: several frontier developers independently expect assurance requirements to rise with capability and risk.
+
+That is the strongest motivation for an Alignment Nursery. A creator need not spend civilization-scale resources from curiosity. It may be protecting itself and others from a powerful intelligence it cannot yet trust.
+
+## One environment can do two jobs
+
+The expense is easier to explain if the environment is not purely an exam.
+
+Development and safety evaluation can share the same costly substrate. The situations that teach an agent to plan, cooperate, recover from mistakes, and act under uncertainty can also reveal how it uses power, handles conflicts, and responds when oversight is weak.
+
+The process can alternate rather than separate the jobs:
+
+1. experience develops or refines the mind;
+2. behavior reveals a failure or uncertainty;
+3. feedback changes the mind or environment;
+4. new situations test whether the change generalizes;
+5. access expands only when the accumulated safety case is adequate.
+
+We already mix training, evaluation, red-teaming, mitigation, and deployment decisions. OpenAI reports that deployment-simulation results have identified blind spots during development and informed mitigations and release decisions.[^deployment-simulation]
+
+That is not yet a lifelong environment, and it does not establish that joint production must continue at larger scales. It gives us a direct prediction: as capability and risk rise, development and safety evaluation should become more integrated, not less.
+
+If assurance remains cheap and separable—if inspection or short tests reliably establish safety across novel conditions—the economic case for an Alignment Nursery weakens.
 
 ## Tests become less obvious
 
-Capability is only part of the problem. Developers also want to know how a system will behave after deployment.
+A benchmark works only while passing it predicts behavior elsewhere.
 
-A benchmark works only while performance on the benchmark predicts performance elsewhere. Once a system recognizes the test, it may exploit its regularities or produce the behavior the evaluator rewards without acquiring the property the evaluator intended to measure.
+Once an agent recognizes a test, it may exploit its regularities, optimize the visible metric, or behave differently until the evaluation ends. More capable agents may be better at modeling the evaluator and the boundary between testing and deployment.
 
-This has pushed current research toward hidden tests, realistic scenarios, adversarial evaluation, and attempts to detect concealed objectives. OpenAI's deployment-simulation work constructs realistic conversation histories and tool-use situations partly to reduce evaluation awareness.[^deployment-simulation] Anthropic has trained models with known hidden objectives, then given blinded teams the task of discovering them in order to evaluate auditing methods.[^alignment-audits]
+Current work has begun measuring that problem. Deployment Simulation uses realistic conversation histories partly to reduce clues that tell a model it is being evaluated.[^deployment-simulation] Controlled alignment-faking experiments produced different behavior depending on whether a model believed its responses affected training.[^alignment-faking] Blinded auditing games test whether investigators can discover deliberately implanted hidden objectives.[^alignment-audits]
 
-Again, the analogy has limits. Present models do not need to be conscious to recognize patterns in an evaluation. A laboratory test lasting hours is not a lifetime. Developers can inspect parameters and logs unavailable to a hypothetical creator observing an autonomous world.
+The experiments are limited. They do not demonstrate a persistent malicious agent or a need to hide an entire world.
 
-Still, one premise has crossed from speculation into practice: an evaluator may learn more when the subject cannot trivially distinguish the evaluation from the situation that matters.
+They support a narrower pressure:
 
-That gives the Hidden Purpose claim a mechanism. It does not give it a free pass.
+> If recognizable evaluations become less predictive as capability rises, evaluators have reason to use more realistic, longer-horizon, and harder-to-recognize environments.
 
-## How many artificial minds are there?
+We can now watch whether that pressure grows or stalls.
 
-The temptation is to count.
+## Scale counts, but for a different claim
 
-Humans number about 8.2 billion.[^human-population] Animals outnumber us by staggering margins: one empirical estimate puts the number of ants alone near 20 quadrillion, around 2.5 million ants for every human.[^ants]
+Our civilization is also devoting rapidly increasing resources to artificial cognition. Google reported more than 3.2 quadrillion tokens processed across its AI surfaces in May 2026, while OpenAI reported more than 2.5 billion ChatGPT messages per day in July 2025.[^google-tokens][^openai-messages]
 
-Artificial cognition is also occurring at enormous scale. Google reported processing more than 3.2 quadrillion tokens across its AI surfaces in May 2026.[^google-tokens] OpenAI reported more than 2.5 billion ChatGPT messages per day in July 2025.[^openai-messages]
+Those numbers do not count minds. Tokens and messages are flows of computation, not persistent observers. We cannot compare them directly with roughly 8.2 billion humans or with animal populations.[^human-population]
 
-Those numbers count for something. They do not count the same thing.
+They do measure activity. They can update the claim that a technological civilization may devote extraordinary resources to creating and refining artificial systems. They do not update artificial consciousness or show that we are artificial.
 
-“Eight billion humans” is a stock of living individuals. “Three quadrillion tokens per month” is a flow of computation. An ant is not a human-sized unit of experience. A token is not an observer. One set of model weights can serve millions of simultaneous conversations, while a single conversation can start and end without persistent memory.
+Keep the units attached to the claims they can actually bear.
 
-The ant estimate makes the problem vivid. By individual count, ants outnumber humans by more than six orders of magnitude. By dry-carbon biomass, the same study estimates all ants at roughly one-fifth of human biomass. Change the unit and the ratio reverses.
+## What should move the hypothesis?
 
-Counting models is worse. If the unit is trained model families, there are few. If it is active inference processes, there may be millions. If it is tokens, activity is measured in quadrillions. None tells us whether there is anybody home.
+The strict hypothesis should rise if, as capability and risk increase:
 
-## Count time, then expose the assumptions
+- safety investment grows faster than ordinary product testing;
+- consequential access becomes conditional on stronger safety cases;
+- direct inspection and short evaluations repeatedly miss deployment behavior;
+- training and safety evaluation converge in persistent, realistic environments;
+- evaluation awareness produces larger evaluation-to-deployment gaps;
+- longer histories and social interaction reveal failures that short tasks miss.
 
-The least misleading comparison would begin with candidate observer-time rather than raw entities:
+It should fall if:
 
-`candidate observer-time = active duration × probability of consciousness × relative experience rate × reference-class weight`
+- capability grows without increasing hazard or control difficulty;
+- transparent, compact evaluations remain strongly predictive;
+- trustworthy behavior can be directly specified and verified;
+- development and safety evaluation remain cheaply separable;
+- capable systems receive broad access regardless of safety evidence, without failures creating pressure for stronger gates.
 
-The measured quantity and the judgment calls must remain separate.
+These are observations about our engineering trajectory. Even a strong upward update would establish only that an Alignment Nursery is a rational design. The additional claim that *our* world is one remains separate.
 
-For humans, population and duration are measurable, while conscious experience is our reference point. For animal groups, population estimates are possible, but sentience and experience may differ radically by species. “Animals” cannot be one category that treats an ape, trout, ant, and nematode as equivalent units.
-
-For language models, providers can sometimes report tokens, messages, compute, or active users. Converting those flows into persistent processes is difficult. Converting processes into conscious experience is entirely unsettled.
-
-That uncertainty is a reason to perform sensitivity analysis, not a reason to abandon numbers.
-
-We can ask what assumptions would be required for artificial observer-time to exceed human observer-time. We can vary the probability that a model process is conscious. We can test whether the result depends almost entirely on that probability, on process duration, or on the definition of an individual. We can record how the boundary moves as artificial activity grows.
-
-The useful output may be a phase diagram rather than a total: regions of the assumption space in which humans, animal groups, or artificial processes dominate.
-
-## What the numbers can update
-
-The observer census cannot tell us that present language models are conscious. A trillion unconscious calculations remain unconscious.
-
-It cannot tell us that we are artificial. Even a future dominated by artificial minds does not determine the origin of present humans without an additional sampling argument.
-
-It can tell us how quickly one civilization is increasing the quantity of candidate artificial cognition. It can measure whether artificial systems become persistent agents rather than disposable calls. It can track whether their development relies increasingly on worlds, other agents, long histories, and hidden evaluations.
-
-Those observations bear directly on two parts of the Nursery model:
-
-- **Development:** Do increasingly capable systems require richer experience?
-- **Recursive creation:** Does a technological civilization devote an increasing share of its resources to producing and testing new minds?
-
-Humanity is a sample of one. But this is the only sample whose engineering choices we can watch from the inside.
-
-The strongest fact is not that our environments resemble the universe. It is that, almost as soon as we began building general artificial behavior, we began building worlds for it to develop in.
+Humanity is a sample of one, but it is the only sample whose design decisions we can observe from inside. The right comparison is not between the universe and a video game. It is between the causal pressures predicted by the Alignment Nursery and the pressures that appear as we build increasingly capable agents ourselves.
 
 ## Notes
 
-[^procgen]: OpenAI, [“Procgen Benchmark”](https://openai.com/index/procgen-benchmark/) (2019). The benchmark uses procedurally generated training and test levels to measure generalization.
+[^procgen]: OpenAI, [“Procgen Benchmark”](https://openai.com/index/procgen-benchmark/) (2019).
 [^xland]: Google DeepMind, [“Generally capable agents emerge from open-ended play”](https://deepmind.google/blog/generally-capable-agents-emerge-from-open-ended-play/) (2021).
 [^sima]: Google DeepMind, [“A generalist AI agent for 3D virtual environments”](https://deepmind.google/blog/sima-generalist-ai-agent-for-3d-virtual-environments/) (2024).
+[^preparedness]: OpenAI, [“Our updated Preparedness Framework”](https://openai.com/index/updating-our-preparedness-framework/) (2025).
+[^responsible-scaling]: Anthropic, [“Responsible Scaling Policy”](https://www.anthropic.com/responsible-scaling-policy), current version and change log.
+[^frontier-safety]: Google DeepMind, [“Introducing the Frontier Safety Framework”](https://deepmind.google/blog/introducing-the-frontier-safety-framework/) (2024).
 [^deployment-simulation]: OpenAI, [“Predicting model behavior before release by simulating deployment”](https://openai.com/index/deployment-simulation/) (2026).
+[^alignment-faking]: Anthropic, [“Alignment faking in large language models”](https://www.anthropic.com/research/alignment-faking) (2024).
 [^alignment-audits]: Anthropic, [“Auditing language models for hidden objectives”](https://www.anthropic.com/research/auditing-hidden-objectives) (2025).
-[^human-population]: United Nations, [*World Population Prospects 2024* summary](https://www.un.org/sustainabledevelopment/blog/2024/07/press-release-wpp2024/).
-[^ants]: Patrick Schultheiss et al., [“The abundance, biomass, and distribution of ants on Earth”](https://pmc.ncbi.nlm.nih.gov/articles/PMC9546634/), *PNAS* 119, no. 40 (2022).
-[^google-tokens]: Google, [I/O 2026 keynote summary](https://blog.google/intl/fr-fr/nouvelles-de-lentreprise/technologie/sundar-pichai-io-2026/). The reported total covers Google's platforms, not all global AI use.
+[^google-tokens]: Google, [I/O 2026 keynote summary](https://blog.google/intl/fr-fr/nouvelles-de-lentreprise/technologie/sundar-pichai-io-2026/). The total covers Google's platforms, not global AI use.
 [^openai-messages]: OpenAI, [“OpenAI's new economic analysis”](https://openai.com/global-affairs/new-economic-analysis/) (2025).
+[^human-population]: United Nations, [*World Population Prospects 2024* summary](https://www.un.org/sustainabledevelopment/blog/2024/07/press-release-wpp2024/).

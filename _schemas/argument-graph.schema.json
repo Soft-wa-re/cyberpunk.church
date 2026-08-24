@@ -129,6 +129,27 @@
         }
       ]
     },
+    "updates": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "up": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "down": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        }
+      }
+    },
     "epistemics": {
       "type": "object",
       "additionalProperties": false,
@@ -147,6 +168,9 @@
           "items": {
             "$ref": "#/$defs/nonEmptyString"
           }
+        },
+        "updates": {
+          "$ref": "#/$defs/updates"
         }
       }
     },
