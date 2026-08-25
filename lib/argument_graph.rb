@@ -320,6 +320,9 @@ module ArgumentGraph
   end
 
   class Compiler
+    MAPPED_CLAIM_PATTERN = /\[[^\]\n]+\]\(([^)\n]+)\)\{:[^}\n]*\.mapped-claim[^}\n]*\}/
+    MAPPED_CLAIM_TARGET_PATTERN = /\A#argument-map\?node=([a-z0-9]+(?:-[a-z0-9]+)*)\z/
+
     def initialize(root)
       @root = Pathname(root)
     end
@@ -355,11 +358,19 @@ module ArgumentGraph
         path = Pathname(post_path)
         next unless path.file?
 
-        frontmatter = read_frontmatter(path)
-        next unless frontmatter&.key?("argument_graph")
+        source = path.read
+        frontmatter = read_frontmatter(path, source)
+        mapped_claim_targets = source.scan(MAPPED_CLAIM_PATTERN).flatten
+        relative = path.relative_path_from(@root)
+
+        unless frontmatter&.key?("argument_graph")
+          mapped_claim_targets.each do |target|
+            errors << "#{relative}: mapped claim '#{target}' requires argument_graph frontmatter"
+          end
+          next
+        end
 
         graph_id = frontmatter["argument_graph"]
-        relative = path.relative_path_from(@root)
         unless graph_id.is_a?(String)
           errors << "#{relative}: argument_graph must be a graph id string"
           next
@@ -369,26 +380,48 @@ module ArgumentGraph
           next
         end
 
-        next unless frontmatter.key?("argument_graph_view")
+        graph = graphs.fetch(graph_id)
+        view = nil
+        if frontmatter.key?("argument_graph_view")
+          view_id = frontmatter["argument_graph_view"]
+          unless view_id.is_a?(String)
+            errors << "#{relative}: argument_graph_view must be a view id string"
+            next
+          end
 
-        view_id = frontmatter["argument_graph_view"]
-        unless view_id.is_a?(String)
-          errors << "#{relative}: argument_graph_view must be a view id string"
-          next
+          view = Array(graph["views"]).find do |candidate|
+            candidate.is_a?(Hash) && candidate["id"] == view_id
+          end
+          unless view
+            errors << "#{relative}: argument graph '#{graph_id}' has no view '#{view_id}'"
+            next
+          end
         end
 
-        view_ids = Array(graphs.fetch(graph_id)["views"]).filter_map do |view|
-          view["id"] if view.is_a?(Hash)
-        end
-        unless view_ids.include?(view_id)
-          errors << "#{relative}: argument graph '#{graph_id}' has no view '#{view_id}'"
+        node_ids = Array(graph["nodes"]).filter_map { |node| node["id"] if node.is_a?(Hash) }.to_set
+        mapped_claim_targets.each do |target|
+          match = target.match(MAPPED_CLAIM_TARGET_PATTERN)
+          unless match
+            errors << "#{relative}: mapped claim '#{target}' must target #argument-map?node=<node-id>"
+            next
+          end
+
+          node_id = match[1]
+          unless node_ids.include?(node_id)
+            errors << "#{relative}: mapped claim refers to nonexistent node '#{node_id}' in graph '#{graph_id}'"
+            next
+          end
+
+          if view && !Array(view["nodes"]).include?(node_id)
+            errors << "#{relative}: mapped claim node '#{node_id}' is not included in view '#{view["id"]}'"
+          end
         end
       end
       errors
     end
 
-    def read_frontmatter(path)
-      match = path.read.match(/\A---\s*\n(.*?)\n---\s*\n/m)
+    def read_frontmatter(path, source = path.read)
+      match = source.match(/\A---\s*\n(.*?)\n---\s*\n/m)
       return nil unless match
 
       YAML.safe_load(match[1], aliases: false)

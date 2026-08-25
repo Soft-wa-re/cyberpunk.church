@@ -23,7 +23,7 @@ Suppose the world exists because minds need somewhere to develop.
 
 That is the broad **AI Nursery** concept:
 
-> We may be artificial conscious minds developing inside an environment constructed or selected by another intelligence.
+> [We may be artificial conscious minds developing inside an environment constructed or selected by another intelligence.](#argument-map?node=nursery-hypothesis){:.mapped-claim}
 
 The stronger hypothesis adds a reason to go to extraordinary lengths.
 
@@ -49,9 +49,9 @@ It does require conscious inhabitants. We have no accepted test for artificial c
 
 The **Alignment Nursery Hypothesis** is narrower:
 
-> An Alignment Nursery uses a rich environment both to develop or refine artificial minds and to establish that they are safe enough before granting them greater freedom, capability, or access.
+> [An Alignment Nursery uses a rich environment both to develop or refine artificial minds and to establish that they are safe enough before granting them greater freedom, capability, or access.](#argument-map?node=alignment-hypothesis){:.mapped-claim}
 
-Safety is not an optional theme added to the broad Nursery. It is the strongest known motivation for paying its cost.
+[Safety is not an optional theme added to the broad Nursery. It is the strongest known motivation for paying its cost.](#argument-map?node=safety-investment-pressure){:.mapped-claim}
 
 A powerful intelligence can create enormous value, but capability also raises the cost of error. An agent with more autonomy, better tools, wider access, and a longer time horizon can do more good and more harm. If deployment could expose a civilization to irreversible loss, spending extraordinary resources before deployment may be rational.
 
@@ -71,7 +71,7 @@ An environment can then perform three roles:
 - **Revelation:** unfamiliar situations expose properties that short, recognizable tests miss.
 - **Selection:** different developmental outcomes receive different access or futures.
 
-The economics improve when those roles overlap. A civilization-scale environment need not exist *only* as an elaborate exam. The same histories, relationships, failures, and consequences that develop a mind can also provide evidence about it. Development and safety evaluation become one combined process.
+The economics improve when those roles overlap. A civilization-scale environment need not exist *only* as an elaborate exam. The same histories, relationships, failures, and consequences that develop a mind can also provide evidence about it. [Development and safety evaluation become one combined process.](#argument-map?node=joint-development-evaluation){:.mapped-claim}
 
 This does not make any imaginable expense rational. It answers a narrower objection: if rich experience is needed for development anyway, using that experience for safety evaluation is cheaper than building an equally rich world solely for testing.
 

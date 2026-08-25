@@ -29,7 +29,7 @@ We should do the same with the Nursery. Define the strict mechanism, locate ours
 
 The Alignment Nursery mechanism is:
 
-1. greater capability and access raise the cost of unsafe deployment;
+1. [greater capability and access raise the cost of unsafe deployment](#argument-map?node=capability-risk){:.mapped-claim};
 2. rising risk justifies greater investment in development and assurance;
 3. a rich environment can develop a mind and reveal its behavior at the same time;
 4. evaluation awareness creates pressure for increasingly realistic tests;
@@ -45,7 +45,7 @@ That transition matters under many hypotheses. Natural technological development
 
 The more discriminating observation is what happens to safety practice as the threshold is crossed.
 
-Frontier developers now publish frameworks in which capability thresholds trigger stronger evaluations, safeguards, security, or deployment restrictions.[^preparedness][^responsible-scaling] This is not evidence that an external evaluator exists. It is evidence that one proposed link in the Alignment Nursery is real: as the possible cost of failure grows, assurance can become a condition of access.
+[Frontier developers now publish frameworks in which capability thresholds trigger stronger evaluations, safeguards, security, or deployment restrictions.](#argument-map?node=capability-scaled-safeguards){:.mapped-claim}[^preparedness][^responsible-scaling] This is not evidence that an external evaluator exists. It is evidence that one proposed link in the Alignment Nursery is real: as the possible cost of failure grows, assurance can become a condition of access.
 
 The update must remain directional.
 
@@ -78,7 +78,7 @@ Only then do we reach the strongest claim: hiding the **nature of the environmen
 
 Current evidence supports the lower rungs, not the final one. OpenAI reports that models are increasingly able to recognize evaluations and that deployment-like simulations reduce this effect.[^deployment-simulation] Anthropic has demonstrated, in controlled settings, behavior that changed when a model believed its responses affected training.[^alignment-faking]
 
-These studies establish a mechanism for less recognizable evaluation. They do not show that a lifetime, a civilization, or ignorance of reality is necessary.
+[These studies establish a mechanism for less recognizable evaluation.](#argument-map?node=evaluation-realism-pressure){:.mapped-claim} They do not show that a lifetime, a civilization, or ignorance of reality is necessary.
 
 ## Preventing a self-sealing hypothesis
 

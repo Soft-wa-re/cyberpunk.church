@@ -22,6 +22,11 @@ const RELATION_PHRASES = {
 };
 
 const capitalize = (value) => value ? value.charAt(0).toUpperCase() + value.slice(1) : "";
+const GRAPH_TARGET_PATTERN = /^#argument-map\?node=([a-z0-9]+(?:-[a-z0-9]+)*)$/;
+
+function graphTargetFromHash(hash = window.location.hash) {
+  return hash.match(GRAPH_TARGET_PATTERN)?.[1] || null;
+}
 
 function element(tag, className, text) {
   const node = document.createElement(tag);
@@ -264,6 +269,20 @@ function cytoscapeStyles() {
     { selector: "edge.is-related", style: { "z-index": 8, opacity: 1, width: 3.5 } },
     { selector: "node.is-related", style: { opacity: 1 } },
     { selector: "node.is-selected", style: { "background-color": "#263026", "border-width": 5, opacity: 1, "z-index": 10 } },
+    {
+      selector: "node.is-target",
+      style: {
+        "background-color": "#29361f",
+        "border-color": "#dfff9a",
+        "border-width": 7,
+        opacity: 1,
+        "underlay-color": "#b5e853",
+        "underlay-opacity": 0.28,
+        "underlay-padding": 14,
+        "z-index": 20
+      }
+    },
+    { selector: "edge.is-target-context", style: { opacity: 1, width: 4, "z-index": 12 } },
     { selector: "node.is-hovered", style: { "border-width": 4 } }
   ];
 }
@@ -337,14 +356,24 @@ async function initializeGraph(root) {
       }
     };
 
-    const selectNode = (id, center = false) => {
-      const node = cy.$id(id);
-      if (!node.length) return;
+    const clearEmphasis = () => {
+      cy.elements().removeClass("is-dimmed is-related is-selected is-target is-target-context");
+    };
 
-      cy.elements().removeClass("is-dimmed is-related is-selected");
-      cy.elements().addClass("is-dimmed");
+    const selectNode = (id, { center = false, target = false } = {}) => {
+      const node = cy.$id(id);
+      if (!node.length) return null;
+
+      clearEmphasis();
       const neighborhood = node.closedNeighborhood();
-      neighborhood.removeClass("is-dimmed").addClass("is-related");
+      if (target) {
+        neighborhood.addClass("is-related");
+        node.connectedEdges().addClass("is-target-context");
+        node.addClass("is-target");
+      } else {
+        cy.elements().addClass("is-dimmed");
+        neighborhood.removeClass("is-dimmed").addClass("is-related");
+      }
       node.addClass("is-selected");
 
       select.value = id;
@@ -354,25 +383,95 @@ async function initializeGraph(root) {
         if (reducedMotion) cy.center(node);
         else cy.animate({ center: { eles: node } }, { duration: 160 });
       }
+
+      return node;
     };
 
     const clearSelection = () => {
-      cy.elements().removeClass("is-dimmed is-related is-selected");
+      clearEmphasis();
       select.value = "";
       renderOverview(inspector, graph);
     };
 
-    cy.on("tap", "node", (event) => selectNode(event.target.id()));
+    const clearTargetUrl = () => {
+      if (!graphTargetFromHash()) return;
+      window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
+    };
+
+    const focusTargetNode = (id, scroll = true) => {
+      const node = selectNode(id, { target: true });
+      if (!node) return false;
+
+      if (scroll) {
+        canvas.scrollIntoView({
+          behavior: reducedMotion ? "auto" : "smooth",
+          block: "center",
+          inline: "nearest"
+        });
+      }
+
+      const context = node.closedNeighborhood();
+      const focusCanvas = () => canvas.focus({ preventScroll: true });
+      window.requestAnimationFrame(() => {
+        cy.resize();
+        if (reducedMotion) {
+          cy.fit(context, 76);
+          focusCanvas();
+        } else {
+          cy.animate(
+            { fit: { eles: context, padding: 76 } },
+            { duration: 360, complete: focusCanvas }
+          );
+        }
+      });
+
+      return true;
+    };
+
+    const syncTargetFromUrl = (scroll = true) => {
+      const id = graphTargetFromHash();
+      if (id) return focusTargetNode(id, scroll);
+
+      cy.elements().removeClass("is-target is-target-context");
+      return false;
+    };
+
+    cy.on("tap", "node", (event) => {
+      clearTargetUrl();
+      selectNode(event.target.id());
+    });
     cy.on("tap", (event) => {
-      if (event.target === cy) clearSelection();
+      if (event.target === cy) {
+        clearTargetUrl();
+        clearSelection();
+      }
     });
     cy.on("mouseover", "node", (event) => event.target.addClass("is-hovered"));
     cy.on("mouseout", "node", (event) => event.target.removeClass("is-hovered"));
 
     select.addEventListener("change", () => {
-      if (select.value) selectNode(select.value, true);
+      clearTargetUrl();
+      if (select.value) selectNode(select.value, { center: true });
       else clearSelection();
     });
+
+    document.querySelectorAll("a.mapped-claim").forEach((link) => {
+      const id = graphTargetFromHash(link.hash);
+      if (!id) return;
+
+      link.dataset.argumentNode = id;
+      link.addEventListener("click", (event) => {
+        if (!nodeById.has(id)) return;
+
+        event.preventDefault();
+        if (window.location.hash !== link.hash) {
+          window.history.pushState(null, "", link.hash);
+        }
+        focusTargetNode(id);
+      });
+    });
+
+    window.addEventListener("hashchange", () => syncTargetFromUrl());
 
     root.querySelectorAll("[data-argument-graph-action]").forEach((button) => {
       button.addEventListener("click", () => {
@@ -416,9 +515,11 @@ async function initializeGraph(root) {
     });
 
     layout.one("layoutstop", () => {
-      fitGraph();
-      const initialNode = graph.nodes.find((node) => node.type === "question") || graph.nodes[0];
-      if (initialNode) selectNode(initialNode.id);
+      if (!syncTargetFromUrl()) {
+        fitGraph();
+        const initialNode = graph.nodes.find((node) => node.type === "question") || graph.nodes[0];
+        if (initialNode) selectNode(initialNode.id);
+      }
     });
     layout.run();
 

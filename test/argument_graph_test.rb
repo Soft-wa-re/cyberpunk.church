@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 require "minitest/autorun"
+require "fileutils"
+require "tmpdir"
 require_relative "../lib/argument_graph"
 
 class ArgumentGraphValidatorTest < Minitest::Test
@@ -101,5 +103,47 @@ class ArgumentGraphValidatorTest < Minitest::Test
         }
       ]
     }
+  end
+end
+
+class ArgumentGraphCompilerTest < Minitest::Test
+  def test_rejects_mapped_claims_missing_from_the_graph_or_post_view
+    Dir.mktmpdir do |root|
+      FileUtils.mkdir_p(File.join(root, "_arguments"))
+      FileUtils.mkdir_p(File.join(root, "_posts"))
+
+      graph = {
+        "version" => 1,
+        "id" => "site-map",
+        "title" => "Site map",
+        "views" => [
+          { "id" => "post-view", "title" => "Post view", "nodes" => ["question"] }
+        ],
+        "nodes" => [
+          { "id" => "question", "type" => "question", "title" => "A question" },
+          { "id" => "evidence", "type" => "evidence", "title" => "Some evidence" }
+        ],
+        "edges" => []
+      }
+      File.write(File.join(root, "_arguments", "site-map.yml"), YAML.dump(graph))
+      File.write(
+        File.join(root, "_posts", "2026-01-01-post.md"),
+        <<~MARKDOWN
+          ---
+          argument_graph: site-map
+          argument_graph_view: post-view
+          ---
+          [Outside the view](#argument-map?node=evidence){:.mapped-claim}
+          [Missing entirely](#argument-map?node=missing-node){:.mapped-claim}
+        MARKDOWN
+      )
+
+      error = assert_raises(ArgumentGraph::ValidationError) do
+        ArgumentGraph::Compiler.new(root).compile
+      end
+
+      assert_includes error.errors, "_posts/2026-01-01-post.md: mapped claim node 'evidence' is not included in view 'post-view'"
+      assert_includes error.errors, "_posts/2026-01-01-post.md: mapped claim refers to nonexistent node 'missing-node' in graph 'site-map'"
+    end
   end
 end

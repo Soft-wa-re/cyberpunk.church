@@ -33,7 +33,7 @@ These systems are not evidence of artificial consciousness. Their apparent devel
 
 They do support one premise:
 
-> When we want behavior that survives unfamiliar situations, we use varied environments and let interaction do work that direct specification did not.
+> [When we want behavior that survives unfamiliar situations, we use varied environments and let interaction do work that direct specification did not.](#argument-map?node=development-matters){:.mapped-claim}
 
 ## Safety changes the economics
 
@@ -45,13 +45,13 @@ Our current institutions already express this pressure. OpenAI's Preparedness Fr
 
 Policies are not outcomes, and public commitments are not proof that safeguards work. They are still an observation: several frontier developers independently expect assurance requirements to rise with capability and risk.
 
-That is the strongest motivation for an Alignment Nursery. A creator need not spend civilization-scale resources from curiosity. It may be protecting itself and others from a powerful intelligence it cannot yet trust.
+That is the strongest motivation for an Alignment Nursery. A creator need not spend civilization-scale resources from curiosity. [It may be protecting itself and others from a powerful intelligence it cannot yet trust.](#argument-map?node=safety-investment-pressure){:.mapped-claim}
 
 ## One environment can do two jobs
 
 The expense is easier to explain if the environment is not purely an exam.
 
-Development and safety evaluation can share the same costly substrate. The situations that teach an agent to plan, cooperate, recover from mistakes, and act under uncertainty can also reveal how it uses power, handles conflicts, and responds when oversight is weak.
+[Development and safety evaluation can share the same costly substrate.](#argument-map?node=joint-development-evaluation){:.mapped-claim} The situations that teach an agent to plan, cooperate, recover from mistakes, and act under uncertainty can also reveal how it uses power, handles conflicts, and responds when oversight is weak.
 
 The process can alternate rather than separate the jobs:
 
@@ -79,7 +79,7 @@ The experiments are limited. They do not demonstrate a persistent malicious agen
 
 They support a narrower pressure:
 
-> If recognizable evaluations become less predictive as capability rises, evaluators have reason to use more realistic, longer-horizon, and harder-to-recognize environments.
+> [If recognizable evaluations become less predictive as capability rises, evaluators have reason to use more realistic, longer-horizon, and harder-to-recognize environments.](#argument-map?node=evaluation-realism-pressure){:.mapped-claim}
 
 We can now watch whether that pressure grows or stalls.
 

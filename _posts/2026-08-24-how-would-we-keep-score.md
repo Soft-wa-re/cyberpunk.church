@@ -129,13 +129,13 @@ Epistemic values should remain displayed rather than automatically propagated. A
 
 The Alignment Nursery is now more specific than the broad AI Nursery.
 
-It proposes a motive: unsafe deployment is expensive.
+[It proposes a motive: unsafe deployment is expensive.](#argument-map?node=capability-risk){:.mapped-claim}
 
-It proposes an economy: development and safety evaluation share one rich environment.
+[It proposes an economy: development and safety evaluation share one rich environment.](#argument-map?node=joint-development-evaluation){:.mapped-claim}
 
-It proposes an evaluation pressure: capable agents make recognizable tests less reliable.
+[It proposes an evaluation pressure: capable agents make recognizable tests less reliable.](#argument-map?node=evaluation-realism-pressure){:.mapped-claim}
 
-It proposes a consequence: wider access is gated on safety evidence.
+[It proposes a consequence: wider access is gated on safety evidence.](#argument-map?node=deployment-gating){:.mapped-claim}
 
 Each claim can rise or fall as we build artificial systems ourselves. Even if all four gain support, the conclusion that *our world* is such a Nursery remains a separate inference.
 

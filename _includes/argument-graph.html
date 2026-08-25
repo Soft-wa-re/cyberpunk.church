@@ -3,7 +3,7 @@
 {% if include.view_id %}
   {% assign graph_instance_id = graph_instance_id | append: '-' | append: include.view_id %}
 {% endif %}
-<section class="argument-graph{% unless include.view_id %} argument-graph--canonical{% endunless %}" data-argument-graph data-graph-src="{{ graph_path }}"{% if include.view_id %} data-graph-view="{{ include.view_id }}"{% endif %} aria-labelledby="argument-graph-title-{{ graph_instance_id }}">
+<section id="argument-map" class="argument-graph{% unless include.view_id %} argument-graph--canonical{% endunless %}" data-argument-graph data-graph-src="{{ graph_path }}"{% if include.view_id %} data-graph-view="{{ include.view_id }}"{% endif %} aria-labelledby="argument-graph-title-{{ graph_instance_id }}">
   <header class="argument-graph__header">
     <div>
       <p class="argument-graph__eyebrow">{% if include.view_id %}Filtered post view{% else %}Canonical argument graph{% endif %} · schema v1</p>

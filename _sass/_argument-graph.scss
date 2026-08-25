@@ -6,6 +6,39 @@ $argument-objection: #e46a6a;
 $argument-assumption: #f4bf75;
 $argument-conclusion: #75b5aa;
 
+.mapped-claim {
+  padding: 0 0.08em;
+  background: rgba(99, 192, 245, 0.045);
+  color: inherit;
+  font-weight: 500;
+  text-decoration-color: rgba(99, 192, 245, 0.78);
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  transition: background-color 140ms ease, color 140ms ease, text-decoration-color 140ms ease;
+
+  &::after {
+    margin-left: 0.22em;
+    color: rgba(99, 192, 245, 0.82);
+    content: "↘";
+    font-size: 0.72em;
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background: rgba(99, 192, 245, 0.12);
+    color: $argument-question;
+    text-decoration-color: $argument-question;
+  }
+
+  &:focus-visible {
+    outline: 1px dashed $argument-question;
+    outline-offset: 3px;
+  }
+}
+
 .argument-graph {
   margin: 64px 0 36px;
   padding: 32px 0 0;

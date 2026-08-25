@@ -68,6 +68,14 @@ Relationship types are `supports`, `attacks`, `contradicts`, `entails`, `assumes
 
 Directional `epistemics.updates` are displayed in the inspector and remain part of the normalized graph, so claims can be queried by observations that would raise or lower them.
 
+To map an important proposition in a post to one of its graph nodes, use an ordinary Kramdown link with the `mapped-claim` class:
+
+```markdown
+[Recognizable evaluations can distort behavior.](#argument-map?node=evaluation-awareness){:.mapped-claim}
+```
+
+The node ID must exist in the canonical graph and in the post's selected view. The build validates both conditions. Activating the link records the node in the URL, opens the post's graph, and focuses the corresponding node.
+
 Reference the canonical graph and view in the post's frontmatter:
 
 ```yaml

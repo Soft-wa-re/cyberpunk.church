@@ -60,20 +60,21 @@ views:
     title: Why Here? Why Now?
     description: What our position near artificial-mind creation can reveal about capability-scaled safety pressure, evaluation realism, and hidden purpose.
     nodes:
-      - nursery-question
       - alignment-question
-      - recursive-creation
       - ai-threshold
       - timing-selection
       - natural-development
       - alignment-hypothesis
+      - capability-risk
+      - safety-investment-pressure
       - capability-scaled-safeguards
+      - joint-development-evaluation
+      - deployment-gating
       - hidden-purpose
       - evaluation-awareness
       - alignment-faking-observed
       - evaluation-realism-pressure
       - hiddenness-self-sealing
-      - evidence-ledger
       - current-verdict
 
   - id: are-we-building-ai-nurseries

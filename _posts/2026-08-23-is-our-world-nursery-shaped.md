@@ -17,7 +17,7 @@ A broad Nursery needs stable rules, consequences, other agents, difficult choice
 
 The stricter **Alignment Nursery** adds a causal claim, not just another resemblance:
 
-> The environment develops or refines artificial minds and helps establish that they are safe enough before they receive greater freedom, capability, or access.
+> [The environment develops or refines artificial minds and helps establish that they are safe enough before they receive greater freedom, capability, or access.](#argument-map?node=alignment-hypothesis){:.mapped-claim}
 
 That version has a stronger motive—safety—and a more demanding structure.
 
@@ -60,7 +60,7 @@ Our world contains those situations.
 
 It also contains the ordinary consequences of organisms competing for resources while depending on one another. Evolution and culture explain both cooperation and conflict without an evaluator.
 
-Social and moral difficulty therefore satisfies a design requirement. It is not evidence of design unless the Alignment Nursery predicts a pattern that natural development does not.
+[Social and moral difficulty satisfies a design requirement; it is not evidence of design unless the Alignment Nursery predicts a pattern that natural development does not.](#argument-map?node=compatibility-not-evidence){:.mapped-claim}
 
 ## Hiddenness comes in layers
 
@@ -86,7 +86,7 @@ The excess-world objection remains substantial.
 
 Why use billions of galaxies, billions of years of lifeless history, mass extinction, inaccessible detail, and immense suffering to develop and evaluate minds on one planet?
 
-The Alignment Nursery has a better answer than a pure examination story. If a rich environment is already needed to produce or refine the minds, using the same environment to gather safety evidence combines two expensive problems. The world is not built solely as a test.
+The Alignment Nursery has a better answer than a pure examination story. [If a rich environment is already needed to produce or refine the minds, using the same environment to gather safety evidence combines two expensive problems.](#argument-map?node=joint-development-evaluation){:.mapped-claim} The world is not built solely as a test.
 
 That improves the economics without explaining every apparent cost. A joint process could still be far smaller, shorter, and less cruel than our universe appears to be. Selective simulation, physical construction, or a generative history may reduce the cost, but each adds assumptions.
 
@@ -123,7 +123,7 @@ The Alignment Nursery supplies the strongest motive we have: the cost of deployi
 
 Current AI practice supports pieces of that causal mechanism. Frontier developers scale safeguards with capability, use deployment-like evaluation, and study behavior that can vary with evaluation context.[^preparedness]
 
-Our world remains weak evidence. Its developmental and moral structure is also expected under natural evolution, its hidden origin is what naturalism predicts, and its apparent scale is difficult to justify.
+[Our world remains weak evidence.](#argument-map?node=current-verdict){:.mapped-claim} Its developmental and moral structure is also expected under natural evolution, its hidden origin is what naturalism predicts, and its apparent scale is difficult to justify.
 
 The hypothesis is now more rigorous because it can lose. The next question is not whether another feature of our world can be made to fit. It is whether the safety pressures we have named continue to emerge, and whether any resulting prediction distinguishes an Alignment Nursery from its alternatives.
 
