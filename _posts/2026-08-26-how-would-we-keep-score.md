@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "How Would We Keep Score?"
-date: "2026-08-24"
-section: "AI Nursery"
+date: "2026-08-26"
+section: "World Purposes"
+order: 5
 argument_graph: epistemic-map
 argument_graph_view: how-would-we-keep-score
 tags:

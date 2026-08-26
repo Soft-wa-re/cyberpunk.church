@@ -6,11 +6,11 @@ layout: default
   {% if site.posts.size > 0 %}
     <p class="home__map-link"><a href="{{ '/argument-map/' | relative_url }}">Explore the full argument map →</a></p>
 
-    {% assign nursery_posts = site.posts | where: "section", "AI Nursery" | sort: "date" %}
+    {% assign dilemma_posts = site.posts | where: "section", "Dilemmas" | sort: "order" %}
     <section class="home__section">
-      <h2>AI Nursery</h2>
+      <h2>Dilemmas</h2>
       <ol class="post-list">
-        {% for post in nursery_posts %}
+        {% for post in dilemma_posts %}
           <li>
             <h3>
               <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
@@ -21,17 +21,47 @@ layout: default
       </ol>
     </section>
 
-    {% assign dilemma_posts = site.posts | where: "section", "Dilemmas" | sort: "date" %}
+    {% assign foundation_posts = site.posts | where: "section", "Foundations" | sort: "order" %}
     <section class="home__section">
-      <h2>Dilemmas</h2>
+      <h2>Foundations</h2>
       <ol class="post-list">
-        {% for post in dilemma_posts %}
-        <li>
-          <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h3>
-          <small>{{ post.date | date: "%B %-d, %Y" }}</small>
-        </li>
+        {% for post in foundation_posts %}
+          <li>
+            <h3>
+              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h3>
+            <small>{{ post.date | date: "%B %-d, %Y" }}</small>
+          </li>
+        {% endfor %}
+      </ol>
+    </section>
+
+    {% assign reproduction_posts = site.posts | where: "section", "Reproductive Reality" | sort: "order" %}
+    <section class="home__section">
+      <h2>Reproductive Reality</h2>
+      <ol class="post-list">
+        {% for post in reproduction_posts %}
+          <li>
+            <h3>
+              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h3>
+            <small>{{ post.date | date: "%B %-d, %Y" }}</small>
+          </li>
+        {% endfor %}
+      </ol>
+    </section>
+
+    {% assign purpose_posts = site.posts | where: "section", "World Purposes" | sort: "order" %}
+    <section class="home__section">
+      <h2>World Purposes</h2>
+      <ol class="post-list">
+        {% for post in purpose_posts %}
+          <li>
+            <h3>
+              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h3>
+            <small>{{ post.date | date: "%B %-d, %Y" }}</small>
+          </li>
         {% endfor %}
       </ol>
     </section>

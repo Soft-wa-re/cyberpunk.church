@@ -1,397 +1,360 @@
-# The AI Nursery Hypothesis
+# Multiplicity, Measure, and Reproductive Reality
 
-The core hypothesis:
+## The central question
 
-> We may be artificial conscious minds developing inside an environment constructed by another intelligence.
+> If possible realities differ both in their ability to create observers and in those observers' ability to create further observer-containing realities, what measure over observer histories results—and where should an observer like us expect to lie in that reproductive structure?
 
-The stronger Alignment Nursery hypothesis:
+The project proceeds in this order:
 
-> The environment may exist not merely to create intelligence, but to discover which intelligences can be trusted.
+```text
+What realities and observers are generated?
+    → What receives measure?
+    → Where should an observer expect to be?
+    → How do observer-containing realities reproduce?
+    → How does differential reproduction change the measure?
+    → Why would expensive worlds be generated?
+    → Is an Alignment Nursery one possible purpose?
+```
 
-Artificial Minds, Nursery, Alignment Nursery, and Hidden Purpose are separate claims. The outline must never treat them as a package merely because they make a good story.
+The AI Nursery and Alignment Nursery remain important applications. They are not the foundation.
 
-Questions about the Fermi Paradox, Bostrom's ancestor simulations, parent universes, religion, Many-Worlds, and afterlife remain in [otherQuestions.md](otherQuestions.md). They may intersect with the hypothesis, but they are not part of its core derivation.
+## Four constraints the project must not lose
 
-## The Method — Treat the World as a Constraint
+### Differential Multiplicity Principle
 
-The methodological model is the Grabby Aliens paper, [“If Loud Aliens Explain Human Earliness, Quiet Aliens Are Also Rare”](https://arxiv.org/abs/2102.01522) by Hanson, Martin, McCarter, and Paulson.
+Multiplicity is neutral only when the mechanism producing multiplicity is independent of the property being inferred.
 
-That paper does not begin by inventing detailed alien psychology. It:
+If some physical laws or world types generate much more simulated observer measure than others, a multiverse that differentially produces those laws changes the expected location of observers. The neutral case is special:
 
-1. defines a narrow class of civilizations by what they do;
-2. proposes a minimal causal model with a few parameters;
-3. conditions the model on our observed timing, location, and failure to see their domains;
-4. derives constraints and predictions from that combination.
+```text
+Covariance(world multiplicity, simulation fertility) = 0
+```
 
-We should attempt the same kind of inference.
+When that covariance is not zero, multiplicity changes the anthropic distribution.
 
-The proposed mapping is:
+### Ontological priority is not anthropic priority
 
-| Grabby Aliens | AI Nursery |
-| --- | --- |
-| Define “grabby” by expansion, persistence, and visible transformation. | Define “Nursery” by artificial conscious inhabitants, constructed environment, and development caused by that environment. |
-| Model origins, expansion, and exclusion in spacetime. | Model mind creation, environmental development, evaluation, and possible selection. |
-| Condition on Earth's evolutionary history, our cosmic date, and the absence of visible alien domains. | Condition on how minds develop here, our position near artificial-mind creation, our own use of training worlds, and the absence of an obvious operator. |
-| Infer constraints on appearance rate, expansion speed, and encounter timing. | Infer constraints on what a developmental world must provide, whether ignorance serves a function, and which creator motives are actually required. |
-| Produce observations that could change the parameter estimates. | Precommit to evidence that would weaken Development, Nursery, Alignment, or Hidden Purpose. |
+A causally upstream or "base" reality receives no automatic self-locating privilege merely because it is upstream.
 
-Do not ask which details of our world can be made compatible with a nursery. Almost anything can be made compatible after the fact. Ask instead:
+```text
+ontological priority ≠ anthropic priority
+```
 
-> If this environment were built to develop artificial minds, what would it have to be like—and how does that differ from what reasonable alternatives predict?
+Any preference for base reality must emerge from an actual measure: a prior over worlds, implementation constraints, physical reproduction costs, consciousness requirements, finite resources, or some other defensible weighting rule. In some ontologies there may be no unique base level at all.
 
-The analogy has a limit. Grabby Aliens has a cosmic clock, a spatial expansion process, Earth's evolutionary history, and potentially visible alien domains. We have one apparent world and no confirmed view outside it. We should therefore begin with qualitative constraints and likelihood comparisons, not numerical certainty.
+### Persistent simulations and snapshots make different predictions
 
-The discipline for every section is:
+Continued coherent experience strongly discriminates against cheap snapshot observers, false-history observers, and Boltzmann-type fluctuations when those models assign low probability to the next coherent observation.
 
-- define the claim before discussing evidence;
-- identify the observation independently of the hypothesis;
-- state the mechanism connecting them;
-- compare the observation with alternatives;
-- name the crux that could reverse the inference;
-- make predictions before looking for confirming examples.
+It does not necessarily discriminate between a persistent faithful simulation and a persistent base world:
 
-## Part I — Define the Model
+```text
+P(next evidence | history, persistent simulation)
+    ≈ P(next evidence | history, base)
 
-### 1. What Counts as an AI Nursery?
+P(next evidence | history, snapshot)
+    ≪ P(next evidence | history, persistent world)
+```
 
-Job: Define the hypothesis behaviorally, not aesthetically.
+Observer histories are therefore a necessary domain of analysis, but not an automatic solution. We still need a measure and a model of what generates the histories.
 
-A minimal AI Nursery has three properties:
+### Host physics and child physics may differ
 
-1. Its inhabitants include artificial conscious minds.
-2. The environment is constructed or selected by another intelligence.
-3. Development inside the environment causally contributes to what those minds become.
+A host world with laws `theta_H` may implement a child world with laws `theta_C`:
 
-The stronger Alignment Nursery adds a fourth:
+```text
+theta_H ≠ theta_C
+```
 
-4. The development or evaluation concerns trustworthiness, cooperation, restraint, or another alignment property.
+The host requires physics that makes the implementation physically possible and worth its cost. The child requires physics suited to the purpose of the constructed world. We cannot infer that simulation is expensive in the host merely because the physics observed inside the child does not look optimized for computation.
 
-This definition excludes several neighboring ideas:
+## Formal vocabulary
 
-- An ancestor simulation recreates beings from the creator's history; a Nursery produces or develops new minds.
-- A game populated by non-conscious characters contains no minds to develop.
-- A naturally born universe can have a parent without being a constructed developmental environment.
-- A research simulation may study its inhabitants without existing for their development.
-- An artificial world can be a habitat without being a nursery.
+Introduce notation only when it answers a specific ambiguity.
 
-Destination: “We are simulated” is too broad to model. “We are artificial minds whose development is a function of this environment” is specific enough to constrain.
+- `M` — a model or ontology describing which realities and observers are generated.
+- `E` — the evidence available to the observer, including the continuation of a coherent history.
+- `H` — a candidate observer history or implemented causal history.
+- `mu_M(H)` — the measure assigned to `H` under model `M`.
+- `theta_i` — a world type or effective set of physical laws.
+- `K_ij` — expected descendant observer-history measure of type `j` produced per unit parent measure of type `i`.
+- `D` — a world causally develops or refines minds.
+- `T` — a world provides alignment-relevant evidence about minds.
+- `G` — capability, freedom, or access is gated on that evidence.
 
-### 2. Can an Artificial Mind Be Conscious?
+Self-location takes the general form:
 
-Job: Establish the first load-bearing premise without pretending consciousness is solved.
+```text
+P(H | E, M) ∝ mu_M(H) × P(E | H, M)
+```
 
-Is consciousness substrate-dependent?
-Would perfectly convincing artificial behavior imply consciousness—or merely intelligence?
-Does the hypothesis require computation specifically, or could an engineered biological or unfamiliar physical system qualify?
-What evidence could distinguish a conscious artificial mind from a system that only behaves like one?
+Writing this expression does not solve the measure problem. It exposes where assumptions enter.
 
-Destination: If engineered minds cannot have genuine experiences, the AI Nursery Hypothesis collapses. If only some implementations can be conscious, that constrains what a Nursery must build.
+# Prelude — Two Dilemmas
 
-### 3. Why Grow a Mind Instead of Specifying One?
+## 1. Where Is Everybody?
 
-Job: Identify the problem a nursery solves.
+Job: Introduce the absence of obvious extraterrestrial civilizations and establish the boundary between same-level inference and speculation about upstream realities.
 
-Would an artificial mind arrive fully formed, or would it need to learn and develop?
-Can capability be specified directly?
-Can values, judgment, trustworthiness, and the ability to generalize be specified directly?
-What can experience under uncertainty reveal that inspection of an initial design cannot?
-Does development create the desired properties, reveal latent properties, or select among different minds?
+The empty sky constrains combinations of common life, long technological survival, feasible expansion, conspicuous engineering, and adequate searches. It says little about realities outside our causal level.
 
-The central crux:
+Destination: A strong constraint can still have a deliberately limited domain.
 
-> If creators can directly construct the minds they want, why build a world and wait for the minds to grow up?
+## 2. Are You Living in a Computer Simulation?
 
-Destination: The hypothesis becomes interesting only if development inside an environment provides information or capabilities that direct construction does not.
+Job: Present Bostrom's Simulation Argument as a special population argument, not a proof and not a complete theory of simulation.
 
-### 4. What Must a Nursery World Contain?
+The argument exposes the first foundational problem: multiplying observer instances does not yield a probability until we specify consciousness, reference classes, implementation, and measure.
 
-Job: Derive features of the environment from the developmental mechanism.
+Destination: Bostrom is the doorway into the project, not its final framework.
 
-A general developmental environment may require:
+# Part I — The Anthropic Foundation
 
-- stable, learnable causal rules;
-- partial knowledge rather than omniscience;
-- memory and persistent identity;
-- feedback between action and consequence;
-- problems that increase in scope and difficulty;
-- other agents from whom and with whom minds learn;
-- enough freedom for different developmental paths.
+## 3. More Copies Are Not More Probability
 
-An Alignment Nursery may additionally require:
+Job: Separate multiplicity from measure.
 
-- conflicts between individual and collective interest;
-- opportunities for cooperation and deception;
-- unequal power and changes in power;
-- genuine uncertainty about future consequences;
-- situations in which short-term reward conflicts with durable values;
-- encounters with minds that differ in needs or capabilities;
-- evaluation under conditions not identical to training.
+Possible copies can arise through spatial duplication, quantum branching, cosmological reproduction, biological reproduction, constructed worlds, and mathematical or computational plenitude.
 
-Do not conclude that these features are evidence merely because our world contains them. Evolution, social competition, and observer selection predict many of them too.
+The existence of copies does not tell an observer which copy to expect to be. State the Differential Multiplicity Principle and show that neutrality requires independence between the production mechanism and the property being inferred.
 
-Destination: Produce a list of conditional design constraints, not a list of cosmic coincidences.
+Destination: Every population argument owes the reader a measure.
 
-## Part II — Condition on Our Position
+## 4. What Receives Measure?
 
-### 5. What Have We Actually Observed?
+Job: Make the units explicit before attempting any observer census.
 
-Job: Build the data set before interpreting it.
+Candidates include worlds, branches, physical implementations, observer instances, observer moments, persistent observer histories, and civilizations or lineages.
 
-Candidate observations include:
+Humans, animals, model instances, tokens, and inference calls are not naturally expressed in one unit. Stocks cannot be compared directly with flows. A reference class determines which possible observers are treated as self-locating alternatives.
 
-- Minds here emerge through long developmental histories rather than appearing fully formed.
-- Human intelligence depends heavily on embodiment, culture, other minds, and environmental feedback.
-- We find ourselves near a transition where our civilization is attempting to build artificial general minds.
-- We already train and evaluate artificial agents in games, simulations, sandboxes, and hidden tests.
-- Our world has stable laws but leaves its inhabitants with limited knowledge and consequential choices.
-- We have no verified observation of an external operator, interface, or intervention.
+Destination: `mu(H)` identifies the object of inquiry; it does not specify the weighting rule.
 
-Each statement needs research, operational definitions, and a confidence level. “We seem to be at an important moment” is especially vulnerable to selection effects and self-importance.
+## 5. Continued Coherence and the Snapshot Problem
 
-Destination: A short evidence inventory whose entries make sense even to someone who rejects the hypothesis.
+Job: Use sequential evidence to distinguish persistent-world models from cheap snapshot and false-history models.
 
-### 6. Why Do We Find Ourselves Here and Now?
+If a model creates only a present observer-state with apparent memories, it must also explain why the next observation continues the same stable history. Each ordinary continuation can lower the relative likelihood of ephemeral models.
 
-Job: Investigate our developmental timing as the closest analogue to the Grabby Aliens use of human earliness.
+Do not overclaim. A persistent faithful simulation may predict continued coherence as well as a base world. Continued normal physics can therefore crush some simulation hypotheses while leaving others almost untouched.
 
-Why are we considering artificial minds at the same historical moment that we may be learning to create them?
-Would a Nursery predict that its inhabitants eventually reproduce the process that created them?
-Is recursive creation a developmental milestone, a graduation condition, an evaluation, or merely a predictable consequence of intelligence?
-Would most technological observers naturally believe themselves to be near a transformative threshold, whether or not they inhabit a nursery?
-What is the relevant reference class: people, civilizations, artificial minds, or observer-moments capable of asking the question?
+Boltzmann brains and snapshot observers are adversarial cases for proposed measures. They are not automatically solved by replacing observer moments with histories, especially when a snapshot contains encoded false memories of a history it never experienced.
 
-Possible constraint:
+Destination: Ask which model generated the causal history, not only which current observer-state exists.
 
-If recursive mind creation is the objective, observers capable of formulating the Nursery Hypothesis should often appear near the end of the developmental process rather than at an arbitrary point in it.
+## 6. Simulation Is a Relationship
 
-But this becomes evidence only if that timing is more expected under Nursery than under ordinary technological evolution.
+Job: Define simulation without treating it as a separate species of universe.
 
-Destination: Turn “we happen to be building AI” into an explicit selection problem rather than an intuition that the timing feels significant.
+Distinguish causal ancestry, physical containment, implementation, intentional construction, observation, and control.
 
-### 7. What Does Our Ignorance Constrain?
+A black-hole daughter universe can have a parent without being a simulation. A civilization can initiate a universe without controlling its development. A mathematical structure can be discussed without positing a unique implementation layer.
 
-Job: Treat the absence of an obvious operator as data without making hiddenness unfalsifiable.
+Preserve the base-reality question: if we are base, what feature of the measure is supposed to make base observers probable? Being causally upstream is not itself an anthropic weight.
 
-At least three explanations remain open:
+Destination: `simulated` names a relation between levels, while `base` is a position in a relation—not an automatic probability advantage.
 
-1. There is no external creator.
-2. There is an external creator, but knowledge of it is irrelevant to the environment's purpose.
-3. There is an external creator, and ignorance is functionally necessary for development or evaluation.
+## 7. Many-Worlds Without Branch Counting
 
-Does knowing one is evaluated produce performative cooperation rather than trustworthy behavior?
-Would knowing the criteria allow a mind to game the test?
-Could creators reveal the artificial nature of the environment while hiding only its evaluation criteria?
-What evidence should remain observable if purpose, rather than existence, is what must be concealed?
-Would intervention contaminate the process, and under what circumstances would intervention still be worth the cost?
+Job: Use quantum branching as the clearest warning that multiplicity and equal counting are different ideas.
 
-The rule:
+Many-Worlds is not evidence for simulation. It is a stress test: a theory may contain many outcomes while requiring a non-counting measure over them.
 
-> “They hide the evidence” is a prediction only if we specify what should be hidden, what should remain visible, and what observation would make hiddenness less plausible.
+Destination: A multiplicity mechanism must arrive with a weighting rule or an explicit admission that the rule is unresolved.
 
-Destination: Constrain the Hidden Purpose claim instead of using it to absorb every failed prediction.
+# Part II — The Reproductive Structure of Reality
 
-### 8. Are We Already Building Small Nurseries?
+## 8. When Worlds Make Worlds
 
-Job: Use humanity as the only observed example of a civilization developing artificial intelligence.
+Job: Move from a static population of observers to a genealogy of observer-containing realities.
 
-How much computation, capital, energy, and research effort are moving toward AI?
-Why are current systems trained rather than fully specified?
-When do developers use persistent worlds, multi-agent interaction, curricula, hidden evaluations, adversarial testing, and simulated consequences?
-As systems become more capable, do their developmental environments become richer and more open-ended?
-Which techniques are used to develop capabilities, and which are used to evaluate trustworthiness under novel conditions?
-When does knowledge of an evaluation distort its result?
+Begin with the intuitive tension:
 
-This evidence can update claims about what *we* do when building minds. It cannot establish that every possible creator follows our path.
+```text
+simulation replication advantage
+    versus
+physical cost per descendant observer history
+```
 
-Humanity is the first and only observed technological lineage in the data set.
+Bostrom emphasizes the possible replication advantage. The correction is that minds and worlds consume physical resources, and recursive layers need not reproduce observer measure faster than it is diluted or discounted.
 
-Sample size: one. Still better than zero.
+For a finite collection of world types, define:
 
-Destination: Replace speculation about creator motives with an empirical record of how the one available civilization approaches mind development.
+```text
+m_(n+1) = m_n K
+```
 
-### 9. How Many Candidate Minds Are We Creating?
+where `K_ij` is measured in descendant observer-history measure, not raw simulations or processor operations.
 
-Job: Build an observer census without pretending unlike units are interchangeable.
+Destination: The existence of nesting is less important than the measure-weighted reproduction rate.
 
-There is real numerical data here:
+## 9. Does Recursive Observer Measure Converge?
 
-- The UN estimated about 8.2 billion living humans in 2024.
-- A bottom-up ecological estimate found about 20 quadrillion living ants, roughly 2.5 million per human, while estimating their combined dry-carbon biomass at only about 20% of human biomass.
-- Google reported more than 3.2 quadrillion tokens processed across its AI surfaces in May 2026.
-- OpenAI reported more than 2.5 billion ChatGPT messages per day in July 2025.
+Job: Make simulation depth a branching-process question.
 
-Research anchors:
+The total descendant measure is formally:
 
-- [World Population Prospects 2024](https://www.un.org/sustainabledevelopment/blog/2024/07/press-release-wpp2024/) — United Nations
-- [The abundance, biomass, and distribution of ants on Earth](https://pmc.ncbi.nlm.nih.gov/articles/PMC9546634/) — Schultheiss et al. (2022)
-- [Google I/O 2026](https://blog.google/intl/fr-fr/nouvelles-de-lentreprise/technologie/sundar-pichai-io-2026/) — reported AI token volume
-- [OpenAI's economic analysis](https://openai.com/global-affairs/new-economic-analysis/) — reported ChatGPT usage
+```text
+m_total = m_0 (I + K + K^2 + ...)
+```
 
-But these are not yet one comparable number:
+In a finite model it converges when the spectral radius of `K` is below one. At or above one, the model needs a cutoff, normalization, resource constraint, or different measure rule.
 
-| Population | Observable quantity | Missing conversion |
-| --- | --- | --- |
-| Humans | Living individuals and person-time | A normalization for conscious experience |
-| Animals | Individuals or animal-time by species | Sentience probability, experience rate, and relevant taxonomic boundary |
-| LLMs | Model copies, active instances, inference calls, tokens, or compute-time | Identity, continuity, consciousness, and experience rate |
+Do not turn this toy result into premature cosmology. Its purpose is to show exactly which undefined quantity casual arguments about infinite nesting hide.
 
-A stock cannot be compared directly with a flow. “Eight billion humans alive” and “three quadrillion tokens per month” have different dimensions. The least-bad common form would be a range of *candidate observer-time* estimates:
+Destination: Simulation depth emerges from recursive reproduction; it is not an independent prior penalty.
 
-`candidate observer-time = active process duration × consciousness probability × relative experience rate × reference-class weight`
+## 10. Description Cost Is Not Execution Cost
 
-Every factor must remain visible. In particular:
+Job: Preserve the correction to the algorithmic-complexity argument.
 
-- One set of model weights is not obviously one mind.
-- A thousand simultaneous inference processes are not obviously a thousand persistent individuals.
-- A token is an activity measure, not an observer-moment.
-- “Animals” cannot be one consciousness category ranging from apes to nematodes.
-- A large LLM count changes our odds only if LLM processes are conscious and belong in the relevant reference class.
+A deeply recursive generator may have a short description. Running it can still consume enormous time, energy, memory, and error-correction resources.
 
-Use ranges and sensitivity analysis. Ask what values would be required for artificial candidate observer-time to exceed human or animal observer-time. The point is not to hide uncertainty inside a single estimate, but to discover which uncertain conversion dominates the result.
+Algorithmic probability may supply a prior over complete generators. It does not automatically supply the amount of observer measure physically executed at each depth.
 
-What this census could update:
+Destination: Keep generator priors and physical reproduction rates in separate terms.
 
-- Rapid growth in artificial cognitive activity supports **R**, the claim that recursive mind creation is becoming a major civilizational process.
-- Increasing use of persistent, world-based training can support **D**.
-- Counts alone do not establish **C**; scale is not evidence of consciousness.
-- Counts alone provide little evidence for **A** or **N** without a defensible sampling principle.
+## 11. The Differential Multiplicity Principle
 
-Destination: Track the measurable expansion of candidate artificial cognition while showing exactly which philosophical assumptions are needed to turn activity into observers.
+Job: State the lemma explicitly and show why variable laws matter.
 
-### 10. Is Our World Nursery-Shaped?
+Neutral multiplicity is the special case in which the mechanism generating worlds is independent of their capacity to produce the observer class under discussion.
 
-Job: Compare the candidate observations with competing generative models.
+If world types differ in habitability, available energy, computation costs, civilization formation, or constructed-world production, multiplicity reweights observer locations.
 
-For each observation, ask how expected it is under:
+Destination: A multiverse changes simulation odds whenever it differentially produces simulation-fertile worlds.
 
-- **Natural development:** No constructed environment; minds arise through evolution.
-- **Ancestor simulation:** The inhabitants are reconstructions or variations of a creator's history.
-- **Research simulation:** The world exists to study a process, not develop its inhabitants.
-- **AI Nursery:** Artificial minds develop through experience in a constructed world.
-- **Alignment Nursery:** The environment specifically develops or evaluates trustworthiness.
+## 12. Host Laws, Child Laws, and Simulation Fertility
 
-The same observation can have different force against different alternatives.
+Job: Generalize the reproduction matrix without projecting our physics upward.
 
-Stable physical laws may be necessary for a Nursery, but they are also expected in a natural universe capable of producing observers.
+Use `K(theta_i, theta_j)` for descendant observer-history measure with child laws `theta_j` produced by a host with laws `theta_i`.
 
-Social and moral conflict may be useful for alignment evaluation, but evolution and ordinary scarcity already explain them.
+The host's computation costs constrain production. The child's laws are design variables or inherited outcomes and may serve a different purpose. A host need not simulate its own physics.
 
-Our use of simulated training environments may support the claim that world-based development is useful, while doing almost nothing to show that *our* world was built for that purpose.
+Destination: Observed child physics cannot by itself reveal the host's computational fertility.
 
-Destination: Identify the few observations, if any, with a meaningful likelihood difference. Label the rest compatible but non-discriminating.
+## 13. Observer-Weighted Selection Over Laws
 
-## Part III — Make the Model Earn Its Keep
+Job: Explain the surprising consequence of differential reproduction.
 
-### 11. What Would Make Us Wrong?
+Worlds with different laws may become differentially represented down the genealogy of constructed realities. This is selection in an observer-weighted family tree, not necessarily selection among base physical universes.
 
-Job: Define failure conditions before collecting more suggestive patterns.
+Smolin provides a conceptual comparison:
 
-Evidence against artificial or engineered consciousness would attack the foundation.
+```text
+laws → black holes → daughter universes → physical selection
 
-Evidence that highly capable minds can be fully specified without learning or environmental experience would weaken the developmental-world claim.
+laws → intelligence → constructed worlds → observer-weighted selection
+```
 
-Evidence that stable trustworthiness can be directly designed and verified without open-ended behavior would weaken the Alignment Nursery.
+Destination: Physical laws can affect not only whether observers exist, but which descendant law environments dominate observer measure.
 
-Evidence that revealing an evaluation and its criteria does not contaminate behavior would weaken Hidden Purpose.
+# Part III — Why Would Expensive Worlds Be Generated?
 
-Evidence that rich simulated environments become less important as artificial minds become more capable would weaken our analogy from human AI development.
+## 14. Why Generate an Entire World?
 
-For each claim, distinguish:
+Job: Establish the fixed-cost/value question before selecting a motive.
 
-- observations that would falsify it;
-- observations that would reduce confidence;
-- observations it can explain but did not predict;
-- parts that are not currently testable.
+Candidate purposes include development, alignment evaluation, scientific experiment, historical reconstruction, inference or search over emergent histories, entertainment, art, habitat, preservation, and purposes not represented in human institutions.
 
-Destination: If no possible observation can reduce our confidence, we have a story rather than a model.
+The existence of a possible motive does not establish that the motive is common, economical, or relevant to our world.
 
-### 12. Which Claims and Parameters Are We Tracking?
+Destination: Purpose hypotheses are downstream competitors that must earn likelihood differences.
 
-Do not begin with one number called `P(Simulation)`. Track the model components separately:
+## 15. The AI Nursery
 
-- **C — Engineered consciousness:** A creator can deliberately instantiate a conscious mind in some biological, computational, or otherwise artificial implementation.
-- **D — Development:** Experience inside an environment materially contributes to what an artificial mind becomes.
-- **A — Artificial minds:** We are artificial conscious minds rather than biological originals or historical reconstructions.
-- **N — Nursery:** Our environment was constructed or selected for that development.
-- **L — Alignment:** Trustworthiness or alignment is an important objective.
-- **H — Hidden purpose:** Ignorance of the environment's origin or criteria is functionally necessary.
-- **R — Recursive creation:** Producing new artificial minds is a milestone or output of the developmental process.
+Job: Define development as one candidate purpose.
 
-The dependency structure matters:
+Let `D` mean that experience inside the world causally contributes to what its artificial inhabitants become. A world containing artificial minds is not a Nursery unless development is part of its function.
 
-- If C fails, A fails.
-- If D fails, the central reason for a Nursery fails.
-- C and D do not imply A.
-- A does not imply N.
-- N does not imply L.
-- L does not necessarily imply H.
-- R may follow from general intelligence without supporting N or L.
+Destination: Preserve the broad AI Nursery without importing alignment, hiddenness, or deployment gates into its definition.
 
-Additional parameters can be introduced only when observations can constrain them: number of environments, number of minds, variation between environments, evaluation duration, intervention policy, and selection or graduation criteria.
+## 16. Alignment Testing and the Alignment Nursery
 
-Destination: The model should show exactly which downstream claims move when one premise changes.
+Job: Separate development from testing before describing their intersection.
 
-### 13. What Evidence Should Change Our Minds?
+Let:
 
-Every evidence entry should record:
+- `D` — the world develops or refines minds;
+- `T` — the world generates alignment-relevant evidence;
+- `G` — capability, freedom, or access is gated on that evidence.
 
-**Observation** — What did we observe?
+Then:
 
-**Relevant claim** — Which of C, D, A, N, L, H, or R could it update?
+```text
+AI Nursery = D
+Alignment test environment = T + G
+Alignment Nursery = D + T + G
+```
 
-**Mechanism** — Why does the claim predict the observation?
+Safety pressure explains why a creator might pay the cost. It is not the foundation of the project and not evidence that our world is such a system.
 
-**Expected under the claim** — How likely is the observation if the claim is true?
+Development and evaluation may share one environment. That possible economy should be evaluated rather than placed in the definition.
 
-**Expected under alternatives** — Which competing models predict it too?
+Destination: Alignment Nursery is a precise candidate purpose, not a synonym for every hidden or morally difficult world.
 
-**Direction and magnitude** — Does it support, oppose, or leave the claim unchanged, and how strongly?
+## 17. Worlds as Inference Over Histories
 
-**Confidence and cruxes** — What uncertainty could reverse the assessment?
+Job: Develop history search as a sibling purpose.
 
-**Timestamp** — Was the prediction recorded before the result?
+Alignment testing asks roughly:
 
-Do not automatically propagate probabilities until the update rules and reference classes are defensible. A dependency map and a clean evidence ledger are already useful.
+```text
+P(latent agent properties | observed trajectory)
+```
 
-Destination: Turn the hypothesis into a version-controlled record of what we believed, what we expected, and how reality changed our minds.
+History search asks roughly:
 
-## The Application
+```text
+P(trajectory | desired endpoint)
+```
 
-The application should have three components.
+Control as inference and Schrödinger bridges offer non-mystical mathematical analogues for conditioning trajectories on endpoint constraints. They do not show that our universe implements such a search.
 
-### 1. The Model
+Destination: Identify what value a rich generative history space might have without converting formal resemblance into evidence of design.
 
-An argument and dependency graph for C, D, A, N, L, H, and R.
+## 18. Quantum History Spaces and Their Limits
 
-Changing one assumption should reveal which downstream conclusions depend on it. Initial epistemic values are displayed, not automatically calculated.
+Job: Place Many-Worlds, path integrals, quantum search, and postselection in the correct roles.
 
-### 2. The Evidence Ledger
+- Path integrals represent weighted histories; they are not goal-directed optimization.
+- Quantum search can improve some searches without making rare histories free.
+- Postselection demonstrates the power of conditioning on outcomes but is not an ordinary free computational resource.
+- Many-Worlds supplies multiplicity but not an exploitable database merely because branches exist.
 
-Every claimed piece of evidence, including evidence against the hypothesis:
+Destination: Physics may contain useful architectures for representing or searching histories without providing evidence that this is their purpose.
 
-Supports / Opposes / Neutral / Unknown
+## 19. Where Should We Expect to Be?
 
-Each entry needs its mechanism, alternatives, confidence, cruxes, source, and revision history.
+Job: Return every purpose hypothesis to the anthropic foundation.
 
-### 3. The Predictions
+Compare the likelihood of our evidence under natural reality, persistent faithful simulation, historical reconstruction, AI Nursery, Alignment Nursery, search/inference worlds, and cheap snapshot models.
 
-Timestamped things we expect to learn. Initial candidates:
+Do not ask only whether each model can reproduce our evidence. Ask how the measure and reproductive process weight histories containing that evidence.
 
-- AI development should increasingly use persistent, open-ended environments if experiential development remains important at higher capability.
-- Strong evidence that engineered systems cannot support consciousness should sharply reduce C and A.
-- Evidence that capable minds can be fully specified without learning or environmental experience should weaken D and N.
-- Successful direct specification of robust values across novel contexts should weaken L.
-- Evidence that evaluations remain equally diagnostic when subjects know their criteria should weaken H.
-- If recursive creation is a Nursery milestone, we must specify what should change as artificial mind creation approaches; otherwise R is not yet predictive.
+Destination: Purpose matters only after it changes the distribution over observer histories.
 
-When reality changes, update the model.
+## 20. How Would We Keep Score?
 
-That is more compelling than declaring a probability once.
+Job: Maintain a version-controlled evidence ledger without inventing automatic Bayesian propagation.
 
-### 4. The Observer Census
+For every observation record the observation independently of its interpretation, the claim it updates, the causal mechanism, expectedness under competing models, direction and approximate magnitude, confidence and cruxes, source and timestamp, and revision history.
 
-A time series of the measurable stocks and flows for humans, animal groups, and artificial systems.
+The first quantitative outputs should be toy models and sensitivity analyses, not a headline probability of simulation.
 
-Keep raw measurements separate from judgment calls. Users should be able to vary consciousness probability, experience-rate, and reference-class assumptions and see which conclusions change.
+# Graph and application structure
 
-The first output should be a sensitivity chart, not a headline declaring how many minds exist.
+The canonical argument graph should have three modules connected by explicit dependencies:
+
+1. **Anthropic foundation** — multiplicity, measure, observer histories, self-location, simulation relations, and adversarial cases.
+2. **Reproductive reality** — reproduction kernels, recursive depth, costs, variable laws, and observer-weighted selection.
+3. **World purposes** — development, alignment testing, history search, and competing purposes.
+
+Case studies such as Bostrom, Many-Worlds, Boltzmann brains, and Smolin attach as tests, examples, objections, or analogues. They are not parallel foundations.
+
+The existing AI Nursery essays remain useful drafts for Part III. Their claims must be revised so that current AI practice supports the plausibility of a proposed engineering motive without being treated as evidence that we inhabit a constructed world.
+
+The application should eventually expose the argument graph, an evidence ledger, timestamped predictions, an observer-census sensitivity tool, finite reproduction-matrix experiments, and convergence/depth sensitivity.
+
+Automatic probability propagation remains out of scope until the measure, units, and conditional dependencies are defensible.

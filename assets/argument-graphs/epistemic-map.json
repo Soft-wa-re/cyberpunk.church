@@ -2,8 +2,107 @@
   "version": 1,
   "id": "epistemic-map",
   "title": "Cyberpunk Church Epistemic Map",
-  "description": "The canonical map of the broad AI Nursery concept, the strict Alignment Nursery Hypothesis, their empirical constraints, and the Fermi and Simulation dilemmas that frame them.",
+  "description": "The canonical map of anthropic measure, observer histories, reproductive reality, proposed purposes for constructed worlds, and the dilemmas that motivate the inquiry.",
   "views": [
+    {
+      "id": "more-copies-are-not-more-probability",
+      "title": "More Copies Are Not More Probability",
+      "description": "Why observer multiplicity creates a measure and self-location problem rather than directly determining where an observer should expect to be.",
+      "nodes": [
+        "multiplicity-question",
+        "observer-multiplicity",
+        "multiplicity-not-probability",
+        "measure-required",
+        "self-location",
+        "reference-class",
+        "mostly-simulated",
+        "many-worlds-measure",
+        "differential-multiplicity",
+        "neutral-multiplicity"
+      ]
+    },
+    {
+      "id": "what-receives-measure",
+      "title": "What Receives Measure?",
+      "description": "Candidate units for anthropic reasoning, the observer-history proposal, and why choosing a domain does not yet supply a weighting rule.",
+      "nodes": [
+        "measure-target-question",
+        "measure-required",
+        "self-location",
+        "reference-class",
+        "observer-history-measure",
+        "measure-rule-unsettled",
+        "observer-census",
+        "incommensurable-counts",
+        "boltzmann-snapshot-problem"
+      ]
+    },
+    {
+      "id": "continued-coherence",
+      "title": "Continued Coherence and the Snapshot Problem",
+      "description": "How sequentially coherent evidence can reject ephemeral observer models without distinguishing a faithful persistent simulation from a persistent base world.",
+      "nodes": [
+        "observer-history-measure",
+        "measure-rule-unsettled",
+        "snapshot-observers",
+        "persistent-simulation",
+        "continued-coherence",
+        "coherence-discriminates-snapshots",
+        "coherence-neutral-persistent",
+        "boltzmann-snapshot-problem"
+      ]
+    },
+    {
+      "id": "simulation-is-relational",
+      "title": "Simulation Is a Relationship",
+      "description": "The distinctions among causal ancestry, implementation, construction, control, and base status—and why upstream position supplies no automatic anthropic weight.",
+      "nodes": [
+        "simulation-relational",
+        "causal-ancestry-not-simulation",
+        "base-no-anthropic-privilege",
+        "base-may-not-exist",
+        "host-child-laws",
+        "self-location",
+        "measure-required",
+        "ancestor-simulation",
+        "research-simulation"
+      ]
+    },
+    {
+      "id": "when-worlds-make-worlds",
+      "title": "When Worlds Make Worlds",
+      "description": "The competition between simulated-observer replication and physical reproduction cost, represented by a measure-weighted reproduction kernel.",
+      "nodes": [
+        "world-reproduction",
+        "reproduction-kernel",
+        "simulation-replication-advantage",
+        "physical-reproduction-cost",
+        "recursive-observer-reproduction",
+        "reproduction-convergence",
+        "description-execution-distinction",
+        "measure-required",
+        "observer-history-measure",
+        "mostly-simulated",
+        "abundant-compute"
+      ]
+    },
+    {
+      "id": "differential-multiplicity",
+      "title": "The Differential Multiplicity Principle",
+      "description": "Why multiplicity is neutral only under independence, how host and child laws can differ, and how recursive construction can select laws in an observer-weighted genealogy.",
+      "nodes": [
+        "differential-multiplicity",
+        "neutral-multiplicity",
+        "reproduction-kernel",
+        "physical-reproduction-cost",
+        "recursive-observer-reproduction",
+        "host-child-laws",
+        "variable-law-fertility",
+        "observer-weighted-law-selection",
+        "smolin-reproduction-analogy",
+        "base-no-anthropic-privilege"
+      ]
+    },
     {
       "id": "where-is-everybody",
       "title": "Where Is Everybody?",
@@ -166,6 +265,453 @@
     }
   ],
   "nodes": [
+    {
+      "id": "multiplicity-question",
+      "type": "question",
+      "title": "What follows from the existence of many observers like us?",
+      "body": "Spatial duplication, quantum branching, cosmological reproduction, biological reproduction, and constructed worlds can all produce compatible observers. Their existence alone does not determine which observer-instantiation we should expect to be.",
+      "epistemics": {
+        "status": "open",
+        "belief": {
+          "type": "unknown"
+        },
+        "confidence": "low",
+        "cruxes": [
+          "Which observer differences remain relevant after conditioning on all of our available evidence."
+        ]
+      }
+    },
+    {
+      "id": "observer-multiplicity",
+      "type": "claim",
+      "title": "Reality may generate compatible observers through several mechanisms",
+      "body": "Copies or near-copies can arise through space, quantum branches, cosmological processes, biological lineages, constructed worlds, or mathematical and computational plenitude.",
+      "epistemics": {
+        "status": "tentative",
+        "belief": {
+          "type": "qualitative",
+          "value": "Plausible under several live models"
+        },
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "multiplicity-not-probability",
+      "type": "conclusion",
+      "title": "More copies do not by themselves determine self-location",
+      "body": "A count becomes an anthropic probability only after specifying what receives measure, how unlike instances are weighted, and which candidates belong in the reference class.",
+      "epistemics": {
+        "status": "accepted",
+        "belief": {
+          "type": "qualitative",
+          "value": "Methodological constraint"
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "measure-required",
+      "type": "claim",
+      "title": "Self-location requires a measure over compatible observers or histories",
+      "body": "When a model contains several observer-instantiations compatible with our evidence, an additional weighting rule is needed before deriving what an observer should expect to see.",
+      "epistemics": {
+        "status": "accepted",
+        "belief": {
+          "type": "qualitative",
+          "value": "Required but underspecified"
+        },
+        "confidence": "high",
+        "cruxes": [
+          "Whether a defensible measure can remain stable under duplication, branching, nesting, and infinite populations."
+        ]
+      }
+    },
+    {
+      "id": "self-location",
+      "type": "question",
+      "title": "Where should an observer with our evidence expect to be?",
+      "body": "For a model M, evidence E, and candidate history H, self-location depends on both the measure assigned to H and the likelihood of E under that history.",
+      "epistemics": {
+        "status": "open",
+        "belief": {
+          "type": "unknown"
+        },
+        "confidence": "low",
+        "cruxes": [
+          "Which measure and reference class remain coherent across the competing models."
+        ]
+      }
+    },
+    {
+      "id": "measure-target-question",
+      "type": "question",
+      "title": "What object should receive anthropic measure?",
+      "body": "Candidate units include worlds, branches, physical implementations, observer instances, observer moments, persistent histories, civilizations, and lineages. These choices need not produce the same self-locating predictions.",
+      "epistemics": {
+        "status": "open",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "observer-history-measure",
+      "type": "hypothesis",
+      "title": "Anthropic measure may need to range over observer histories",
+      "body": "Persistent causal histories preserve identity, sequential evidence, and the process generating an observer rather than treating every instantaneous observer-state as an isolated draw.",
+      "epistemics": {
+        "status": "tentative",
+        "belief": {
+          "type": "qualitative",
+          "value": "Promising domain; weighting unresolved"
+        },
+        "confidence": "low",
+        "cruxes": [
+          "Whether the measure tracks causal history, represented memories, physical implementation, duration, or some combination."
+        ],
+        "updates": {
+          "up": [
+            "History-based measures avoid pathologies that remain unavoidable under otherwise comparable observer-moment measures."
+          ],
+          "down": [
+            "Snapshot observers with encoded false memories remain indistinguishable and equally weighted under the proposed history measure."
+          ]
+        }
+      }
+    },
+    {
+      "id": "measure-rule-unsettled",
+      "type": "objection",
+      "title": "Choosing observer histories does not specify their weights",
+      "body": "Writing mu(H) identifies a domain. It does not decide how duration, branching, implementation count, computational cost, consciousness, or duplicated histories contribute to the measure.",
+      "epistemics": {
+        "status": "accepted",
+        "belief": {
+          "type": "qualitative",
+          "value": "Decisive limitation on the current formalism"
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "many-worlds-measure",
+      "type": "claim",
+      "title": "Quantum branching shows why multiplicity is not equal counting",
+      "body": "In a branching quantum ontology, the existence of multiple outcomes does not imply that branches should receive equal weight. The weighting rule remains fundamental.",
+      "epistemics": {
+        "status": "tentative",
+        "belief": {
+          "type": "qualitative",
+          "value": "Strong conceptual stress test"
+        },
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "snapshot-observers",
+      "type": "hypothesis",
+      "title": "A cheap process could instantiate only a present observer-state",
+      "body": "A snapshot model produces a current conscious configuration with apparent memories but does not generate the persistent causal history those memories represent.",
+      "epistemics": {
+        "status": "open",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "persistent-simulation",
+      "type": "hypothesis",
+      "title": "A simulation could generate a persistent coherent history",
+      "body": "A faithful implementation can continue stable dynamics and preserve causal history, making ordinary future observations about as expected as they are under a persistent base world.",
+      "epistemics": {
+        "status": "open",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "continued-coherence",
+      "type": "evidence",
+      "title": "Our observations continue to extend one coherent history",
+      "body": "New experiences usually preserve stable laws, memory continuity, shared records, and causal consequences rather than dissolving into unrelated observer-states.",
+      "epistemics": {
+        "status": "accepted",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "coherence-discriminates-snapshots",
+      "type": "conclusion",
+      "title": "Continued coherence lowers cheap snapshot models",
+      "body": "When a snapshot model assigns little probability to the next orderly observation conditioned on the apparent past, every coherent continuation produces evidence against that model relative to persistent-world alternatives.",
+      "epistemics": {
+        "status": "tentative",
+        "belief": {
+          "type": "qualitative",
+          "value": "Strong when the snapshot model predicts poor continuation"
+        },
+        "confidence": "medium",
+        "cruxes": [
+          "Whether the proposed snapshot ensemble already includes correlated successor states or complete encoded histories."
+        ]
+      }
+    },
+    {
+      "id": "coherence-neutral-persistent",
+      "type": "conclusion",
+      "title": "Continued coherence need not distinguish persistent simulation from base reality",
+      "body": "If both models implement the same durable laws and histories, ordinary continuation can have nearly equal likelihood under each and therefore provide almost no Bayes factor between them.",
+      "epistemics": {
+        "status": "tentative",
+        "belief": {
+          "type": "qualitative",
+          "value": "Important limit on simulation tests"
+        },
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "boltzmann-snapshot-problem",
+      "type": "objection",
+      "title": "False-history observers challenge naive moment and history measures",
+      "body": "Fluctuation observers and deliberately instantiated snapshots may contain internally coherent memories without the causal past those memories describe. A measure must say whether represented history or generated history matters.",
+      "epistemics": {
+        "status": "accepted",
+        "belief": {
+          "type": "qualitative",
+          "value": "Adversarial test for the measure"
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "simulation-relational",
+      "type": "claim",
+      "title": "Simulation is an implementation relationship between realities",
+      "body": "A world is simulated relative to a causally upstream process that implements its dynamics. Simulation is not an intrinsic material category or another standalone level in a multiverse taxonomy.",
+      "epistemics": {
+        "status": "tentative",
+        "belief": {
+          "type": "qualitative",
+          "value": "Working definition"
+        },
+        "confidence": "medium",
+        "cruxes": [
+          "Which counterfactual and causal conditions distinguish implementation from mere mathematical correspondence."
+        ]
+      }
+    },
+    {
+      "id": "causal-ancestry-not-simulation",
+      "type": "conclusion",
+      "title": "Causal ancestry, construction, and simulation are different relations",
+      "body": "A universe can cause or contain another universe without implementing its dynamics. A civilization can initiate a world without observing, controlling, or simulating it.",
+      "epistemics": {
+        "status": "accepted",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "base-no-anthropic-privilege",
+      "type": "conclusion",
+      "title": "Ontological priority gives no automatic anthropic priority",
+      "body": "Being causally upstream does not by itself assign greater observer measure. Any preference for base observers must follow from a prior, physical costs, implementation or consciousness constraints, reproduction dynamics, or another explicit measure.",
+      "epistemics": {
+        "status": "accepted",
+        "belief": {
+          "type": "qualitative",
+          "value": "Core methodological conclusion"
+        },
+        "confidence": "high",
+        "cruxes": [
+          "Whether a defensible measure contains a principled upstream or non-implemented preference."
+        ]
+      }
+    },
+    {
+      "id": "base-may-not-exist",
+      "type": "hypothesis",
+      "title": "Some ontologies may contain no unique base reality",
+      "body": "An implementation genealogy could regress indefinitely, branch without a unique root, or be embedded in an ontology where complete mathematical structures receive prior status without one privileged implementation layer.",
+      "epistemics": {
+        "status": "open",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "host-child-laws",
+      "type": "claim",
+      "title": "Host physics and child physics need not match",
+      "body": "A host with laws theta_H can implement a child environment with laws theta_C. Host laws determine available resources and computation costs; child laws may be selected for the constructed world's purpose.",
+      "epistemics": {
+        "status": "tentative",
+        "belief": {
+          "type": "qualitative",
+          "value": "Important structural possibility"
+        },
+        "confidence": "medium",
+        "cruxes": [
+          "Which properties must remain invariant across a genuine implementation relationship."
+        ]
+      }
+    },
+    {
+      "id": "world-reproduction",
+      "type": "claim",
+      "title": "Observer-containing worlds can produce descendant observer-containing worlds",
+      "body": "Civilizations, physical birth processes, or other mechanisms may generate new environments containing observers, turning reality into a genealogy rather than a static collection.",
+      "epistemics": {
+        "status": "tentative",
+        "belief": {
+          "type": "qualitative",
+          "value": "Physically conceivable; prevalence unknown"
+        },
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "reproduction-kernel",
+      "type": "claim",
+      "title": "A reproduction kernel tracks descendant observer-history measure",
+      "body": "K_ij denotes the expected descendant observer-history measure of world type j produced per unit parent measure of type i. Its units must not be replaced by raw simulation counts or processor operations.",
+      "epistemics": {
+        "status": "tentative",
+        "belief": {
+          "type": "qualitative",
+          "value": "Useful finite-model formalization"
+        },
+        "confidence": "medium",
+        "cruxes": [
+          "Whether parent measure, descendant measure, and shared physical resources can be normalized consistently."
+        ]
+      }
+    },
+    {
+      "id": "simulation-replication-advantage",
+      "type": "claim",
+      "title": "Constructed worlds could multiply observer measure",
+      "body": "Once a world can implement conscious descendants, one parent civilization might generate many observer histories rather than only the observers produced biologically in its original history.",
+      "epistemics": {
+        "status": "open",
+        "belief": {
+          "type": "qualitative",
+          "value": "Bostrom's central multiplicity pressure"
+        },
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "physical-reproduction-cost",
+      "type": "objection",
+      "title": "Descendant observer histories consume physical resources",
+      "body": "Computation, energy, memory, time, communication, fidelity, error correction, and opportunity cost can limit how much descendant observer measure each parent world produces.",
+      "epistemics": {
+        "status": "accepted",
+        "belief": {
+          "type": "qualitative",
+          "value": "Necessary counterweight to replication advantage"
+        },
+        "confidence": "high",
+        "cruxes": [
+          "The minimum host resources required per unit of conscious descendant history."
+        ]
+      }
+    },
+    {
+      "id": "recursive-observer-reproduction",
+      "type": "claim",
+      "title": "Descendant worlds may reproduce again",
+      "body": "Constructed observers can eventually create further observer-containing worlds, forming a branching process whose depth distribution depends on measure-weighted reproduction rates.",
+      "epistemics": {
+        "status": "open",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "reproduction-convergence",
+      "type": "conclusion",
+      "title": "Recursive observer measure converges only under additional conditions",
+      "body": "In a finite toy model, the series I + K + K^2 + ... converges when the spectral radius of K is below one. Otherwise a cutoff, resource constraint, normalization, or different measure rule is needed.",
+      "epistemics": {
+        "status": "tentative",
+        "belief": {
+          "type": "qualitative",
+          "value": "Exact within the finite linear toy model"
+        },
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "description-execution-distinction",
+      "type": "conclusion",
+      "title": "Description complexity and execution cost are different quantities",
+      "body": "A recursively defined generator may have a short description while the physical execution of its descendant worlds consumes enormous resources. Algorithmic priors and reproduction rates therefore answer different questions.",
+      "epistemics": {
+        "status": "accepted",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "differential-multiplicity",
+      "type": "conclusion",
+      "title": "Multiplicity changes inference when it correlates with observer reproduction",
+      "body": "Multiplicity is anthropically neutral only when the mechanism producing worlds is independent of their capacity to generate the observer measure relevant to the inference.",
+      "epistemics": {
+        "status": "accepted",
+        "belief": {
+          "type": "qualitative",
+          "value": "Differential Multiplicity Principle"
+        },
+        "confidence": "high",
+        "cruxes": [
+          "Which correlations survive after specifying the seed distribution, reproduction kernel, measure, and observer evidence."
+        ]
+      }
+    },
+    {
+      "id": "neutral-multiplicity",
+      "type": "assumption",
+      "title": "Neutral multiplicity requires independence from the inferred property",
+      "body": "Replicating every relevant world type by the same measure factor leaves normalized anthropic odds unchanged. This is a special independence case rather than the default effect of multiplicity.",
+      "epistemics": {
+        "status": "accepted",
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "variable-law-fertility",
+      "type": "hypothesis",
+      "title": "Physical laws can differ in simulation fertility",
+      "body": "Laws affect habitability, intelligence, usable energy, computation, world construction, and the cost of conscious implementations. Different host laws may therefore generate radically different descendant observer measure.",
+      "epistemics": {
+        "status": "open",
+        "belief": {
+          "type": "qualitative",
+          "value": "Plausible consequence of variable-law ensembles"
+        },
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "observer-weighted-law-selection",
+      "type": "conclusion",
+      "title": "Laws can become differentially represented in the observer-weighted genealogy",
+      "body": "If world types reproduce descendant observer measure at different rates, their laws or chosen child laws can become overrepresented down the constructed-world family tree without becoming more common among base universes.",
+      "epistemics": {
+        "status": "tentative",
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "smolin-reproduction-analogy",
+      "type": "claim",
+      "title": "Cosmological natural selection is an analogue, not the same mechanism",
+      "body": "Smolin's proposal selects among physically reproduced universes through black holes. Constructed-world reproduction instead selects within an observer-weighted genealogy unless it also changes the population of base physical universes.",
+      "epistemics": {
+        "status": "accepted",
+        "belief": {
+          "type": "qualitative",
+          "value": "Useful comparison with a strict boundary"
+        },
+        "confidence": "medium"
+      }
+    },
     {
       "id": "nursery-question",
       "type": "question",
@@ -1071,6 +1617,290 @@
     }
   ],
   "edges": [
+    {
+      "id": "multiplicity-raises-question",
+      "from": "observer-multiplicity",
+      "to": "multiplicity-question",
+      "type": "explains"
+    },
+    {
+      "id": "simulation-dominance-exemplifies-multiplicity",
+      "from": "mostly-simulated",
+      "to": "observer-multiplicity",
+      "type": "explains"
+    },
+    {
+      "id": "many-worlds-exemplifies-multiplicity",
+      "from": "many-worlds-measure",
+      "to": "observer-multiplicity",
+      "type": "explains"
+    },
+    {
+      "id": "multiplicity-conclusion-entails-measure",
+      "from": "multiplicity-not-probability",
+      "to": "measure-required",
+      "type": "entails"
+    },
+    {
+      "id": "measure-depends-on-multiplicity",
+      "from": "measure-required",
+      "to": "observer-multiplicity",
+      "type": "depends-on"
+    },
+    {
+      "id": "self-location-depends-measure",
+      "from": "self-location",
+      "to": "measure-required",
+      "type": "depends-on"
+    },
+    {
+      "id": "self-location-assumes-reference-class",
+      "from": "self-location",
+      "to": "reference-class",
+      "type": "assumes"
+    },
+    {
+      "id": "measure-question-explains-measure",
+      "from": "measure-target-question",
+      "to": "measure-required",
+      "type": "explains"
+    },
+    {
+      "id": "histories-alternative-to-census",
+      "from": "observer-history-measure",
+      "to": "observer-census",
+      "type": "alternative-to",
+      "note": "A history measure and a raw census answer different questions; either still requires explicit units and weights."
+    },
+    {
+      "id": "weights-attack-history-solution",
+      "from": "measure-rule-unsettled",
+      "to": "observer-history-measure",
+      "type": "attacks",
+      "note": "The objection attacks the claim that choosing histories solves the measure problem, not the usefulness of histories as a domain."
+    },
+    {
+      "id": "counts-attack-measure-target",
+      "from": "incommensurable-counts",
+      "to": "measure-target-question",
+      "type": "attacks"
+    },
+    {
+      "id": "boltzmann-attacks-history-solution",
+      "from": "boltzmann-snapshot-problem",
+      "to": "observer-history-measure",
+      "type": "attacks"
+    },
+    {
+      "id": "history-enables-coherence-test",
+      "from": "observer-history-measure",
+      "to": "continued-coherence",
+      "type": "explains"
+    },
+    {
+      "id": "coherence-attacks-snapshots",
+      "from": "continued-coherence",
+      "to": "snapshot-observers",
+      "type": "attacks"
+    },
+    {
+      "id": "coherence-supports-snapshot-conclusion",
+      "from": "continued-coherence",
+      "to": "coherence-discriminates-snapshots",
+      "type": "supports"
+    },
+    {
+      "id": "snapshot-conclusion-attacks-snapshots",
+      "from": "coherence-discriminates-snapshots",
+      "to": "snapshot-observers",
+      "type": "attacks"
+    },
+    {
+      "id": "coherence-supports-persistent-parity",
+      "from": "continued-coherence",
+      "to": "coherence-neutral-persistent",
+      "type": "supports"
+    },
+    {
+      "id": "persistent-explains-parity",
+      "from": "persistent-simulation",
+      "to": "coherence-neutral-persistent",
+      "type": "explains"
+    },
+    {
+      "id": "snapshot-alternative-persistent",
+      "from": "snapshot-observers",
+      "to": "persistent-simulation",
+      "type": "alternative-to"
+    },
+    {
+      "id": "ancestry-supports-relational-definition",
+      "from": "causal-ancestry-not-simulation",
+      "to": "simulation-relational",
+      "type": "supports"
+    },
+    {
+      "id": "simulation-relation-supports-base-conclusion",
+      "from": "simulation-relational",
+      "to": "base-no-anthropic-privilege",
+      "type": "supports"
+    },
+    {
+      "id": "measure-supports-base-conclusion",
+      "from": "measure-required",
+      "to": "base-no-anthropic-privilege",
+      "type": "supports"
+    },
+    {
+      "id": "no-base-supports-base-conclusion",
+      "from": "base-may-not-exist",
+      "to": "base-no-anthropic-privilege",
+      "type": "supports"
+    },
+    {
+      "id": "host-child-depends-implementation",
+      "from": "host-child-laws",
+      "to": "simulation-relational",
+      "type": "depends-on"
+    },
+    {
+      "id": "ancestor-explains-ancestry-distinction",
+      "from": "ancestor-simulation",
+      "to": "causal-ancestry-not-simulation",
+      "type": "explains"
+    },
+    {
+      "id": "research-explains-implementation-distinction",
+      "from": "research-simulation",
+      "to": "simulation-relational",
+      "type": "explains"
+    },
+    {
+      "id": "simulation-explains-world-reproduction",
+      "from": "simulation-relational",
+      "to": "world-reproduction",
+      "type": "explains"
+    },
+    {
+      "id": "kernel-depends-world-reproduction",
+      "from": "reproduction-kernel",
+      "to": "world-reproduction",
+      "type": "depends-on"
+    },
+    {
+      "id": "kernel-depends-measure",
+      "from": "reproduction-kernel",
+      "to": "measure-required",
+      "type": "depends-on"
+    },
+    {
+      "id": "kernel-depends-histories",
+      "from": "reproduction-kernel",
+      "to": "observer-history-measure",
+      "type": "depends-on"
+    },
+    {
+      "id": "simulation-dominance-supports-replication",
+      "from": "mostly-simulated",
+      "to": "simulation-replication-advantage",
+      "type": "supports"
+    },
+    {
+      "id": "compute-supports-replication",
+      "from": "abundant-compute",
+      "to": "simulation-replication-advantage",
+      "type": "supports"
+    },
+    {
+      "id": "replication-supports-kernel",
+      "from": "simulation-replication-advantage",
+      "to": "reproduction-kernel",
+      "type": "supports"
+    },
+    {
+      "id": "cost-attacks-replication",
+      "from": "physical-reproduction-cost",
+      "to": "simulation-replication-advantage",
+      "type": "attacks"
+    },
+    {
+      "id": "cost-constrains-kernel",
+      "from": "reproduction-kernel",
+      "to": "physical-reproduction-cost",
+      "type": "depends-on"
+    },
+    {
+      "id": "recursive-depends-kernel",
+      "from": "recursive-observer-reproduction",
+      "to": "reproduction-kernel",
+      "type": "depends-on"
+    },
+    {
+      "id": "recursion-entails-convergence-question",
+      "from": "recursive-observer-reproduction",
+      "to": "reproduction-convergence",
+      "type": "entails"
+    },
+    {
+      "id": "distinction-explains-cost",
+      "from": "description-execution-distinction",
+      "to": "physical-reproduction-cost",
+      "type": "explains"
+    },
+    {
+      "id": "differential-alternative-neutral",
+      "from": "differential-multiplicity",
+      "to": "neutral-multiplicity",
+      "type": "alternative-to"
+    },
+    {
+      "id": "fertility-supports-differential",
+      "from": "variable-law-fertility",
+      "to": "differential-multiplicity",
+      "type": "supports"
+    },
+    {
+      "id": "kernel-explains-fertility",
+      "from": "reproduction-kernel",
+      "to": "variable-law-fertility",
+      "type": "explains"
+    },
+    {
+      "id": "host-child-supports-fertility",
+      "from": "host-child-laws",
+      "to": "variable-law-fertility",
+      "type": "supports"
+    },
+    {
+      "id": "cost-constrains-fertility",
+      "from": "variable-law-fertility",
+      "to": "physical-reproduction-cost",
+      "type": "depends-on"
+    },
+    {
+      "id": "differential-supports-law-selection",
+      "from": "differential-multiplicity",
+      "to": "observer-weighted-law-selection",
+      "type": "supports"
+    },
+    {
+      "id": "recursion-supports-law-selection",
+      "from": "recursive-observer-reproduction",
+      "to": "observer-weighted-law-selection",
+      "type": "supports"
+    },
+    {
+      "id": "smolin-explains-law-selection",
+      "from": "smolin-reproduction-analogy",
+      "to": "observer-weighted-law-selection",
+      "type": "explains"
+    },
+    {
+      "id": "base-conclusion-supports-law-selection",
+      "from": "base-no-anthropic-privilege",
+      "to": "observer-weighted-law-selection",
+      "type": "supports"
+    },
     {
       "id": "indicators-support-consciousness",
       "from": "consciousness-indicators",

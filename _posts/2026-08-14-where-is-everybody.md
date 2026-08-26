@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Where Is Everybody?"
-date: "2026-08-18"
+date: "2026-08-14"
 section: "Dilemmas"
+order: 1
 argument_graph: epistemic-map
 argument_graph_view: where-is-everybody
 ---

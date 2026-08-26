@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Are You Living in a Computer Simulation?"
-date: "2026-08-19"
+date: "2026-08-15"
 section: "Dilemmas"
+order: 2
 argument_graph: epistemic-map
 argument_graph_view: simulation-argument
 ---
