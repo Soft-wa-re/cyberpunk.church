@@ -1,0 +1,38 @@
+_posts/2026-08-24-are-we-building-ai-nurseries.md
+  s_96d41d7152aad9::t_3e3061c554de88 49
+_posts/2026-08-20-when-worlds-make-worlds.md
+  s_96d41d7152aad9::t_3e3061c554de88 67,70-72,75-76,79
+outline.md
+  s_96d41d7152aad9::t_3e3061c554de88 27
+_posts/2026-08-22-what-is-an-ai-nursery.md
+  s_96d41d7152aad9::t_3e3061c554de88 55
+_posts/2026-08-16-more-copies-are-not-more-probability.md
+  s_96d41d7152aad9::t_3e3061c554de88 78
+_posts/2026-08-21-the-differential-multiplicity-principle.md
+  s_96d41d7152aad9::t_3e3061c554de88 29,31,34,37-38,41
+_arguments/epistemic-map.yml
+  s_96d41d7152aad9::t_4e7c8c96abc7e9 620-834
+  s_96d41d7152aad9::t_0fabbff1c3b7a1 553,572,585
+  s_96d41d7152aad9::t_7def0d9e438b9a 94-125
+  s_96d41d7152aad9::t_1cbcb11b9df1be 1743-1877
+assets/argument-graphs/epistemic-map.json
+  s_96d41d7152aad9::t_e8b8c1dbdd856e 106-141,666,690,707,751-1018,2208-2367
+_posts/2026-08-25-is-our-world-nursery-shaped.md
+  s_96d41d7152aad9::t_3e3061c554de88 123
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.24",
+  "base_commit_sha": "9cf8d035db859c7927318dafb7d21429acd0dbac",
+  "prompts": {},
+  "sessions": {
+    "s_96d41d7152aad9": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a02a29-c49f-7592-82fb-7f590ff38bdf",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "thomas beckenhauer <thomas.beckenhauer.developer@gmail.com>"
+    }
+  }
+}
