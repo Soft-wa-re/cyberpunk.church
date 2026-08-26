@@ -75,11 +75,7 @@ The same rule applies to worlds.
 
 > **Differential Multiplicity Principle:** multiplicity changes an anthropic probability whenever the mechanism producing multiplicity correlates with production of the observer measure relevant to that probability.
 
-The neutral case requires something like:
-
-```text
-covariance(world multiplicity, observer reproduction) = 0
-```
+The neutral case requires the multiplicity mechanism to be conditionally independent of observer fertility under the model, evidence, and seed measure being used. Equal multiplication is the simplest example.
 
 [Neutral multiplicity is therefore an independence condition, not the default effect of having many worlds.](#argument-map?node=neutral-multiplicity){:.mapped-claim}
 

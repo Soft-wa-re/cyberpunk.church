@@ -26,17 +26,19 @@ The relative frequency changes.
 
 ## Neutrality is the special case
 
-Let `M(theta)` be the multiplicity of worlds with laws `theta`, and let `F(theta)` be their capacity to produce descendant observer measure. If the two are independent, multiplication can cancel under normalization.
+Let `q(theta)` be the normalized seed weighting over laws supplied by a particular model, after conditioning on the evidence used at this stage. Let `M(theta)` be its world-multiplicity factor and `F(theta)` its capacity to produce descendant observer measure.
 
-Schematically:
+Neutrality requires `M` not to favor laws on the basis of `F` under that specified seed distribution. In the simplest linear setting, zero seed-weighted covariance is a useful diagnostic:
 
 ```text
-covariance(M(theta), F(theta)) = 0
+Cov_q(M(theta), F(theta)) = 0
 ```
+
+Zero covariance alone is not a general definition of conditional independence. The substantive requirement is that the multiplicity mechanism supply no information about observer fertility once the relevant model and evidence are fixed.
 
 [Uniform multiplication leaves normalized anthropic odds unchanged.](#argument-map?node=neutral-multiplicity){:.mapped-claim}
 
-But if world-production favors laws with unusually high or low reproductive capacity, that covariance is not zero. The multiplication mechanism is then part of the evidence model.
+But if world-production favors laws with unusually high or low reproductive capacity under `q`, the multiplication mechanism is part of the evidence model.
 
 This is why a multiverse cannot simply be declared irrelevant to simulation odds. Its relevance depends on whether the way it populates physical laws correlates with the later production of simulated observer-histories.
 

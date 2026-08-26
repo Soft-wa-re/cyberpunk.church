@@ -64,16 +64,19 @@ m_(n+1) = m_n K
 
 [Nested simulations form a branching process, so total measure depends on reproduction across the entire tree rather than the existence of a single simulated layer.](#argument-map?node=recursive-observer-reproduction){:.mapped-claim}
 
-In a finite, stationary toy model, the spectral radius of `K` gives a useful dividing line:
+In a finite, stationary toy model, the spectral radius of `K` gives a useful dividing line for the full matrix series:
 
 ```text
-spectral radius(K) < 1  -> descendant measure tends to converge
-spectral radius(K) > 1  -> descendant measure can grow without bound
+spectral radius(K) < 1  -> I + K + K^2 + ... converges
+spectral radius(K) = 1  -> the series does not converge
+spectral radius(K) > 1  -> the series does not converge and expanding modes grow
 ```
+
+For a particular starting distribution `m_0`, only the part of the kernel reachable from `m_0` matters. In the standard nonnegative case, if an accessible reproductive mode has spectral radius at least one, its infinite descendant sum fails to converge without an additional cutoff or weighting rule.
 
 [Whether recursive observer measure converges is a property of reproduction rates and the measure—not of depth by itself.](#argument-map?node=reproduction-convergence){:.mapped-claim}
 
-Real models may have changing resources, nonstationary civilizations, finite lifetimes, or infinite measures. The toy criterion is not a cosmological result. It shows which quantity a serious model must constrain.
+Real models may have changing resources, nonstationary civilizations, finite lifetimes, or infinite measures. They may impose a physical cutoff, normalization, discount, or different measure rule. The toy criterion is not a cosmological result. It shows which quantity a serious model must constrain.
 
 ## Short descriptions can be expensive to run
 

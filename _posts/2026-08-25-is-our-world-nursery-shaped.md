@@ -120,7 +120,7 @@ These outcomes update whether an Alignment Nursery is a rational design. They do
 
 The broad AI Nursery is coherent but underspecified. It tells us that artificial minds develop inside a constructed environment without explaining why a creator pays for the process.
 
-The Alignment Nursery supplies the strongest motive we have: the cost of deploying unsafe intelligence may justify extraordinary investment, and one rich environment can combine development with safety evaluation.
+The Alignment Nursery supplies the strongest concrete motive identified here: the cost of deploying unsafe intelligence may justify extraordinary investment, and one rich environment can combine development with safety evaluation.
 
 Current AI practice supports pieces of that causal mechanism. Frontier developers scale safeguards with capability, use deployment-like evaluation, and study behavior that can vary with evaluation context.[^preparedness]
 

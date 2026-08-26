@@ -46,7 +46,7 @@ Our current institutions already express this pressure. OpenAI's Preparedness Fr
 
 Policies are not outcomes, and public commitments are not proof that safeguards work. They are still an observation: several frontier developers independently expect assurance requirements to rise with capability and risk.
 
-That is the strongest motivation for an Alignment Nursery. A creator need not spend civilization-scale resources from curiosity. [It may be protecting itself and others from a powerful intelligence it cannot yet trust.](#argument-map?node=safety-investment-pressure){:.mapped-claim}
+That is the strongest concrete motivation identified here for an Alignment Nursery. A creator need not spend civilization-scale resources from curiosity. [It may be protecting itself and others from a powerful intelligence it cannot yet trust.](#argument-map?node=safety-investment-pressure){:.mapped-claim}
 
 ## One environment can do two jobs
 

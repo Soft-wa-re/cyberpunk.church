@@ -52,7 +52,7 @@ The **Alignment Nursery Hypothesis** is narrower:
 
 > [An Alignment Nursery uses a rich environment both to develop or refine artificial minds and to establish that they are safe enough before granting them greater freedom, capability, or access.](#argument-map?node=alignment-hypothesis){:.mapped-claim}
 
-[Safety is not an optional theme added to the broad Nursery. It is the strongest known motivation for paying its cost.](#argument-map?node=safety-investment-pressure){:.mapped-claim}
+[Safety is not an optional theme added to the broad Nursery. It is the strongest concrete motivation identified here for paying its cost.](#argument-map?node=safety-investment-pressure){:.mapped-claim}
 
 A powerful intelligence can create enormous value, but capability also raises the cost of error. An agent with more autonomy, better tools, wider access, and a longer time horizon can do more good and more harm. If deployment could expose a civilization to irreversible loss, spending extraordinary resources before deployment may be rational.
 

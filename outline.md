@@ -24,13 +24,7 @@ The AI Nursery and Alignment Nursery remain important applications. They are not
 
 Multiplicity is neutral only when the mechanism producing multiplicity is independent of the property being inferred.
 
-If some physical laws or world types generate much more simulated observer measure than others, a multiverse that differentially produces those laws changes the expected location of observers. The neutral case is special:
-
-```text
-Covariance(world multiplicity, simulation fertility) = 0
-```
-
-When that covariance is not zero, multiplicity changes the anthropic distribution.
+If some physical laws or world types generate much more simulated observer measure than others, a multiverse that differentially produces those laws changes the expected location of observers. The neutral case is the special case in which the multiplicity mechanism is conditionally independent of observer fertility under the relevant model, evidence, and seed measure. A covariance statement is meaningful only after that distribution over world types has been specified.
 
 ### Ontological priority is not anthropic priority
 
