@@ -13,8 +13,9 @@ The layers are intentionally separate:
 1. `_arguments/epistemic-map.yml` — author-edited source of truth, including named views
 2. `lib/argument_graph.rb` — YAML loader, normalized model validation, and post-reference checks
 3. `assets/argument-graphs/*.json` — generated canonical JSON for the browser and future non-visual consumers
-4. `_javascript/argument-graph.js` — reusable Cytoscape visualization and inspector
-5. `_includes/argument-graph.html` — Jekyll integration
+4. `_javascript/semantic-layout.mjs` — deterministic topology- and relation-driven layout shared by every view
+5. `_javascript/argument-graph.js` — reusable Cytoscape visualization and inspector
+6. `_includes/argument-graph.html` — Jekyll integration
 
 The canonical schema is documented in `_schemas/argument-graph.schema.json`.
 
@@ -91,6 +92,8 @@ npm run arguments:build
 
 Graphs are optional. A post without `argument_graph` renders exactly as before. Omitting `argument_graph_view` displays the full canonical graph, which is how the `/argument-map/` page works.
 
+Every view is laid out independently from its induced nodes and edges. Supporting, entailing, and explanatory relationships flow from reasons toward their targets; assumptions and dependencies flow from prerequisites toward dependents; attackers enter from a lower challenge lane. Edge attraction, same-layer separation, and deterministic tie-breaking organize the remaining space. There are no saved coordinates or per-view layout rules.
+
 ### Development commands
 
 ```sh
@@ -99,4 +102,4 @@ npm test
 npm run build
 ```
 
-`npm test` checks the validator, JavaScript syntax, post references, and whether committed JSON is current. `npm run build` regenerates argument JSON and the browser bundle before running Jekyll.
+`npm test` checks the validator, JavaScript syntax, post references, committed JSON freshness, and the semantic layout of every named view plus the full canonical graph. `npm run layouts:check` runs the layout experiment by itself. `npm run build` regenerates argument JSON and the browser bundle before running Jekyll.

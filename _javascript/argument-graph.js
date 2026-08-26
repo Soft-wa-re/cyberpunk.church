@@ -1,4 +1,5 @@
 import cytoscape from "cytoscape";
+import { computeSemanticLayout } from "./semantic-layout.mjs";
 
 const NODE_TYPE_LABELS = {
   question: "Question",
@@ -287,14 +288,15 @@ function cytoscapeStyles() {
   ];
 }
 
-function graphElements(graph) {
+function graphElements(graph, positions) {
   const nodes = graph.nodes.map((node) => ({
     data: {
       id: node.id,
       label: `${NODE_TYPE_LABELS[node.type].toUpperCase()}\n${node.title}`,
       title: node.title,
       type: node.type
-    }
+    },
+    position: positions[node.id]
   }));
 
   const edges = graph.edges.map((edge) => ({
@@ -337,11 +339,14 @@ async function initializeGraph(root) {
 
     renderOverview(inspector, graph);
 
+    const semanticLayout = computeSemanticLayout(graph);
+
     const cy = cytoscape({
       container: canvas,
-      elements: graphElements(graph),
+      elements: graphElements(graph, semanticLayout.positions),
       style: cytoscapeStyles(),
-      minZoom: 0.35,
+      layout: { name: "preset", fit: false },
+      minZoom: 0.2,
       maxZoom: 2.25,
       wheelSensitivity: 0.18,
       boxSelectionEnabled: false,
@@ -501,27 +506,14 @@ async function initializeGraph(root) {
       }
     });
 
-    const layoutElements = cy.elements().not(
-      "edge[type = 'assumes'], edge[type = 'depends-on'], edge[type = 'alternative-to']"
-    );
-    const layout = layoutElements.layout({
-      name: "breadthfirst",
-      directed: true,
-      direction: "rightward",
-      padding: 36,
-      spacingFactor: 1.18,
-      avoidOverlap: true,
-      nodeDimensionsIncludeLabels: true
-    });
-
-    layout.one("layoutstop", () => {
+    window.requestAnimationFrame(() => {
+      cy.resize();
       if (!syncTargetFromUrl()) {
         fitGraph();
         const initialNode = graph.nodes.find((node) => node.type === "question") || graph.nodes[0];
         if (initialNode) selectNode(initialNode.id);
       }
     });
-    layout.run();
 
     if (window.ResizeObserver) {
       const observer = new ResizeObserver(() => window.requestAnimationFrame(() => cy.resize()));
