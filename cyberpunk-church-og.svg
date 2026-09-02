@@ -36,7 +36,7 @@
   <!-- Body / terminal prompt -->
   <text x="100" y="286"
         font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace"
-        font-size="26" fill="#59b7ff">Explore the full argument map →</text>
+        font-size="26" fill="#59b7ff">Where is Everybody? →</text>
 
   <text x="100" y="380"
         font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace"
