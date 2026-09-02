@@ -2,6 +2,7 @@ bundle install
 npm install
 npm run arguments:build
 npm run assets:build
+npm run social-card:build
 
 bundle exec jekyll serve --livereload &
 JEKYLL_PID=$!

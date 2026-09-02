@@ -103,3 +103,9 @@ npm run build
 ```
 
 `npm test` checks the validator, JavaScript syntax, post references, committed JSON freshness, and the semantic layout of every named view plus the full canonical graph. `npm run layouts:check` runs the layout experiment by itself. `npm run build` regenerates argument JSON and the browser bundle before running Jekyll.
+
+The Open Graph card takes its title, description, featured link text, taglines,
+and domain from `_config.yml`. `npm run social-card:build` renders both
+`cyberpunk-church-og.svg` and `cyberpunk-church-og.png`; the normal site build
+runs this automatically. Rendering requires `rsvg-convert` from librsvg
+(`brew install librsvg` on macOS).

@@ -4,10 +4,12 @@
   "scripts": {
     "arguments:build": "ruby scripts/build_argument_graphs.rb",
     "arguments:check": "ruby scripts/build_argument_graphs.rb --check",
+    "social-card:build": "ruby scripts/build_social_card.rb",
+    "social-card:check": "ruby scripts/build_social_card.rb --check",
     "layouts:check": "node scripts/check_argument_layouts.mjs",
     "assets:build": "esbuild _javascript/argument-graph.js --bundle --minify --legal-comments=eof --outfile=assets/js/argument-graph.js",
-    "test": "ruby -Itest test/argument_graph_test.rb && node --check _javascript/argument-graph.js && npm run arguments:check && npm run layouts:check",
-    "build": "npm run arguments:build && npm run assets:build && JEKYLL_NO_BUNDLER_REQUIRE=true bundle exec jekyll build"
+    "test": "ruby -Itest test/argument_graph_test.rb && node --check _javascript/argument-graph.js && npm run arguments:check && npm run social-card:check && npm run layouts:check",
+    "build": "npm run arguments:build && npm run assets:build && npm run social-card:build && JEKYLL_NO_BUNDLER_REQUIRE=true bundle exec jekyll build"
   },
   "dependencies": {
     "cytoscape": "3.34.1"

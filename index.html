@@ -4,8 +4,6 @@ layout: default
 
 <div class="home">
   {% if site.posts.size > 0 %}
-    <p class="home__map-link"><a href="{{ '/argument-map/' | relative_url }}">Explore the full argument map →</a></p>
-
     {% assign dilemma_posts = site.posts | where: "section", "Dilemmas" | sort: "order" %}
     <section class="home__section">
       <h2>Dilemmas</h2>
@@ -65,6 +63,8 @@ layout: default
         {% endfor %}
       </ol>
     </section>
+
+    <p class="home__map-link"><a href="{{ site.featured.url | relative_url }}">{{ site.featured.text }}</a></p>
   {% else %}
     <p>No posts yet.</p>
   {% endif %}

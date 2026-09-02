@@ -12,6 +12,25 @@ url: "https://cyberpunk.church"
 google_analytics: G-3QR2M1PYHS
 include: []
 
+# Homepage feature and social-card copy. Change `featured` when a post should
+# replace the argument map as the site's primary invitation.
+featured:
+  text: Where is Everybody? →
+  url: /where-is-everybody/
+social_card:
+  tagline: passing obsessions, taken slightly too seriously.
+  prompt: follow the rabbit hole_
+
+# jekyll-seo-tag reads its fallback image from front-matter defaults.
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /cyberpunk-church-og.png
+        width: 1200
+        height: 627
+
 # Build settings
 markdown: kramdown
 permalink: /:title/
