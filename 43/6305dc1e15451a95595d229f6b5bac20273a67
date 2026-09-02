@@ -1,0 +1,35 @@
+index.html
+  s_ce01b22c4a89ef::t_eeebf21b49f440 66-67
+_config.yml
+  s_ce01b22c4a89ef::t_4f112d4a25befc 15-17,20-22
+  s_ce01b22c4a89ef::t_407ae58775dc8d 23-32
+  s_ce01b22c4a89ef::t_a62bd94fe24a24 18-19
+  s_ce01b22c4a89ef::t_736109452ba724 33
+README.md
+  s_ce01b22c4a89ef::t_4f112d4a25befc 106-111
+scripts/cyberpunk-church-og.svg.erb
+  s_ce01b22c4a89ef::t_4f112d4a25befc 1-53
+package.json
+  s_ce01b22c4a89ef::t_4f112d4a25befc 7-8,11-12
+serve.sh
+  s_ce01b22c4a89ef::t_4f112d4a25befc 5
+scripts/build_social_card.rb
+  s_ce01b22c4a89ef::t_4f112d4a25befc 1-49,62-78
+  s_ce01b22c4a89ef::t_e94590421ebf59 50-61
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "436305dc1e15451a95595d229f6b5bac20273a67",
+  "prompts": {},
+  "sessions": {
+    "s_ce01b22c4a89ef": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a061e4-3382-79a1-bf3b-eb9dbe8b2475",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "thomas beckenhauer <thomas.beckenhauer.developer@gmail.com>"
+    }
+  }
+}
