@@ -12,14 +12,18 @@ url: "https://cyberpunk.church"
 google_analytics: G-3QR2M1PYHS
 include: []
 
-# Homepage feature and social-card copy. Change `featured` when a post should
-# replace the argument map as the site's primary invitation.
+# Featured social-card copy for the homepage.
 featured:
   text: Where is Everybody? →
   url: /where-is-everybody/
 social_card:
   tagline: passing obsessions, taken slightly too seriously.
   prompt: follow the rabbit hole_
+
+# Secondary annotation shown below the homepage's post sections.
+argument_map:
+  text: Explore the full argument map →
+  url: /argument-map/
 
 # jekyll-seo-tag reads its fallback image from front-matter defaults.
 defaults:
