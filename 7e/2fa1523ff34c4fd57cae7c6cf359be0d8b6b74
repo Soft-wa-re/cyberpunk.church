@@ -1,0 +1,14 @@
+cyberpunk-church-og.svg
+  h_b4e8fce3b624b4 39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "7e2fa1523ff34c4fd57cae7c6cf359be0d8b6b74",
+  "prompts": {},
+  "humans": {
+    "h_b4e8fce3b624b4": {
+      "author": "thomas beckenhauer <thomas.beckenhauer.developer@gmail.com>"
+    }
+  }
+}
