@@ -11,7 +11,30 @@ The project now has a foundation-first [master outline](outline.md). Several sub
 - Smolin as an analogue for reproductive selection;
 - quantum history spaces as a possible architecture for later purpose hypotheses.
 
-This file retains research branches that can deepen those sections but should not silently become premises.
+This file retains research branches that can deepen those sections but should not silently become premises. Load-bearing unresolved questions appear first.
+
+## Priority: Measure and Reproduction
+
+### What regularizes nonconvergent recursive observer measure?
+
+Job: Replace the placeholder word `normalization` with a physically and epistemically explicit rule.
+
+The finite stationary matrix model now supplies a clean negative result: when an accessible reproductive mode has spectral radius at least one, the unnormalized sum over generations does not converge. Normalized type proportions can sometimes settle, but that answers a different question and does not define a sample over all observer histories.
+
+The remaining issue is not whether one can divide by a growing total. It is which population the model says an observer is sampled from:
+
+- Does the cutoff operate by causal depth, host time, child time, computation, energy, or another resource?
+- Does reproduction saturate as descendants compete for shared resources?
+- Are lineages independent enough for a branching model, or does common infrastructure couple their fates?
+- Which conclusions remain stable across defensible cutoff or saturation rules?
+
+Destination: Produce sensitivity results across explicit regularizations. Do not adopt a cutoff merely because it yields a finite answer.
+
+Research anchors:
+
+- [Matrix Analysis and Applied Linear Algebra](https://doi.org/10.1137/1.9781611977448) by Carl D. Meyer (2023), for the finite matrix-series result.
+- [Galton-Watson and Branching Process Representations of the Normalized Perron-Frobenius Eigenvector](https://doi.org/10.1051/ps/2019007) by Cerf and Dalmau (2019), for the distinction between growth and normalized type composition under primitive branching assumptions.
+- [An Approximation of Populations on a Habitat with Large Carrying Capacity](https://doi.org/10.1007/s00285-024-02069-w) by Bauman, Chigansky, and Klebaner (2024), for a density-dependent alternative to unconstrained branching.
 
 ## Physical Parent Universes
 

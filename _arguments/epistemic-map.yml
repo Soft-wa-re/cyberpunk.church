@@ -504,8 +504,8 @@ nodes:
 
   - id: reproduction-kernel
     type: claim
-    title: A reproduction kernel tracks descendant observer-history measure
-    body: K_ij denotes the expected descendant observer-history measure of world type j produced per unit parent measure of type i. Its units must not be replaced by raw simulation counts or processor operations.
+    title: A reproduction kernel tracks direct-child observer-history measure
+    body: K_ij denotes the expected direct-child observer-history measure of world type j produced in one reproductive step per unit parent measure of type i. Later descendants appear through powers of K, so including them inside K would double count them. Its units must not be replaced by raw simulation counts or processor operations.
     epistemics:
       status: tentative
       belief:
@@ -542,7 +542,7 @@ nodes:
   - id: recursive-observer-reproduction
     type: claim
     title: Descendant worlds may reproduce again
-    body: Constructed observers can eventually create further observer-containing worlds, forming a branching process whose depth distribution depends on measure-weighted reproduction rates.
+    body: Constructed observers may eventually create further observer-containing worlds. A branching process is an available model only after specifying a probability law over direct-child outputs and defending independence and stationarity assumptions. The expected observer-measure kernel alone does not define that stochastic process.
     epistemics:
       status: open
       confidence: low
@@ -550,13 +550,26 @@ nodes:
   - id: reproduction-convergence
     type: conclusion
     title: Recursive observer measure converges only under additional conditions
-    body: In a finite linear toy model, the full series I + K + K^2 + ... converges exactly when the spectral radius of K is below one. At the critical value one it already fails to converge. For a particular starting distribution, the same test applies to the accessible part of a nonnegative kernel; otherwise a cutoff, resource constraint, normalization, or different measure rule is needed.
+    body: In a finite stationary linear toy model, the full unnormalized series I + K + K^2 + ... converges exactly when the spectral radius of K is below one. The dominant direction of expected measure may settle under stronger Perron-Frobenius conditions even when that sum diverges, but this does not choose how observer measure weights generations, time, or finite resources. Stochastic survival and type-composition claims require an additional probability law that K alone does not provide.
     epistemics:
       status: tentative
       belief:
         type: qualitative
-        value: Exact within the finite linear toy model
+        value: Exact convergence boundary within the finite linear toy model
       confidence: high
+      cruxes:
+        - Which physically justified cutoff, saturation law, or sampling rule replaces the divergent stationary model.
+        - Whether reproduction can be approximated as independent and stationary over more than an initial regime.
+    sources:
+      - title: Matrix Analysis and Applied Linear Algebra, Second Edition
+        url: https://doi.org/10.1137/1.9781611977448
+        note: Meyer provides the finite matrix analysis underlying the geometric-series boundary.
+      - title: Galton-Watson and Branching Process Representations of the Normalized Perron-Frobenius Eigenvector
+        url: https://doi.org/10.1051/ps/2019007
+        note: Cerf and Dalmau state survival and normalized type-composition results for a primitive mean matrix under standard multitype branching assumptions.
+      - title: An Approximation of Populations on a Habitat with Large Carrying Capacity
+        url: https://doi.org/10.1007/s00285-024-02069-w
+        note: Bauman, Chigansky, and Klebaner analyze a density-dependent alternative to unconstrained branching.
 
   - id: description-execution-distinction
     type: conclusion

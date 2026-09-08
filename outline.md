@@ -71,7 +71,7 @@ Introduce notation only when it answers a specific ambiguity.
 - `H` — a candidate observer history or implemented causal history.
 - `mu_M(H)` — the measure assigned to `H` under model `M`.
 - `theta_i` — a world type or effective set of physical laws.
-- `K_ij` — expected descendant observer-history measure of type `j` produced per unit parent measure of type `i`.
+- `K_ij`: expected direct-child observer-history measure of type `j` produced in one reproductive step per unit parent measure of type `i`.
 - `D` — a world causally develops or refines minds.
 - `T` — a world provides alignment-relevant evidence about minds.
 - `G` — capability, freedom, or access is gated on that evidence.
@@ -178,25 +178,29 @@ For a finite collection of world types, define:
 m_(n+1) = m_n K
 ```
 
-where `K_ij` is measured in descendant observer-history measure, not raw simulations or processor operations.
+where `K_ij` is measured in direct-child observer-history measure, not raw simulations or processor operations. Later descendants appear through powers of `K`; including them in each entry would double count them.
 
 Destination: The existence of nesting is less important than the measure-weighted reproduction rate.
 
 ## 9. Does Recursive Observer Measure Converge?
 
-Job: Make simulation depth a branching-process question.
+Job: Separate four questions that a reproduction matrix does not answer at once: expected growth, stochastic survival, convergence of unnormalized total measure, and convergence of normalized type proportions.
 
-The total descendant measure is formally:
+If `K` is an expected reproduction kernel, then `m_(n+1) = m_n K` tracks a first moment. It does not define a stochastic branching process or determine extinction probabilities, variance among lineages, or dependencies caused by shared finite resources. Those questions require a probability law over one-step outputs plus independence and stationarity assumptions.
+
+In a finite, stationary linear model, the unnormalized total descendant measure is formally:
 
 ```text
 m_total = m_0 (I + K + K^2 + ...)
 ```
 
-In a finite model it converges when the spectral radius of `K` is below one. At or above one, the model needs a cutoff, normalization, resource constraint, or different measure rule.
+The full matrix series converges exactly when the spectral radius of `K` is below one. For a particular `m_0`, only accessible reproductive components matter. At or above one, unnormalized descendant measure diverges along any accessible critical or expanding mode.
 
-Do not turn this toy result into premature cosmology. Its purpose is to show exactly which undefined quantity casual arguments about infinite nesting hide.
+Normalized type proportions may still converge under stronger Perron-Frobenius assumptions. In standard multitype branching models, survival and composition results require an offspring-count process that the observer-measure kernel does not yet supply. These are different results. A stable mix within late generations does not specify how to weight generations, physical time, or resource-bounded histories.
 
-Destination: Simulation depth emerges from recursive reproduction; it is not an independent prior penalty.
+Do not turn this toy result into premature cosmology. Real reproduction can be nonstationary, density-dependent, correlated, or infinite-type. The purpose of the matrix is to expose which cutoff, saturation law, or sampling rule a serious model still owes.
+
+Destination: Simulation depth emerges from recursive reproduction; convergence of a matrix sum, stable type composition, lineage survival, and a defensible observer measure remain distinct claims.
 
 ## 10. Description Cost Is Not Execution Cost
 
@@ -222,7 +226,7 @@ Destination: A multiverse changes simulation odds whenever it differentially pro
 
 Job: Generalize the reproduction matrix without projecting our physics upward.
 
-Use `K(theta_i, theta_j)` for descendant observer-history measure with child laws `theta_j` produced by a host with laws `theta_i`.
+Use `K(theta_i, theta_j)` for direct-child observer-history measure with laws `theta_j` produced in one reproductive step by a host with laws `theta_i`.
 
 The host's computation costs constrain production. The child's laws are design variables or inherited outcomes and may serve a different purpose. A host need not simulate its own physics.
 
