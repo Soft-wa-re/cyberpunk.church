@@ -52,7 +52,7 @@ Using the reproduction kernel from the previous essay:
 
 ```text
 K(theta_i, theta_j)
-    = observer-history measure with child laws theta_j
+    = direct-child observer-history measure with laws theta_j
       produced by worlds with host laws theta_i
 ```
 
